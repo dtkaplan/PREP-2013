@@ -1,0 +1,44 @@
+Topics
+=======================
+
+### MAA PREP 2013
+### Modeling: Early and Often in Undergraduate Calculus
+
+Please note: This is a working outline.
+
+## Monday
+
+### Evening
+
+Welcome dinner and introductions.  Some ice-breaking modeling activities.
+
+## Tuesday
+
+### Morning
+
+* Modeling functions and their parameters
+
+* A software tool kit: the `mosaic` package in R.
+    * RStudio accounts will be provided 
+    * Copies of ["Start R in Calculus"](http://www.amazon.com/Start-Calculus-Daniel-T-Kaplan/dp/0983965897/ref=sr_1_1?ie=UTF8&qid=1366313996&sr=8-1&keywords=start+r+in+calculus) will be provided )
+    
+### Afternoon
+
+## Wednesday
+
+
+### Morning
+
+### Afternoon
+
+
+## Thursday
+
+### Morning
+
+### Afternoon
+
+
+## Friday
+
+### Morning
