@@ -54,6 +54,17 @@ Topics
 ### MAA PREP 2013
 ### Modeling: Early and Often in Undergraduate Calculus
 
+## Before the Workshop
+
+This workshop is about using mathematical modeling as a setting in which to introduce students to calculus and motivating calculus for students by the ways it simplifies constructing models of diverse phenomena.
+
+In the weeks leading up to the workshop, we ask you to spend a couple of hours getting oriented.
+
+* Teaching Modeling-Based Calculus --- a brief introduction to a philosophy of modeling-based calculus. (To be posted.)
+* Computation and graphics.  You may already have experience teaching with a mathematical software system such as Mathematica, MATLAB, Maple, or Sage.  If so, you likely want to continue using that system. In order to provide a common framework for the workshop, and in order to guarantee that all participants have a computational platform that they can bring back to their own institution, we'll be using the free and open-source R with the RStudio and the `mosaic` package.  Upon registration, all participants will receive a free copy of ["Start R in Calculus"](http://www.amazon.com/Start-Calculus-Daniel-T-Kaplan/dp/0983965897/ref=sr_1_1?ie=UTF8&qid=1366313996&sr=8-1&keywords=start+r+in+calculus).  We'll also set you up with an account on a web-based RStudio server.  
+
+You'll notice that the topics for the workshop are not in the order you would use in your own classes. Unlike your students, you already know the operations and concepts of calculus.  So our first day is about building models, even though some of these use calculus.  Later, we'll introduce some models that motivate topics of calculus, so you can teach calculus in the context of modeling.
+
 Please note: This is a working outline.
 
 ```{r, echo=FALSE}
@@ -71,14 +82,14 @@ Welcome dinner and introductions.  Some ice-breaking modeling activities.
 
 ## Tuesday
 
-Unlike your students, you already know the operations and concepts of calculus.  So our first day is about building models, even though some of these use calculus.  Later, we'll introduce some models that motivate topics of calculus, so you can teach calculus in the context of modeling.
+
 
 * Functions for modeling and their parameters [link](http://rpubs.com/dtkaplan/584)
     * Examples: Snow Tree Crickets `r I(displayFile('../Notes/Functions/SnowTreeCricket',''))` : World Population `r I(displayFile('../Notes/Functions/WorldPopulation',''))` : Tides in Hawaii `r I(displayFile('../Notes/Tides/tides-hawaii',''))` : Hill Functions `r I(displayFile('../Notes/Functions/hillFunctions',''))`: Cooling Coffee `r I(displayFile('../Notes/Cooling/CoolingCoffee',''))` 
 
 * A software tool kit: the `mosaic` package in R.
     * RStudio accounts will be provided 
-    * Copies of ["Start R in Calculus"](http://www.amazon.com/Start-Calculus-Daniel-T-Kaplan/dp/0983965897/ref=sr_1_1?ie=UTF8&qid=1366313996&sr=8-1&keywords=start+r+in+calculus) will be provided
+    * Copies of 
     
 * The contour plot approach to two variables [file link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/TwoVariables/TwoVariablesIntro.Rmd)
 
