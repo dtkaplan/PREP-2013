@@ -56,6 +56,12 @@ Topics
 
 Please note: This is a working outline.
 
+```{r, echo=FALSE}
+displayFile <- function(path, text=path, type=c('html','Rmd')) {
+  result <- paste(text, paste("[[", type, "] ](", path, ".", type, ")", sep="", collapse="" ) )
+  return(result)
+  }
+```
 
 ## Monday
 
@@ -68,7 +74,7 @@ Welcome dinner and introductions.  Some ice-breaking modeling activities.
 Unlike your students, you already know the operations and concepts of calculus.  So our first day is about building models, even though some of these use calculus.  Later, we'll introduce some models that motivate topics of calculus, so you can teach calculus in the context of modeling.
 
 * Functions for modeling and their parameters [link](http://rpubs.com/dtkaplan/584)
-    * Examples: Snow Tree Crickets [link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/Functions/SnowTreeCricket.Rmd) : World Population [link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/Functions/WorldPopulation.Rmd) : Tides in Hawaii [link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/Tides/tides-hawaii.Rmd) : Hill Functions [link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/Functions/hillFunctions.Rmd) : Cooling Coffee [link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/Cooling/CoolingCoffee.Rmd) 
+    * Examples: Snow Tree Crickets `r I(displayFile('../Notes/Functions/SnowTreeCricket',' '))` : World Population [link](../Notes/Functions/WorldPopulation.Rmd) : Tides in Hawaii [link](../Notes/Tides/tides-hawaii.Rmd) : Hill Functions [link](../Notes/Functions/hillFunctions.Rmd) : Cooling Coffee [link](../Notes/Cooling/CoolingCoffee.Rmd) 
 
 * A software tool kit: the `mosaic` package in R.
     * RStudio accounts will be provided 
