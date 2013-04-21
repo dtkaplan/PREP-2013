@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Functions Functions for Modeling</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+</head>
+
+<body>
+<h1>Functions Functions for Modeling</h1>
+
+<h2>General Features of Functions</h2>
+
+<h2>What are the inputs?</h2>
+
+<p>Models should be intended for a purpose.  So it matters what is the input and what is the output, since you typically want to transform a particular quantity into another type of quantity.</p>
+
+<p><img src="figures/SnowyTreeCricket.png" alt="Snowy Tree Cricket excerpt"/></p>
+
+<p>Snow Tree Cricket (from Chapter 1 of Hughes-Hallett).  See Math 135 notes from 25 Jan. 2012 and <code>figure/SnowyTreeCricket.png</code></p>
+
+<h2>Difference between traditional math and computer notation for functions.</h2>
+
+<p>\( y = mx + b \), \( f(x) = mx + b \), \( \int x dx \), \( \sin(x) \), \( \sqrt{x} \), and so on.</p>
+
+<h2>Parameters.</h2>
+
+<p>Why would we ever write \( \sin x \)?</p>
+
+<h2>Specific Functions for Modeling</h2>
+
+<h3>Straight-Line functions \( f(x) = mx + b \)</h3>
+
+<h4>Parameterization</h4>
+
+<p>Students already know a lot about these: slope and intercept.  Emphasize that these are parameters.  The parameters specify a particular function out of the whole set of functions.</p>
+
+<p>Other parameterizations (e.g. point-slope, two-points, point-angle) can be converted to slope-intercept.</p>
+
+<h4>Applications</h4>
+
+<p>This is the general purpose modeling function.  All simple relationships can and are represented this way.
+1. World record swim times versus year. <code>swim100m.csv</code>
+2. Wage versus education. <code>cps.csv</code>
+3. Natural gas usage versus temperature. <code>utilities.csv</code>
+See <a href="http://rpubs.com/dtkaplan/577">more details on these examples</a></p>
+
+<h3>Exponentials</h3>
+
+<h4>Proportional versus constant change</h4>
+
+<ol>
+<li>Atmosphere pressure, water pressure</li>
+<li>Population of Mexico (Math 135 27 Jan 2012)</li>
+<li>Exponential models of data <a href="http://dl.dropbox.com/u/5098197/Exercises/HTML/AC-Income-and-Housing/AC-Income-and-Housing-A.html?access=AC7">Income and housing variables</a></li>
+</ol>
+
+<h4>Parameterization of exponentials</h4>
+
+<ol>
+<li>Half-life, interest rate, exponential time constant.  Which is best depends on what information you have.</li>
+<li>Conversion: Rule of 72.</li>
+</ol>
+
+<h4>Models</h4>
+
+<ol>
+<li>Half-lives of meds.  How often should you take the pill to keep the drug level within 10% over the long run?</li>
+<li><a href="http://dl.dropbox.com/u/5098197/Math135/In-Class/doubling-activity.pdf">Activity on doubling and half-lives</a> </li>
+<li>Sums of exponentials.  Why is cooling not a simple exponential?  <a href="http://rpubs.com/dtkaplan/558">Fitting Stan&#39;s data</a> </li>
+</ol>
+
+<h3>Logarithms</h3>
+
+<h4>Examples</h4>
+
+<ol>
+<li><a href="http://test.causeweb.org/wiki/mosaic/index.php/File:Happiness-and-log-scale.jpg">Happiness on a log scale</a> </li>
+<li><a href="http://xkcd.com/798/">Profanity and log axes</a></li>
+</ol>
+
+<h4>Activities</h4>
+
+<ol>
+<li>Log axes &mdash; how to interpret.  <a href="http://dl.dropbox.com/u/5098197/Math135/In-Class/LogAxes.pdf">Example of log axes</a>. Activity: Plot intervals on these scale to indicate absolute and relative precision on both log and linear axes, for instance, 10% precision on measurements of 1 and of 100 on a log axis.</li>
+</ol>
+
+<h4>Modeling project</h4>
+
+<ol>
+<li>Prices versus log prices in the stock market.  Which generates a better simulation of stock variation: a random walk on \( \Delta \) prices or a random walk on \( \Delta \) log prices?</li>
+</ol>
+
+<h4>Other resources</h4>
+
+<ul>
+<li><a href="http://www.rpubs.com/jverzani/278">John Verzani&#39;s notes on logarithms</a></li>
+</ul>
+
+<h3>Splines</h3>
+
+<ol>
+<li>Squeezing Orange Juice<br/></li>
+</ol>
+
+<h3>Power Laws</h3>
+
+<ol>
+<li>Random walks.  How does the typical distance scale?  Explanation in terms of random vectors being perpendicular.  (Later application: Explaining the power law: integration of the square distance compared to integration of the absolute distance)</li>
+<li><a href="https://dl.dropbox.com/u/5098197/PREP2012/Primate-Body-Shape.pdf">Chest circumference versus weight</a>, <a href="https://dl.dropbox.com/u/5098197/PREP2012/Tree-Strength.pdf">tree height and thickness</a>.  (Later example in multivariate: <a href="https://dl.dropbox.com/u/5098197/PREP2012/engine-speed.pdf">relationships in the internal combustion engine</a>)</li>
+</ol>
+
+<h3>Sines and Cosines</h3>
+
+<h4>Parameterization</h4>
+
+<p>Amplitude, time lag, offset.</p>
+
+<h4>Models</h4>
+
+<ol>
+<li>Day length as a function of the day of the year.  (For later example, as a function of longitude.)  Where does the model break down (near the arctic circle)?</li>
+<li>Tone and period.  Model a musical scale.  How does the period change from note to note?  Model a chord.</li>
+<li>Modeling tide data.  Example on <a href="http://rpubs.com/dtkaplan/540">Hawaiian tides</a></li>
+<li>Kepler and the planets.  (See <code>kepler.Rnw</code>)</li>
+</ol>
+
+</body>
+
+</html>
+

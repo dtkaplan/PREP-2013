@@ -1,0 +1,56 @@
+Modeling and Mathematics
+========================
+
+Mathematics as a field and modeling as a practice are allied, but have interests that sometimes conflict.  This workshop will feature the many ways that mathematics and modeling can work together, and highlight their differences.
+
+* Mathematics
+    * Precision, Definition, and Proof
+    * Abstraction/universality
+    * Aesthetics
+    * Mathematics is a goal
+* Modeling
+    * Purpose and utility
+    * Approximation/concreteness
+    * Contextual knowledge and judgment
+    * Mathematics is a tool
+
+### Some Mathematics Quotes
+**Carl Friedrich Gauss**: "Mathematics is the queen of the sciences."
+
+**Benjamin Peirce**: "The science that draws necessary conclusions."
+
+**Wikipedia**: "Aristotle defined mathematics as 'the science of quantity,' and this definition prevailed until the 18th century. In the 19th century, when the study of mathematics increased in rigor and began to address abstract topics such as group theory and projective geometry, which have no clear-cut relation to quantity and measurement, mathematicians and philosophers began to propose a variety of new definitions. Today, there is no consensus on the definition of mathematics, even among professionals. Some emphasize the deductive character of much of mathematics, some emphasize its abstractness, some emphasize certain topics within mathematics. There is not even consensus on whether mathematics is an art or a science. A great many professional mathematicians take no interest in a definition of mathematics, or consider it undefinable. Some say, 'Mathematics is what mathematicians do.'"
+
+### Some Modeling Quotes
+**Albert Einstein**: "As far as the laws of mathematics refer to reality, they are not certain; and as far as they are certain, they do not refer to reality".
+
+**George Box**: "All models are wrong.  Some models are useful."
+
+**John Tukey**: "An approximate answer to the right problem is worth a good deal more than an exact answer to an approximate problem."
+
+**Richard Hamming**: "Does anyone believe that the difference between the Lebesgue and Riemann integrals can have physical significance, and that whether say, an airplane would or would not fly could depend on this difference? If such were claimed, I should not care to fly in that plane."
+
+
+    
+Modeling and Calculus
+---------------------
+* Newton's development was for a class of problems: mechanics.
+* Intuitive notions of limit sufficed for 200 years
+* The cannon of calculus was developed in a particular computational milieu.  Now we work in a different computational milieu.
+* Statistics is key to many modeling problems, but calculus was developed before statistics.
+* Students (and everyone else) have limited contextual knowledge.  Examples should build on and reinforce what students already know, and extend their knowledge in important ways.  Our examples will tend to be about general science (biology, physics, chemistry) and economics/business.
+
+Ways that Modeling can help in teaching Calculus
+-----------------
+* Motivation: Many students like useful things
+* Motivation: The calculus framework is important.  DEs, continuity, differentiability, 
+
+Two ways to go
+--------------
+* Introduce a mathematical topic and illustrate with a modeling setting.
+* Introduce a modeling setting and develop the mathematics needed to work with it.
+
+We will work in both directions.  Putting **settings first** provides motivation and allows judgment and contextual knowledge to be taught.  Putting **math topics** first provides a way to honor the logical dependencies between topics.
+
+
+

@@ -65,7 +65,8 @@ In the weeks leading up to the workshop, we ask you to spend a couple of hours g
 
 You'll notice that the topics for the workshop are not in the order you would use in your own classes. Unlike your students, you already know the operations and concepts of calculus.  So our first day is about building models, even though some of these use calculus.  Later, we'll introduce some models that motivate topics of calculus, so you can teach calculus in the context of modeling.
 
-Please note: This is a working outline.
+
+Please note: This is a working outline.  The topics and their order may change before the workshop.
 
 ```{r, echo=FALSE}
 displayFile <- function(path, text=path, type=c('html','Rmd')) {
@@ -82,55 +83,49 @@ Welcome dinner and introductions.  Some ice-breaking modeling activities.
 
 ## Tuesday
 
-
-
 * Functions for modeling and their parameters [link](http://rpubs.com/dtkaplan/584)
     * Examples: Snow Tree Crickets `r I(displayFile('../Notes/Functions/SnowTreeCricket',''))` : World Population `r I(displayFile('../Notes/Functions/WorldPopulation',''))` : Tides in Hawaii `r I(displayFile('../Notes/Tides/tides-hawaii',''))` : Hill Functions `r I(displayFile('../Notes/Functions/hillFunctions',''))`: Cooling Coffee `r I(displayFile('../Notes/Cooling/CoolingCoffee',''))` 
 
-* A software tool kit: the `mosaic` package in R.
-    * RStudio accounts will be provided 
-    * Copies of 
-    
-* The contour plot approach to two variables [file link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/TwoVariables/TwoVariablesIntro.Rmd)
+* The contour plot approach to functions of two variables `r I(displayFile('../Notes/TwoVariables/TwoVariablesIntro',''))`
 
 * Polynomials approximation and modeling
     * Examples
-        * Straight-line models [link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/Functions/LinearFunctions.Rmd)
-        * Application in Model Building: Enzyme kinetics Michaelis-Menten dynamics [link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/Michaelis-Menten/MichaelisMenten.Rnw) 
-        * Notes on polynomials as models. [link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/Polynomials/notes-on-polynomials.Rmd) 
-        * Selecting model terms from first principles. [link](http://dl.dropbox.com/u/5098197/Math135/In-Class/poly2d.pdf)
-        * Linear Approximation in Max Heart Rate [pdf](https://dl.dropboxusercontent.com/u/5098197/PREP2012/max-hr.pdf)
-    * Activities : Eyeballing interactions [link](http://dl.dropbox.com/u/5098197/Math135/In-Class/eyeball-partials.pdf) : Celebrity Divorce [link](http://dl.dropbox.com/u/5098197/Math135/In-Class/celebrity-divorce.pdf) : A mosaicManip applet for visualizing quadratic approximation in two variables. [pdf](http://dl.dropbox.com/u/5098197/Math135/In-Class/poly2-approx.pdf)
+        * Straight-line models `r I(displayFile('../Notes/Functions/LinearFunctions',''))`
+        * Application in Model Building: Enzyme kinetics Michaelis-Menten dynamics `r I(displayFile('../Notes/Michaelis-Menten/MichaelisMenten',''))` 
+        * Notes on polynomials as models. `r I(displayFile('../Notes/Polynomials/notes-on-polynomials',''))` 
+        * Selecting model terms from first principles. [pdf](http://dl.dropbox.com/u/5098197/Math135/In-Class/poly2d.pdf)
+        * Linear Approximation in Max Heart Rate [pdf](http://dl.dropbox.com/u/5098197/PREP2012/max-hr.pdf)
+    * Activities : Eyeballing interactions [pdf](http://dl.dropbox.com/u/5098197/Math135/In-Class/eyeball-partials.pdf) : Celebrity Divorce [pdf](http://dl.dropbox.com/u/5098197/Math135/In-Class/celebrity-divorce.pdf) : A mosaicManip applet for visualizing quadratic approximation in two variables. [pdf](http://dl.dropbox.com/u/5098197/Math135/In-Class/poly2-approx.pdf)
 
-* Modeling heuristics [link](http://dl.dropbox.com/u/5098197/Math135/In-Class/poly2d.pdf)
+* Modeling heuristics [pdf](http://dl.dropbox.com/u/5098197/Math135/In-Class/poly2d.pdf)
 
 
 ## Wednesday
 
-* Limits [link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/Limits/notes-on-limits.Rmd)
+* Limits `r I(displayFile('../Notes/Limits/notes-on-limits',''))`
 * Derivatives and Integrals
-    * Examples: Foot Arch [link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/Functions/footStretch.Rmd) : Traffic Light Capacity [link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/Integration/Traffic-Light-Capacity.Rmd) : Missile Acceleration [pdf](https://dl.dropbox.com/u/5098197/PREP2012/missile-launch.pdf) : Orange Juice [html](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/OrangeJuiceFlow/OrangeJuice.Rmd) : Lake volume
-    * Notes: Function/Derivative Pairs [html](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Schedule-Outline/Derivatives.Rmd) : Integration [html](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Schedule-Outline/Integrals.Rmd) 
+    * Examples: Foot Arch `r I(displayFile('../Notes/Functions/footStretch',''))` : Traffic Light Capacity `r I(displayFile('../Notes/Integration/Traffic-Light-Capacity',''))` : Missile Acceleration [pdf](https://dl.dropbox.com/u/5098197/PREP2012/missile-launch.pdf) : Orange Juice `r I(displayFile('../Notes/OrangeJuiceFlow/OrangeJuice',''))` : Lake volume
+    * Notes: Function/Derivative Pairs `r I(displayFile('../Notes/Overviews/Derivatives',''))` : `r I(displayFile('../Notes/Overviews/Integrals',''))` 
     * Resources
        * Prevalence and incidence of HIV [link](http://dl.dropbox.com/u/5098197/Math135/In-Class/hiv-graph.pdf)
        * Sommer Gentry's (USNA) exercise on [derivatives and the economy](http://www.mosaic-web.org/Repository/SommerGentry/secondDerivativeInTheNews.pdf)
        * The ideal gas law [file link](http://dl.dropbox.com/u/5098197/Math135/In-Class/ideal-gas-activity1.pdf)
-       * Modeling projection with Cobb-Douglas [file link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/Cobb-Douglas/cobb-douglas.Rmd)
-       * Related rates as change along a path [file link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/RelatedRates/RelatedRatesIntro.Rmd)
+       * Modeling projection with Cobb-Douglas `r I(displayFile('../Notes/Cobb-Douglas/cobb-douglas',''))`
+       * Related rates as change along a path `r I(displayFile('../Notes/RelatedRates/RelatedRatesIntro',''))`
 
 * Optimization
-    * Modeling aspects of optimization [link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/Optimization/One-Variable-Optimization.Rmd) including the oil-can example and multiple objectives
-    * Examples: Beach Population [html](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/Optimization/beach-population.Rmd) : Optimization of Quality Adjusted Life Years [html](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/Optimization/QALY1.Rmd) : Toronto Ball [html](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/Functions/Toronto-Ball.Rmd) : Do Dogs Know Calculus? [pdf of MAA article](http://www.maa.org/features/elvisdog.pdf) and Dog Calculus is Economics [html](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/Optimization/Dog-Calculus.Rmd) : 
+    * Modeling aspects of optimization `r I(displayFile('../Notes/Optimization/One-Variable-Optimization',''))` including the oil-can example and multiple objectives
+    * Examples: Beach Population `r I(displayFile('../Notes/Optimization/beach-population',''))` : Optimization of Quality Adjusted Life Years `r I(displayFile('../Notes/Optimization/QALY1',''))` : Toronto Ball `r I(displayFile('../Notes/Functions/Toronto-Ball',''))` : Do Dogs Know Calculus? [pdf of MAA article](http://www.maa.org/features/elvisdog.pdf) and Dog Calculus is Economics `r I(displayFile('../Notes/Optimization/Dog-Calculus',''))` : 
 
-* Modeling with Series [link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/Series/notes-on-series.Rmd)
+* Modeling with Series `r I(displayFile('../Notes/Series/notes-on-series',''))`
 
 ## Thursday
 
 * Dynamics
-    * Mechanics and what not to do: Solving the Logistic DE, the AP Exam problem [link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/DiffEQ/AlgebraAndIntroDE.Rmd)
+    * Mechanics and what not to do: Solving the Logistic DE, the AP Exam problem `r I(displayFile('../Notes/DiffEQ/AlgebraAndIntroDE',''))`
     * Dynamical phenomena
     * Differential equations as a framework for modeling
-        * A rowing problem [link](file:///Users/kaplan/kaplanfiles/Github/PREP-2012/Topics/DiffEQ/RowingProblem.Rmd)
+        * A rowing problem `r I(displayFile('../Notes/DiffEQ/RowingProblem',''))`
         * Love and war
 
 ## Friday
