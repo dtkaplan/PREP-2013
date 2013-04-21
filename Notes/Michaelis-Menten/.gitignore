@@ -1,0 +1,4 @@
+*.log
+figures
+*-concordance.tex
+*synctex.gz
