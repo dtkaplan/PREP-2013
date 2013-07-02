@@ -10,14 +10,11 @@ options(rstudio.markdownToHTML =
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="../javascripts/main.js"></script>
 
-Workshop Schedule
-=================
-
-### MAA PREP 2013
+### MAA PREP 2013 Workshop
 ### Modeling: Early and Often in Undergraduate Calculus
 
-
-Please note: Exact times may change.
+Schedule
+=================
 
 #### Before the Workshop: Early July 2013
 
