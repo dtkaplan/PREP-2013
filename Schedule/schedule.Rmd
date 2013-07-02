@@ -21,7 +21,7 @@ Schedule
 
 * Browse selectively through the videos [listed here](../Resources/ACM-Calculus-course/index.html) from the Associated Colleges of the Midwest (ACM) Online Course: *[Calculus: A Modeling Approach](http://www.acm.edu/features/feature/426?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+ACMNews+%28Associated+Colleges+of+the+Midwest+-+ACM+News%29)*.  The online aspects of this course are being developed by [Chad Topaz](http://www.chadtopaz.com/) at Macalester College and [Tina Garrett](http://www.stolaf.edu/people/garrettk/) at St. Olaf College, based on the Macalester *Applied Calculus* course and using the `mosaic` package for R.
 
-* The [syllabus for the Macalester *Applied Calculus*](http://www.ted.com/talks/arthur_benjamin_s_formula_for_changing_math_education.html) course.
+* The [syllabus for the Macalester *Applied Calculus*](http://test.causeweb.org/wiki/mosaic/index.php/Pub114) course.
 
 * *Start R in Calculus* This is a [PDF copy](../Resources/StartR-kindlepdf-version.pdf) of the book used in the Macalester and ACM calculus courses.  You'll receive a **printed, bound copy** at the workshop.  The PDF file is formatted in a size appropriate for a tablet viewer such as an iPad or Kindle.
 
