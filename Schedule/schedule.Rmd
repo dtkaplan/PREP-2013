@@ -1,9 +1,10 @@
 ```{r include=FALSE}
+# Run this as a chunk before compiling!
 options(markdown.HTML.stylesheet = '../stylesheets/prep2013.css')
 options(rstudio.markdownToHTML =
   function(inputFile, outputFile) {     
     require(markdown)
-    markdownToHTML(inputFile, outputFile, stylesheet='../stylesheets/cvc2013.css')  
+    markdownToHTML(inputFile, outputFile, stylesheet='../stylesheets/prep2013.css')  
   }
 )
 ```
@@ -20,7 +21,7 @@ Schedule
 
 Distribution of materials and pre-workshop readings.
 
-### Monday, July 8, 2013
+## Monday, July 8, 2013
 
 * Arrival at the College of Idaho in Caldwell, Idaho
     * Shuttle service from the airport
@@ -29,54 +30,55 @@ Distribution of materials and pre-workshop readings.
 * 6:30-9:00 pm  **Welcome dinner** and introductions.
     * Sign up for Thursday evening play: *Much Ado about Nothing*
 
-### Tuesday July 9, 2013
+## Tuesday July 9, 2013
 
 * 7:00-8:00 am Breakfast
 
-**Session 1**
+#### Session 1
 
 
 * 11:30-12:30 Lunch
 
-**Session 2**
+#### Session 2
 
 
 * 6:00-7:00 Dinner
 
-### Wednesday July 10, 2013
+## Wednesday July 10, 2013
 
 * 7:00-8:00 am Breakfast
 
-**Session 3**
+#### Session 3
 
 
 * 11:30-12:30 Lunch
 
-**Session 4**
+#### Session 4
 
 
 
 * 5:30-9:00 Dinner off campus at at [Bitner Vineyards](http://www.bitnervineyards.com/)
 
-### Thursday July 11, 2013
+## Thursday July 11, 2013
 
 * 7:00-8:00 am Breakfast
 
 
-**Session 5**
+#### Session 5
 
 
 * 11:30-12:30 Lunch
 
-**Session 6**
+#### Session 6
+
+* 5:30-9:00 Dinner off campus.  [Idaho Shakespeare Festival](http://www.idahoshakespeare.org/) 8pm performance of [*Much Ado about Nothing*](https://en.wikipedia.org/wiki/Much_Ado_About_Nothing)
 
 
-
-### Friday July 12, 2013
+## Friday July 12, 2013
 
 * 7:00-8:00 am Breakfast
 
-**Session 7**
+#### Session 7
 
 * 11:30-12:30 Lunch
 * 11:30-1:30 Check out
@@ -84,68 +86,70 @@ Distribution of materials and pre-workshop readings.
 
 ---------------------------
 
-### Session 1: Tuesday AM
+## Session 1: Tuesday AM
 
-* Software orientation
-    * Calculus operations in the `mosaic` package. *Start R in Calculus*
-    * Using R Markdown
-* Mathematical functions for modeling
-    * Deliverable: Slides about your functions
-* Fitting parameters
-    * Tides, poverty, coffee
+### Software orientation
+
+* Calculus operations in the `mosaic` package. *Start R in Calculus*
+* Using R Markdown
+
+### Mathematical functions for modeling
+* Deliverable: Slides about your functions
+
+### Fitting parameters
+* Examples: Tides, poverty, coffee
    
-### Session 2: Tuesday PM
+## Session 2: Tuesday PM
 
-#### The process of modeling
+### The process of modeling
 
 * The process of modeling
 * Group work on [model settings](model-settings.html)
     
-#### Working with your current textbook
+### Working with your current textbook
 
 * Finding "drop-in" activities
 * Converting non-modeling activities to modeling activities
 * Finding data (coffee and orange juice, prevalence and incidence)
 * Some bogus models (crickets and beaches)
     
-#### Tools for Modelers
+### Tools for Modelers
 
 * Functions in Two Variables
 * Residuals
 
-### Session 3 Wednesday AM
+## Session 3 Wednesday AM
 
-#### Tools for modelers
+### Tools for modelers
 
 * Units and dimensions
 * Fitting and precision
 * Heuristics for models
 
-### Session 4 Wednesday PM
+## Session 4 Wednesday PM
 
-#### Building a case study
+### Building a case study
 
 * Learning objectives
 * Mathematical objectives
 * Participant presentations: Your modeling setting
 
-### Session 5 Thursday AM
+## Session 5 Thursday AM
 
-#### Tools for Modelers
+### Tools for Modelers
 
 * Dynamics
 * Optimization
     * [QALYs](http://prep2012.mosaic-web.org/Topics/Optimization/QALY1.html)
 
-### Session 6 Thursday PM
+## Session 6 Thursday PM
 
-Building a modeling case study.
+* Building a modeling case study.
+* Writing modeling projects and exercises
 
-Writing modeling projects and exercises
 
-* 5:30-9:00 Dinner off campus.  [Idaho Shakespeare Festival](http://www.idahoshakespeare.org/) 8pm performance of [*Much Ado about Nothing*](https://en.wikipedia.org/wiki/Much_Ado_About_Nothing)
 
-### Session 7 Friday AM
+## Session 7 Friday AM
 
 * The good and bad of open-ended activities
 * Participant Presentation: Leading us through a model
