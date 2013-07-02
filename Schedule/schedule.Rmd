@@ -19,10 +19,16 @@ Schedule
 
 #### Before the Workshop: Early July 2013
 
-* Browse selectively through the videos [listed here](../Resources/ACM-Calculus-course/index.html) from the Associated Colleges of the Midwest (ACM) Online Course: *[Calculus: A Modeling Approach](http://www.acm.edu/features/feature/426?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+ACMNews+%28Associated+Colleges+of+the+Midwest+-+ACM+News%29)*.  The online aspects of this course are being developed by [Chad Topaz](http://www.chadtopaz.com/) at Macalester College and [Tina Garrett](http://www.stolaf.edu/people/garrettk/) at St. Olaf College, based on the Macalester *Applied Calculus* course and using the `mosaic` package for R and *Start R in Calculus*.
+* Browse selectively through the videos [listed here](../Resources/ACM-Calculus-course/index.html) from the Associated Colleges of the Midwest (ACM) Online Course: *[Calculus: A Modeling Approach](http://www.acm.edu/features/feature/426?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+ACMNews+%28Associated+Colleges+of+the+Midwest+-+ACM+News%29)*.  The online aspects of this course are being developed by [Chad Topaz](http://www.chadtopaz.com/) at Macalester College and [Tina Garrett](http://www.stolaf.edu/people/garrettk/) at St. Olaf College, based on the Macalester *Applied Calculus* course and using the `mosaic` package for R.
 
-* *Start R in Calculus* This is a [PDF copy](../Resources/StartR-kindlepdf-version.pdf) of the book.  You'll receive a paper copy at the workshop.  The PDF file is formatted in a size appropriate for a tablet viewer such as an iPad or Kindle.
+* The [syllabus for the Macalester *Applied Calculus*](http://www.ted.com/talks/arthur_benjamin_s_formula_for_changing_math_education.html) course.
 
+* *Start R in Calculus* This is a [PDF copy](../Resources/StartR-kindlepdf-version.pdf) of the book used in the Macalester and ACM calculus courses.  You'll receive a **printed, bound copy** at the workshop.  The PDF file is formatted in a size appropriate for a tablet viewer such as an iPad or Kindle.
+
+* TED talks on teaching math: [Conrad Wolfram](http://www.ted.com/talks/conrad_wolfram_teaching_kids_real_math_with_computers.html), [Dan Meyer](http://www.ted.com/talks/dan_meyer_math_curriculum_makeover.html), [Arthur Benjamin](http://www.ted.com/talks/arthur_benjamin_s_formula_for_changing_math_education.html)
+
+* Identifying Modeling Concepts from the MOSAIC kick-off workshop: [video](http://www.ima.umn.edu/videos/?id=1316) and [slides](http://mosaic-web.org/KickOff/Presentations/aspectsOfModeling.pdf)
+* A panel discussion on modeling-based calculus with Mariah Birgen, Laurie Heyer, and Joe Mahaffy [video](http://www.mosaic-web.org/MCAST/videos/MCAST-2011-04-29/index.htm) and [slides](http://www.mosaic-web.org/MCAST/materials/April-29-2011/April-29-panel.pdf)
 
 ## Monday, July 8, 2013
 
@@ -113,7 +119,9 @@ Schedule
 
 * Finding "drop-in" activities
 * Converting non-modeling activities to modeling activities
-* Finding data (coffee and orange juice, prevalence and incidence)
+* Finding data 
+    * coffee and orange juice, prevalence and incidence
+    * The Island: Letting Students Experiment and College Data by Michael Bulmer [video](http://www.mosaic-web.org/go/MCAST/videos/MCAST-2012-02-24/index.htm). This is a simulation of realistic demographics, disease, and physiology from which students can collect data for modeling.
 * Some bogus models (crickets and beaches)
     
 ### Tools for Modelers
