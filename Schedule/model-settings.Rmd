@@ -1,3 +1,16 @@
+```{r include=FALSE}
+# Run this as a chunk before compiling!
+options(markdown.HTML.stylesheet = '../stylesheets/prep2013.css')
+options(rstudio.markdownToHTML =
+  function(inputFile, outputFile) {     
+    require(markdown)
+    markdownToHTML(inputFile, outputFile, stylesheet='../stylesheets/prep2013.css')  
+  }
+)
+```
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../javascripts/main.js"></script>
+
 Some Model Settings
 ============================
 
@@ -9,7 +22,7 @@ Working in groups, we want you to outline your proposed approach to at least thr
 * Steaming upriver
 * Body shape and diabetes
 * The shape of a tin can
-* Volume and area of a lake: [map of Pokegama Lake in Minnesota](../Resources/Pokegama_Lake_measured.pdf)
+* Volume and area of a lake.  Data: Some of the 10,000 lakes in Minnesota: [Pokegama Lake](../Resources/Pokegama_Lake_measured.pdf), [Lake of the Isles](../Resources/c0961010.pdf), [Snail Lake](../Resources/c0502010.pdf)
 * Fun on the Super Slide.
-* Energy produced by an engine based on its configuration.  [Animation of a two-stroke engine](http://www.animatedengines.com/twostroke.html).  What are the important quantities?  How would you represent them to find energy?  (More engine animations [here](http://www.animatedengines.com/).)  It might be easiest to start with the [Newcomen engine](http://www.animatedengines.com/newcomen.html)
-* Density of prime numbers. [Calculator for nearest primes](http://easycalculation.com/prime-number.php). Data for the number of primes less than $10^x$ for $x\leq 25$: [here](http://primes.utm.edu/howmany.shtml) which also has several approximate formulas for the density of prime numbers, e.g. $1/\ln(x)$ or $1/(\ln(x)-1)$.  See, e.g. SH Marshall and DR Smith (2013) "Feedback control and the distribution of prime numbers" *Mathematics Magazine, 86(30):189-203
+* Energy produced by an engine based on its configuration.  [Animation of a two-stroke engine](http://www.animatedengines.com/twostroke.html).  What are the important quantities?  How would you represent them to find energy?  (More engine animations [here](http://www.animatedengines.com/).)  It might be easiest to start with the [Newcomen engine](http://www.animatedengines.com/newcomen.html).  Note that you can advance the animations one frame at a time.
+* Density of prime numbers. [Calculator for nearest primes](http://easycalculation.com/prime-number.php). Data for the number of primes less than $10^x$ for $x\leq 25$: [here](http://primes.utm.edu/howmany.shtml) which also has several approximate formulas for the density of prime numbers, e.g. $1/\ln(x)$ or $1/(\ln(x)-1)$.  See, e.g. SH Marshall and DR Smith (2013) "Feedback control and the distribution of prime numbers" *Mathematics Magazine* **86**(30):189-203
