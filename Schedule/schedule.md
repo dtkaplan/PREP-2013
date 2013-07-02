@@ -16,13 +16,43 @@ Distribution of materials and pre-workshop readings.
 * Arrival at the College of Idaho in Caldwell, Idaho
     * Shuttle service from the airport
     * Check-in time: 3:00 - 5:00pm
-* 6:30-9:00 pm  Welcome dinner and introductions.
+    
+* 6:30-9:00 pm  **Welcome dinner** and introductions.
+    * Sign up for Thursday evening play: *Much Ado about Nothing*
 
 ## Tuesday July 9, 2013
 
 * 7:00-8:00 am Breakfast
 
+### Session 1:
+
+* Software orientation
+    * Calculus operations in the `mosaic` package. *Start R in Calculus*
+    * Using R Markdown
+* Mathematical functions for modeling
+    * Deliverable: Slides about your functions
+* Fitting parameters
+
 * 11:30-12:30 Lunch
+
+### Session 2:
+
+#### The process of modeling
+
+* The process of modeling
+* Group work on [model settings](model-settings.html)
+    
+#### Working with your current textbook
+
+* Finding "drop-in" activities
+* Converting non-modeling activities to modeling activities
+* Finding data (coffee and orange juice, prevalence and incidence)
+* Some bogus models (crickets and beaches)
+    
+#### Tools for Modelers
+
+* Functions in Two Variables
+* Residuals
 
 * 6:00-7:00 Dinner
 
@@ -30,22 +60,59 @@ Distribution of materials and pre-workshop readings.
 
 * 7:00-8:00 am Breakfast
 
+### Session 3
+
+#### Tools for modelers
+
+* Units and dimensions
+* Fitting and precision
+* Heuristics for models
+
 * 11:30-12:30 Lunch
 
-* 5:30-9:00 Dinner off campus.  Optional wine-tour.
+### Session 4
+
+
+
+#### Building a case study
+
+* Learning objectives
+* Mathematical objectives
+* Participant presentations: Your modeling setting
+
+* 5:30-9:00 Dinner off campus at at [Bitner Vineyards](http://www.bitnervineyards.com/)
 
 ## Thursday July 11, 2013
 
 * 7:00-8:00 am Breakfast
 
+### Session 5
+
+#### Tools for Modelers
+
+* Dynamics
+* Optimization
+    * [QALYs](http://prep2012.mosaic-web.org/Topics/Optimization/QALY1.html)
+
 * 11:30-12:30 Lunch
 
-* 5:30-9:00 Dinner off campus.  Idaho Shakespeare Festival
+### Session 6
+
+Building a modeling case study.
+
+Writing modeling projects and exercises
+
+* 5:30-9:00 Dinner off campus.  [Idaho Shakespeare Festival](http://www.idahoshakespeare.org/) 8pm performance of [*Much Ado about Nothing*](https://en.wikipedia.org/wiki/Much_Ado_About_Nothing)
 
 
 ## Friday July 12, 2013
 
 * 7:00-8:00 am Breakfast
+
+### Session 7
+
+* The good and bad of open-ended activities
+* Participant Presentation: Leading us through a model
 
 * 11:30-12:30 Lunch
 * 11:30-1:30 Check out
