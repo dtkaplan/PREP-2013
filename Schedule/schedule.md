@@ -1,3 +1,8 @@
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../javascripts/main.js"></script>
+
 Workshop Schedule
 =================
 
@@ -7,7 +12,7 @@ Workshop Schedule
 
 Please note: Exact times may change.
 
-#### Before the Workshop: Late June 2013
+#### Before the Workshop: Early July 2013
 
 Distribution of materials and pre-workshop readings.
 
@@ -24,7 +29,58 @@ Distribution of materials and pre-workshop readings.
 
 * 7:00-8:00 am Breakfast
 
-### Session 1:
+**Session 1**
+
+
+* 11:30-12:30 Lunch
+
+**Session 2**
+
+
+* 6:00-7:00 Dinner
+
+## Wednesday July 10, 2013
+
+* 7:00-8:00 am Breakfast
+
+**Session 3**
+
+
+* 11:30-12:30 Lunch
+
+**Session 4**
+
+
+
+* 5:30-9:00 Dinner off campus at at [Bitner Vineyards](http://www.bitnervineyards.com/)
+
+## Thursday July 11, 2013
+
+* 7:00-8:00 am Breakfast
+
+
+**Session 5**
+
+
+* 11:30-12:30 Lunch
+
+**Session 6**
+
+
+
+## Friday July 12, 2013
+
+* 7:00-8:00 am Breakfast
+
+**Session 7**
+
+* 11:30-12:30 Lunch
+* 11:30-1:30 Check out
+* 1:30 Shuttle service to airport
+
+---------------------------
+
+### Session 1: Tuesday AM
 
 * Software orientation
     * Calculus operations in the `mosaic` package. *Start R in Calculus*
@@ -32,10 +88,9 @@ Distribution of materials and pre-workshop readings.
 * Mathematical functions for modeling
     * Deliverable: Slides about your functions
 * Fitting parameters
-
-* 11:30-12:30 Lunch
-
-### Session 2:
+    * Tides, poverty, coffee
+   
+### Session 2: Tuesday PM
 
 #### The process of modeling
 
@@ -54,13 +109,7 @@ Distribution of materials and pre-workshop readings.
 * Functions in Two Variables
 * Residuals
 
-* 6:00-7:00 Dinner
-
-## Wednesday July 10, 2013
-
-* 7:00-8:00 am Breakfast
-
-### Session 3
+### Session 3 Wednesday AM
 
 #### Tools for modelers
 
@@ -68,11 +117,7 @@ Distribution of materials and pre-workshop readings.
 * Fitting and precision
 * Heuristics for models
 
-* 11:30-12:30 Lunch
-
-### Session 4
-
-
+### Session 4 Wednesday PM
 
 #### Building a case study
 
@@ -80,13 +125,7 @@ Distribution of materials and pre-workshop readings.
 * Mathematical objectives
 * Participant presentations: Your modeling setting
 
-* 5:30-9:00 Dinner off campus at at [Bitner Vineyards](http://www.bitnervineyards.com/)
-
-## Thursday July 11, 2013
-
-* 7:00-8:00 am Breakfast
-
-### Session 5
+### Session 5 Thursday AM
 
 #### Tools for Modelers
 
@@ -94,9 +133,7 @@ Distribution of materials and pre-workshop readings.
 * Optimization
     * [QALYs](http://prep2012.mosaic-web.org/Topics/Optimization/QALY1.html)
 
-* 11:30-12:30 Lunch
-
-### Session 6
+### Session 6 Thursday PM
 
 Building a modeling case study.
 
@@ -104,18 +141,11 @@ Writing modeling projects and exercises
 
 * 5:30-9:00 Dinner off campus.  [Idaho Shakespeare Festival](http://www.idahoshakespeare.org/) 8pm performance of [*Much Ado about Nothing*](https://en.wikipedia.org/wiki/Much_Ado_About_Nothing)
 
-
-## Friday July 12, 2013
-
-* 7:00-8:00 am Breakfast
-
-### Session 7
+### Session 7 Friday AM
 
 * The good and bad of open-ended activities
 * Participant Presentation: Leading us through a model
 
-* 11:30-12:30 Lunch
-* 11:30-1:30 Check out
-* 1:30 Shuttle service to airport
+
 
 
