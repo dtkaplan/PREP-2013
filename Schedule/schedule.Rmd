@@ -32,6 +32,7 @@ Distribution of materials and pre-workshop readings.
 * Mathematical functions for modeling
     * Deliverable: Slides about your functions
 * Fitting parameters
+    * Tides, poverty, coffee
 
 * 11:30-12:30 Lunch
 
