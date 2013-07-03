@@ -1,0 +1,164 @@
+
+==Notation==
+The notation that has become conventional and universal in mathematics developed over centuries, a lot of it coming from the 16th and 17th centuries:
+*[http://en.wikipedia.org/wiki/Robert_Recorde Robert Recorde] and the equal sign
+*Use of x, y, z as variables, but a, b, c as parameters
+*<math>\pi</math> by [http://en.wikipedia.org/wiki/William_Jones_(mathematician) William Jones] in 1706
+*<math>dx</math> and <math>\int dx</math> around 1700
+
+This predates much of what now goes on in science.  No field of biology, no field of economics, no theory for electricity, chemistry, etc.  No genes, no DNA, no GDP, no ATP.  It's not a surprise that the notation wasn't invented to represent these things.
+
+There was also no notion on communicating with machines in any but the simplest ways.  So the notation is very much in the style of a "natural language."  There are inconsistencies, e.g. <math>\sin^{-1}(t)</math> versus <math>\sin(t)^{-1}</math> 
+
+Mathematical notation has some conventions. 
+*Variables are named with letters from the last part of the alphabet: <math>x, y, z</math> and even <math>t, u, v</math>.  *Parameters are named with letters from the first part of the alphabet: <math>a, b, c, d</math> and so on.
+From these two, you can make sense of <math>y = a x + b</math> as the equation for a line: <math>y</math> varies with <math>x</math>
+*Functions are named <math>f, g, h</math>
+*When you have more than one thing that is related, subscripts are often used, e.g., economists will often see things like <math>\beta_0 + \beta_1 x_1 + \beta_2 x_2</math>.  
+*Superscripts are used for powers, but sometimes they are also used for inverses, e.g., <math>\sin^{-1}(x) \neq 1/\sin(x)</math>
+
+High-school algebra tends to name things as <math>x</math> and <math>y</math> and many students find they can only do the manipulations if they change some other variable to <math>x</math>.  For instance, what's the value of <math>u</math> if <math>2u - u^2 = -3</math>
+
+This causes some problems for us.
+*The things we will want to work with may have complicated names, and there aren't enough <math>x</math> and <math>y</math> letters to go around.  We'll be working with "age" and "income" and "GDP" and "ATP" and so on.
+*There can be more than one function that we use to describe a relationship.  Often, we'll want to compare different possible representations of the relationship and we need to have a good way to name them.
+*We need a way to be explicit about what are inputs and what are parameters.  Is GDP a constant or is it the varying input to a function.  It can be an important part of the modeling process to decide what should be considered an input and what an output: we can't just use <math>x</math> for all inputs and <math>y</math> for all outputs.
+
+A sophisticated approach to translating human notation for computer readability is in Wolfram Alpha.  This doesn't deal so well with multi-letter names.
+*Multiplication and exponentiation need to be unambiguous  compare <code> ATP/T </code> and <code>A T P / T</code> in [http://www.wolframalpha.com/input/?i=A+T+P%2FT Wolfram Alpha] or even [http://www.wolframalpha.com/input/?i=ATP*T <code>ATP*T</code>]
+
+==Using RStudio and R==
+Review
+*the login process and installing the mosaic software
+*arithmetic notation
+*assignment
+*parentheses and inputs
+*the tilde notation and graphing
+
+==Review of Reading==
+
+[[User:Kaplan|Kaplan]] 21:56, 8 September 2011 (EDT)
+
+Introductory comments.  This is a hard part of the class to teach. There are students who might not know the material, due to a weak high-school preparation.  But most of my students know much of the material very well, e.g., equations of the line, monomials, etc.  Those students can tune out, because they think they know the stuff already.  And they miss something.
+#Our interest is in constructing functions, not in the manipulation of equations emphasized in high-school algebra.
+#They need to learn a notation that will work for functions of multiple variables.  <math>x</math> will not always (or often!) be the input variable.  The output variable can't always be called <math>y</math>
+#They need mainly in the early stage to learn a few different functions and the meaning of their parameters.
+
+An analogy is to writing a screen play for a sitcom.  Suppose you want to tell a story of your own, but you want to do it in a setting that will reach a large audience.  So, you write for a popular sitcom --- "30 Rock" or "Modern Family" or "House" (for the old-timers) "Gilligan's Island."  You have a set of characters you can work with.  Each of the characters has his or her own attributes, and you have to work with them.  You can customize them a little bit --- but the character in an usual setting --- but not too much or they won't be the character that people expect. 
+
+Similarly, in constructing functions, we often do it by putting together one or more functions from a basic library, customizing them by setting their parameters.  So the parameters are what determine the detailed features of the "character", whereas the function type (linear, power-law, sine, ...) sets the broad shape of the character.
+
+==Applied Calculus §1.1==
+
+What's a function?  The book says, "In mathematics, a function is used to represent the dependence of one quantity upon another."  Some words to think about:
+*'''quantity''' --- it doesn't necessarily have to be numerical.  Maybe call them "inputs" or "arguments".
+*'''dependence of ... upon ...''' --- maybe "relationship" or "association" or "matching" or "pairing" or "correspondence".  "Dependence" is an idiom used in mathematics but that carries some freight in other disciplines.  
+*'''represent''' --- it is not the relationship itself, but a way of presenting the relationship.
+*'''mathematics''' --- why in mathematics?  What we're looking for is a form of representation that's easy to manipulate, communicate, visualize, take apart, simulate, etc.
+
+In this course "another quantity" is actually going to mean "one or more other inputs".  In this early part of the semester, we're going to review some material that may seem very familiar to you.  We do this for two reasons:
+#The review may help to refresh your memory for important basics: straight-line relationships, power-laws and exponentials, sines and cosines.
+#We need to help you make the transition from thinking about "the relationship of one quantity upon another" to "the dependence of one quantity on one or more inputs."  
+
+You've been brought up in a mathematical notation that presents a simplistic, even Pavlovian approach.  <math>x</math> is always the independent quantity.  <math>y</math> is always the dependent quantity.  That makes it easy to identify what's what.  Other letters, a, b, <math>\gamma</math>, <math>\beta</math>, etc. stand for fixed quantities.  The more general terms are:
+*variables (fluents in Newton's nomenclature) --- the quantities whose variation we are interested in
+*parameters -- the quantities that are fixed
+But in this course, we'll have multiple inputs, and it would be silly to call them all <math>x</math> and <math>y</math>.  So we'll need a more general notation.
+
+===The Snow Tree Cricket===
+
+(Maybe it should be the "snowy tree cricket.")
+
+The book claims (in Chap. 1) that the "chirp rate" can be computed from the temperature T according to the formula
+
+: <math>C = f(T) = 4 T - 160</math>
+
+Questions:
+*Does this mean that Snow Tree Crickets can measure the temperature, do arithmetic, and measure time?
+*Why would anyone care about the snow tree cricket?
+
+The first question might seem silly --- of course they can't! --- but how does the cricket get it right?  The second might seem callous and disrespectful of nature.  But both questions are important in their own way.
+
+The formula is a '''model''' --- a representation of the snow cricket behavior and the relationship among quantities.  But very important in the construction of a model are two issues:
+#What quantities are you representing?  This is the "operationalization" phase of modeling.
+#What is the purpose for which you are building the model?  This has important implications for the sort of model it's appropriate to construct.
+Each issue is closely related to the other.
+
+No disrespect to crickets, but they don't have thermometers or watches.  It's hardly likely that they do the arithmetic of multiplying temperature (in degrees Fahrenheit) by 4 and then subtract 160, nor do they know what a minute of time is.  Possibly the mechanism has to do with an excitable nerve or muscle cell --- the cell permeability probably depends on temperature (just because many things depend on temperature).  The higher the temperature, the higher the permeability to ions.  Cell membranes can serve as a kind of oscillator: charge (from the flow of ions) builds up on the membrane, changing the transmembrane electrical potential.  When the potential reaches a certain level, the conformation of charged transmembrane protein channels changes, leading to an action potential, a sharp change in permeability, and a resetting of the membrane voltage.  Also a chirp.
+
+It's a choice whether to operationalize the cricket's behavior in terms of the transmembrane potential of a cell, or the chirping rate, or something else.  It's also a choice whether to measure permeability or temperature.  Why to choose one versus the other?
+
+To some extent, it depends on what you can measure and why you are interested in the cricket's behavior.  There are all sorts of reasons why you might be interested.
+
+To quote from the Wikipedia entry [http://en.wikipedia.org/wiki/Tree_cricket on Sept. 8, 2011]:
+<blockquote>
+Tree cricket is also known as poor man's thermometer. It is because if you count the number of chirps in 15 seconds and add 37 you get the temperature close to the Farhenheit temperature of outside.
+</blockquote>
+
+For some people, the "poor man," the reason to model the cricket's behavior is to be able to tell the temperature from something you can easily quantify --- the number of chirps per 15 seconds.  Possibly it would have been better to set up the model explicitly for this purpose, giving temperature as the output:
+
+: <math>T = g(C) = \frac{C + 160}{4}</math>
+
+Even better, as an aid to computation, and because a minute is a long time to be counting chirps, 
+let <math>C_{15}</math> be the number of chirps in 15 seconds: <math>C_{15} = C/4</math> and
+
+: <math>T = C_{15} + 40 </math> 
+This is close to, but not identical to the formula given in the Wikipedia entry.  It raises the question of how accurate such a model needs to be.  Probably the difference of 3 degrees Fahrenheit is not so important to the "poor man".
+
+Unfortunately, the purpose behind models in math books is often to illustrate mathematical principles rather than to illustrate good modeling practices.  That's why there's no statement of '''why''' the model is being built.  You should always have such a statement in mind when constructing a model, since it influences the sorts of quantities you will model, how you will operationalize them, and the kinds of relationships you will represent with your mathematical functions, as well as what is the output and what are the inputs.
+
+==AC §1.2 Linear Functions==
+
+You all know about linear functions: <math>y = m x + b</math>.  For our purposes, what's important is
+#There are two parameters: a "slope" and an intercept.
+#They are a good way to represent or approximate other functions.
+#The "slope" tells how sensitive the output is to changes in the input.  If the slope is zero, then the output does not vary with the input, which is a perfectly sensible and potentially important kind of relationship even if not a terribly interesting one.  It's the relationship of "the output and the input aren't connected with one another."
+#These are arguably the most important sort of models of relationships --- certainly the most common.  Very often, they get generalized to multiple inputs, e.g., <math>y = m_1 x_1 + m_2 x_2 + m_3 x_3 + b</math> where the inputs have been written <math>x_1, x_2, x_3</math>.  Notice that there are several slopes --- one for each input --- but always just one intercept.
+#Digression: Strictly speaking, these are "affine" functions.  Linear functions always have an intercept of zero.  Sometimes I call the <math>mx + b</math> functions "straight-line" functions. 
+
+==AC §1.9 Proportionality and Power Functions==
+
+Proportionality functions <math>f(x) = k x</math> are like linear functions --- no intercept.  They have a slope parameter, which is helpful for describing the relationship between inputs and outputs.
+
+Power functions --- I call them "power-law" functions --- are a generalization of proportionality functions.  They add a new parameter called an exponent: <math>f(x) = k x^p</math>.  Why?
+#They give us a simple way to represent curved relationships.
+#There is a huge theory of such functions, sometimes called "monomials" when p is an integer, and especially sums of different monomials, called "polynomials". We understand them mathematically very well and can use them to represent many different kinds of relationships.  This theory, much of which was worked out at the start of the Renaissance, has informed a lot of more modern mathematics.  It dominates what gets taught to high-school students (factoring!), even though few high-school students or their teachers know why they are studying it.
+#There is a very close relationship between the linear (that is, affine) functions and the power-law functions.  The relationship is mediated by a different kind of function, called a "logarithm", that was invented in the 17th century.  Suppose you let <math>z = \ln(x)</math> and <math>g(z) = \ln(f(x))</math>.  Then $g(z) = p z + \ln(k)$.  
+
+==AC §1.10 Periodic Functions==
+
+There are all sorts of ways to describe functions that vary, but end up repeating themselves.  Examples: the position of the Earth around the sun, the location of a shadow, the temperature over the course of a week or so (repeats only approximately, unless you live in San Diego), sound and other waves (light, water, ...) .  We'll use a simple function that is periodic
+
+: <math> f(t) = A \sin( \frac{2 \pi (t- t_0)}{P} )  + C </math>
+
+There are four parameters here:
+#P -- the period of the repeat.
+#A -- the amplitude of the variation
+#<math>t_0</math> -- The horizontal (that is, input) shift parameter, that is, the time of the first, upward going zero crossing. 
+#C -- the output shift parameter.  The average value of the output.
+
+MEMORIZE this parameterization.
+
+Notice that this explanation is given in terms of an input called <math>t</math>.  That's arbitrary, but reflects the fact that often we are interested in things that repeat themselves in time.   
+
+Question: Give an example of something that repeats itself spatially.
+
+Keep in mind that not all periodic functions are shaped like a sine function.  It turns out, however, that any (continuous) periodic function can be written in terms of a sum of such sine functions.  This is extremely important in term of technology and science, and played a critical role in the development of the telephone (and from there to the radio, etc.)
+
+Another way to write the periodic function above is as a sum of a sine and cosine of the same period.
+
+There are many other ways people might (and do) choose to represent periodic functions, e.g., square pulses or saw-tooth waves, or triangle waves.  Sines and cosines turn out to be important physically and to have lovely mathematical properties that make them fundamental in important ways.  We'll study these toward the end of the semester.  There's a lot of mathematical theory behind the choice of sines and cosines as modeling functions, but our primary objective will be to create and use models rather than to illuminate the theory.
+
+===Note to Instructors===
+In emphasizing that a function is a relationship between input and output, it's worth asking questions along these lines:
+
+Let <math>f</math> be the function defined by <math>f(x) = x+2</math>.  Let <math>g</math> be the function <math>g(u) = u+2</math>.  Then which of the following is true?
+#f and g are exactly the same function.
+#f and g are different functions because x and u are different variables.
+#f and g are different functions whenever x and u are different numbers.
+#Not enough information is given to determine if f and g are the same function.
+
+Some points to make with this:
+*A function is a relationship between input and output.
+*The formal name of the input is just for convenience.
+*In the <code>mosaic</code> R package, you might actually refer to these in different ways, <code>f(x=x)</code> and <code>g(u=x)</code>, but you'll get the same answer for any <code>x</code>, so in that sense f and g are the same function.

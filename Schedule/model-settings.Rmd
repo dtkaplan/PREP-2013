@@ -26,6 +26,9 @@ Working in groups, we want you to outline your proposed approach to at least thr
 * Fun on the Super Slide.
 * Energy produced by an engine based on its configuration.  [Animation of a two-stroke engine](http://www.animatedengines.com/twostroke.html).  What are the important quantities?  How would you represent them to find energy?  (More engine animations [here](http://www.animatedengines.com/).)  It might be easiest to start with the [Newcomen engine](http://www.animatedengines.com/newcomen.html).  Note that you can advance the animations one frame at a time.
 * Density of prime numbers. [Calculator for nearest primes](http://easycalculation.com/prime-number.php). Data for the number of primes less than $10^x$ for $x\leq 25$: [here](http://primes.utm.edu/howmany.shtml) which also has several approximate formulas for the density of prime numbers, e.g. $1/\ln(x)$ or $1/(\ln(x)-1)$.  See, e.g. SH Marshall and DR Smith (2013) "Feedback control and the distribution of prime numbers" *Mathematics Magazine* **86**(30):189-203
+* Autopilot for cars.  You have a radar in your car that tracks the distance to the car ahead.  You will use it to feed a signal to the accelerator.
+
+
 
 
 NOTE: Draw others from [mosaic wiki](http://test.causeweb.org/wiki/mosaic/index.php/Pub116)
