@@ -1,5 +1,8 @@
 ## Functions
 
+```{r include=FALSE}
+require(mosaic)
+```
 
 ### Mathematical Notation
 
@@ -169,3 +172,252 @@ Some points to make with this:
 * A function is a relationship between input and output.
 * The formal name of the input is just for convenience.
 * In the <code>mosaic</code> R package, you might actually refer to these in different ways, <code>f(x=x)</code> and <code>g(u=x)</code>, but you'll get the same answer for any <code>x</code>, so in that sense f and g are the same function.
+
+#### Activity in R      
+
+{{:Math 135 Intro Plotting Activity}}
+
+#### Review Questions using Clickers      
+Getting started with clicker questions for review: {{Math 135 Clicker Question|CT1-1-5}},
+{{Math 135 Clicker Question|CT1-1-6}},
+{{Math 135 Clicker Question|1-2-8}},
+{{Math 135 Clicker Question|1-2-16a}},
+{{Math 135 Clicker Question|CT1-10-5}},
+{{Math 135 Clicker Question|CT1-10-2}},
+{{Math 135 Clicker Question|1-10-14}}
+
+#### Exponential Functions    
+
+Starting question: Between 1990 and 2000, the population of Mexico increased from roughly 100 to 110 million.  The population of the US increased from about 300 to 310 million.  If growth continues in the same way, when will the population of Mexico be greater than that of the US?  1) by 2050  2) by 2075  3) by 2100 4) by 2150 5) by 2200 6) by 2250  7) NEVER
+
+Students suggest both linear and exponential models (without prompting). 
+
+#### Phenomenology of Exponentials    
+
+1. Growth or Decay --- they are the same thing if you think about the possibility of tracking things backwards. 
+1. Constant Doubling Time (Similarly, a constant time for any other proportional change, e.g. tripling, ten-fold, 2.71828182845905
+1. The pure exponential functions always decays to or grows from zero.  Adding in a constant provides a function that grows from or decays to that constant.
+
+#### Parameterization of Exponentials     
+
+Note that the variable is *always* in the exponent, as distinct from power-law functions where the exponent is a constant.
+
+Three main forms that we will use:  
+1. $A 2^{t/\tau} $ where $\tau$ is the doubling/half time.
+1. $A e^{kt} $ where $k$ is related to the doubling/half time.
+1. The banker's form: $A (1+r)^t$ where $r$ is the interest rate, typically a number like 0.02 or -0.05 (for decay).
+
+Meaning of the parameters:  
+* $A$ is the same in all forms: the value at $t=0$
+* $r, k, \tau$ are all related to the doubling time:
+    * $\tau$ is the doubling time
+    * $k = \frac{\ln 2}{\tau}$
+    * $r = 2^{1/\tau} - 1$, which hardly anyone remembers.  Instead, for typical interest rates, it's good enough to say $r = 72/\tau$% (note that the % is effectively dividing by 100).
+
+#### Exponentials Activity 1    
+
+{{:Math 135 Exponential Plotting Activity}}
+
+#### Exponentials Activity 2    
+
+Graphs of functions that do and do not have a doubling time
+[http://dl.dropbox.com/u/5098197/Math135/In-Class/doubling-activity.pdf]
+
+#### Logarithms    
+
+What is a logarithm?  Inverse of an exponential.
+
+#### Demo    
+
+Make a quick table of logarithms, base 2. Write down a column of entries on a doubling scale: 1, 2, 4, 8, 16, 32, and so on.  Next to it, write down a table of indices: 0, 1, 2, 3, 4, and so on.
+
+Show how addition of indices is equivalent to multiplication of the entries.
+
+Invention of logarithms: Napier, Briggs.
+
+First commercial table of logarithms:
+<gallery caption="From William Briggs's Table of Logarithms 1624-1631" widths=80px>
+File:ArithmeticaLogarithmica-TitlePage.png|Title page in Latin
+File:ArithmeticaLogarithmica-EnglishTitlePage.png|Title page in English
+File:ArithmeticaLogarithmica-Introduction.png|Introduction
+File:ArithmeticaLogarithmica-StartOfTable.png|First page of the table
+File:ArithmeticaLogarithmica-EndOfTable.png|Last page of the table
+File:ArithmeticaLogarithmica-Geometry.png|Example from geometry
+File:ArithmeticaLogarithmica-Astronomy.png|Example from astronomy
+File:ArithmeticaLogarithmica-Banking.png|Example from banking
+</gallery>
+
+
+#### Uses of Logarithms=    
+
+1. Historical: Simplifying multiplication
+1. Historical: Giving an operational definition to exponents of any fraction (e.g., $2^{0.24}$)
+1. Algebra: Solving algebraic problems involving exponentials by undoing the exponential
+1. Data: Displaying data in a way that isn't dominated by long tails to the right. [[File:happiness-and-log-scale.jpg|thumb]]
+1. Phenomenological: Examining proportional change and rendering independent of units.
+    * Example: Changes in income over time in difference currencies: put on a log scale so that similar slopes correspond to similar rates of change, irrespective of currency unit.
+    * Example: Stock-market prices.  These tend to grow proportionately.
+    * Half lives of some drugs
+    * *Prozac: take a pill once a day. [http://en.wikipedia.org/wiki/Fluoxetine#Pharmacokinetics]
+    * *THC: [http://en.wikipedia.org/wiki/Tetrahydrocannabinol]
+    * *Tetracycline: take several pills a day. [http://en.wikipedia.org/wiki/Tetracycline_antibiotics]
+
+#### Functions of Two Variables    
+
+* Plotting from an expression
+* Use <code>f = practice.max(seed=birthday)</code> to generate a function (<code>rfun(~x&y,seed=birthday)</code> in updated mosaic package).
+    *Describe the landscape
+    *Ask what happens as we take a trip along a path
+* Contour drawing exercise: Hand out [http://dl.dropbox.com/u/5098197/Math135/In-Class/findingContoursColor.pdf this color-coded table].
+* Contour drawing exercise [http://dl.dropbox.com/u/5098197/Math135/In-Class/findingContours.pdf black and white]
+
+#### Review of exponential fitting exercise    
+* Review the reading and plotting of data.  
+* Show how to overplot a model
+* In a couple of weeks we're going to be talking about formal methods for matching functions to data, so called "fitting".  As an example, here's a program that, when given a reasonable hint about the value of parameters will find a really nice set.
+```{r dev="svg",out.width="50%"}
+income = fetchData("Income-Housing.csv")
+plotPoints( AbandonedBuildings ~ Income, data=income)
+plotFun(10*exp(-.00001*income)~income, 
+        income.lim=range(0,75000),add=TRUE, col="red")
+f = fitModel(AbandonedBuildings ~ A + B*exp(-k*Income), 
+             start=list(A=10,B=2,k=0.00001), 
+             data=income)
+plotFun( f(Income)~Income, Income.lim=range(0,75000),add=TRUE, col="blue", lwd=5)
+```
+The result of the fitting process is to create a new function:
+```{r}
+f
+```
+You can read off the parameters.
+
+CAVEAT: It's so common for models to be linear in the parameters that there is a different notation that we'll learn later on, that doesn't involve assigning a letter name to each parameter.
+
+By way of illustration of the power of this method, consider the coffee-cooling data:
+```{r dev="svg",out.width="50%"}
+stan = fetchData("stan-data.csv")
+plotPoints( temp ~ time, data=stan)
+f1 = fitModel(temp~A + B*exp(-k*time),data=stan,
+              start=list(A=30,B=60,k=1/50))
+plotFun(f1(time)~time, time=range(0,250),add=TRUE,col="blue")
+```
+This gives a function with precise values for the parameters.
+```{r}
+f1
+```
+
+This says the ambient temperature is 27 degrees.  Note how precise it is.  [[Category:Modeling Misconception]]  But is it right.
+
+It might seem that this function is pretty good, but look at some of the ways in which it doesn't follow the data.  In particular, it levels off at too high an ambient temperature, it undershoots at time 100-150.  In general, it's too stiff.
+
+The problem isn't that the physics of cooling water isn't well modeled by an exponential function.  The problem is that the system is more complex.  Among other things, the water cools into the mug pretty fast, and the mug then heats up.  This causes a rapid cooling of the water at first, which then moderates as the mug and water cool into the atmosphere.  (That process is also a bit complex, since heat is conducted into the atmosphere and also transferred by evaporation.)
+
+We can make another model that involves **two** exponential processes, one for the mug and one for the atmosphere.  It would be practically impossible to match this by eye, but the computer can do the search systematically for us.
+
+Here's the two-exponential model:
+```{r}
+f2 = fitModel(temp~A + D*exp(-k2*time) +  B*exp(-k*time),data=stan,
+              start=list(A=30,B=60,k=1/50,D=10,k2=1/10))
+```
+Giving the parameters:
+```{r}
+f2
+```
+According to this model, the ambient temperature is 23.6 degrees.  One of the conduction processes is about 6 times faster than the other.  Question: Which exponential parameter corresponds to the faster process, `k` or `k2`?
+
+The two-exponential gives a much better match to the data:
+
+
+```{r dev="svg",out.width="50%"}
+plotPoints( temp ~ time, data=stan)
+plotFun(f2(time)~time, time=range(0,250),add=TRUE,col="red")
+```
+
+Finally, let's do some checking.  Suppose we look at the data only from time 100 onwards.  At that point, the water-to-mug process is in equilibrium (since it's so fast) and the single exponential model should be pretty good.
+
+```{r}
+late = subset(stan,time>100)
+f1late = fitModel(temp~A + B*exp(-k*time),data=late,
+                  start=list(A=30,B=60,k=1/50))
+```
+Here's the resulting function:
+```{r}
+f1late
+```
+
+This suggests that the ambient temperature is 22.5 degrees, disagreeing with the earlier model.
+
+Why don't we know better?  Because we're relying on a model to **extrapolate**.  Extrapolation relies on the good match of the model to what's going on in the world, and the physics even of a cooling mug of water is more complicated in detail than a simple exponential.
+
+The two models agree beautifully over the extent of the data, but diverge elsewhere.
+```{r dev="svg",out.width="50%"}
+plotFun( f1late(time)~time, time=range(100,400),col="red")
+plotFun( f2(time)~time,add=TRUE,col="blue")
+plotPoints(temp~time, data=stan, add=TRUE)
+```
+
+#### Logarithms    
+
+* ACTIVITY: [http://dl.dropbox.com/u/5098197/Math135/In-Class/LogAxes.pdf Using log axes ]
+* An example of the use of log-log axes [http://dl.dropbox.com/u/5098197/Epidemiology/Figures/EE-Fig-2-4.png Infant mortality versus per capita income]
+    *Why are they using logarithmic axes?
+    *What are the income and infant mortality in Ethiopia?  In Singapore?  (Find the numerical values.)
+    *Is the relationship linear?
+
+#### Compare exponential and linear functions    
+
+{{Math 135 Clicker Question|1-5-14a}}, {{Math 135 Clicker Question|1-5-14b}}, {{Math 135 Clicker Question|1-5-14c}} 
+
+1. Show graph of swimming records <code>plot( time ~ year, data=fetchData("swim100m.csv"))</code>  Are they declining linearly or exponentially.  Note the linear combination; the decline isn't to zero.
+1. {{Math 135 Clicker Question|1-6-24a}},{{Math 135 Clicker Question|1-6-24b}},{{Math 135 Clicker Question|1-7-2}}
+1. Contrast power-law with exponential.  Can you find a power $p$ so that $t^p$ matches $2^{t/c}$?
+1. Log and semi-log graph paper.  Examples at [http://commons.wikimedia.org/wiki/Category:Logarithmic_scale]
+    * [http://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Papier_log_log_50.svg/2000px-Papier_log_log_50.svg.png Log-Log]
+    * [http://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Papier_log_lin_25_italien.svg/2000px-Papier_log_lin_25_italien.svg.png Log-Linear]
+
+
+#### Clicker Questions    
+
+1. Very simple review of exponentials: 
+    * Graph reading: {{Math 135 Clicker Question|1-5-14a}}, 
+    * Graph reading: {{Math 135 Clicker Question|1-5-14b}}
+    * Half-life: {{Math 135 Clicker Question|1-5-14c}}
+1. Half-life calculations:
+    * {{Math 135 Clicker Question|1-7-2}}
+1. Algebra
+    * Amplitude: {{Math 135 Clicker Question|1-6-24a}}, Converting $e^{kt}$ to $b^t$: {{Math 135 Clicker Question|1-6-28a}}
+    * Base: {{Math 135 Clicker Question|1-6-24b}}, {{Math 135 Clicker Question|1-6-28b}}
+
+
+#### Functions of two variables:    
+
+1. Motivation: Functions can have many simultaneous inputs.  We're going to try to develop some techniques for representing and working with such functions.  Overall strategy, build on your intuition for functions of two variables and use this to introduce analytic and formal techniques that can be applied to functions of more than two variables.  
+1. You've seen some examples of constructing functions of one variable to match data.  You can do this pretty well by eye.  That will get hard when you try to do functions of two or more variables.  So, we're going to be studying some formal techniques for doing this.  That's what linear algebra will be about.
+1. Examples
+    *  [http://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Body_mass_index_chart.svg/395px-Body_mass_index_chart.svg.png Body Mass Index] from [http://en.wikipedia.org/wiki/Body_mass_index article]
+    *  [http://etc.usf.edu/clipart/46200/46290/46290_contour_map.htm Topographical map]
+    *  [http://themacklins.net/images/blog_images/Apr_12_2008/map1_resized.jpg Housing prices in Houston] from [http://themacklins.net/blog.php?userid=Paul&postid=11 article]
+    *  [http://www.emc.maricopa.edu/faculty/farabee/biobk/biobookcycles.html pH of acid rain]
+    *  [http://www.google.com/imgres?imgurl=http://osu.orst.edu/dept/ncs/photos/kilauea.jpg&imgrefurl=http://oregonstate.edu/dept/ncs/newsarch/2005/Feb05/volcano.htm&usg=__QhKCZhNbeigUZfbZ-SlYLe1KzJU=&h=717&w=800&sz=512&hl=en&start=0&zoom=1&tbnid=taD9cRBV48y6SM:&tbnh=127&tbnw=142&prev=/images%3Fq%3Dkilauea%2Bvolcano%2Bcontour%2Bdiagram%2Btopographical%2Bmap%26um%3D1%26hl%3Den%26rlz%3D1C1CHFX_enUS393US393%26biw%3D1366%26bih%3D643%26tbs%3Disch:1&um=1&itbs=1&iact=hc&vpx=610&vpy=168&dur=1292&hovh=213&hovw=237&tx=170&ty=144&ei=ce-fTKGQIN_nnQfD7oSIDQ&oei=ce-fTKGQIN_nnQfD7oSIDQ&esq=1&page=1&ndsp=25&ved=1t:429,r:4,s:0 Sulfur dioxide on the island of Hawaii]
+    *  [http://wmbr.mit.edu/www/contours Strength of a radio signal]
+    *  [http://www.esrl.noaa.gov/gmd/ozwv/dobson/papers/wmobro/observed.html#fig10 Ozone depletion]
+    *  [http://www.msnbc.msn.com/id/15029288/ Mona Lisa]
+    *  [http://www.theoildrum.com/uploads/12/rapley_ice_flow.png Antarctic ice flow speed] from [http://www.theoildrum.com/story/2006/2/3/0394/97545 article]
+    *  [http://www.mgs.md.gov/esic/brochures/gif/eqfig6.gif earthquake risk map] showing maximal horizontal ground acceleration from [http://www.mgs.md.gov/esic/brochures/earthquake.html article]
+    *  [http://web2.airmail.net/danb1/TX2a1.jpg Tornadoes in Texas] from [http://web2.airmail.net/danb1/tornado.htm article]
+    *  [http://ecmweb.com/mag/706ecmLPfig2.jpg Thunderstorm days per year] from [http://ecmweb.com/mag/electric_lightning_strikes/ article]
+    * [http://www.originlab.com/www/products/images/temperature_distribution_depicted_in_a_polar_contour_plot_498px.png Temperature at North Pole]  from [http://www.originlab.com/index.aspx?go=Products/Origin/Graphing/Contour article]
+    *  [http://www.infrastructure.gov.au/images/aviation/Page32.jpg Noisy events] near airport from [http://www.infrastructure.gov.au/aviation/environmental/transparent_noise/guidance/part2.aspx article]
+1. Review contour plots.  Making contour plot in R.  Use as example $BMI(w,h) = 703*w/h^2$ 
+1. Linear functions: parameterization $f(x,y) = a x + b y + c$ and contour plot (parallel lines)
+1. ACTIVITY: [http://dl.dropbox.com/u/5098197/Math135/In-Class/DrawingContours.pdf Drawing contours by hand.]
+1. Interpreting contours: {{Math 135 Clicker Question|9-2-24}}
+1. Translating from simple knowledge of a function to a contour plot: {{Math 135 Clicker Question|9-2-2a}},{{Math 135 Clicker Question|9-2-2b}},{{Math 135 Clicker Question|9-2-2c}}
+
+#### Contours by Hand    
+
+#### Solving Equations with Functions    
+
+#### Weekly Quiz    
+
+* [http://db.tt/wJOmPg1D Weekly Quiz]
