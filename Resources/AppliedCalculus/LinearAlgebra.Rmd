@@ -1,0 +1,274 @@
+The idea of a linear combination of functions.  
+*Why <math>mx + b</math> is a linear combination, as is <math>A \sin(2\pi t / P) + C</math> and <math> A \exp(kt) + C</math> as is <math>a x^2 + b x + c</math>.  
+*Smoother-type functions as linear combinations of functions.  These are often called "radial basis functions."  You add them together to match the data.
+*Sometimes you have functions of multiple variables.  Example of a regression model.
+
+Why finding a linear combination is like solving a set of equations.  
+*We'll have to be careful what we mean by "equals" in the equations.
+*CT scan as an example problems of solving equations.  Pixels are the unknowns.  We add together the pixels along each of the paths.  How do we find the pixel values themselves.
+
+#What's a vector.
+#*A pair of numbers.
+#*A length and direction. (Notice that "position" doesn't enter into it.  We're going to have to be careful about the distinction between "direction" and "position".
+#Operations on vectors
+#*Scaling
+#*Addition
+#*Linear combination (just scaling and then addition)
+#*:Clicker Questions: {{Math 135 Clicker Question|KaplanLinalg1-1}}, {{Math 135 Clicker Question|KaplanLinalg1-2}}, {{Math 135 Clicker Question|KaplanLinalg1-3}}, {{Math 135 Clicker Question|KaplanLinalg1-4}},
+
+===Linear Algebra Review from Wednesday===
+#What's a vector.
+#*A pair of numbers.
+#*A length and direction. (Notice that "position" doesn't enter into it.  We're going to have to be careful about the distinction between "direction" and "position".
+#Operations on vectors
+#*Scaling
+#*Addition
+#*Linear combination (just scaling and then addition)
+#*:Clicker Questions: {{Math 135 Clicker Question|KaplanLinalg1-1}}, {{Math 135 Clicker Question|KaplanLinalg1-2}}, {{Math 135 Clicker Question|KaplanLinalg1-3}}, {{Math 135 Clicker Question|KaplanLinalg1-4}},
+
+===More Simple Operations===
+*Length of a vector
+*Angle between two vectors
+*Projection of one vector onto another
+*Extraction of coefficients from a projection
+
+===Weekly Quiz===
+[http://db.tt/EB0InsHz]
+
+===Clicker Review===
+
+Clicker Questions on linear combinations: {{Math 135 Clicker Question|KaplanLinalg1-1}}, {{Math 135 Clicker Question|KaplanLinalg1-2}}, {{Math 135 Clicker Question|KaplanLinalg1-3}}, {{Math 135 Clicker Question|KaplanLinalg1-4}},
+===Algebra and Arithmetic on Vectors===
+#*Length: square root of sum of squares.  Easier to talk about square length so that we don't need to keep using the sqrt.
+#*Dot product
+#*Definition of length in terms of dot product <math>| \vec{a} | = \sqrt{ \vec{a} \cdot \vec{a}}</math>: Sum of squares
+#*Angle between two vectors.  Commonsense definition and then the definition in terms of dot products: <math>\cos \theta = \frac{ a \cdot b }{\sqrt{ a\cdot a \times b \cdot b}}</math>
+#*Derivation of this dot-product formula for angle based on the law of cosines.
+#:  <math>|a|^2 + |b|^2 - 2 |a| |b| \cos(\theta) = c^2</math>
+#: <math>|c|^2 = |a - b|^2 = (a-b) \cdot (a-b) = \sum_i a_i^2 - 2a_i b_i + b_i^2</math>
+#: So <math>2 |a| |b| \cos(\theta) = \sum_i 2 a_i b_i = 2 a \cdot b</math>
+#Orthogonality and the dot product.  When the dot product is zero, the vectors are orthogonal.
+#*Demonstration with vectors in 2-d: arithmetic trick of reversing components and negating one.
+#*Demonstration in 3-d: there are many perpendicular vectors --- a whole plane's worth.  (Demo: Hold up a ruler and ask a student to find a vector perpendicular to it.  Then find another.  Then sweep out the whole space of such vectors.
+#*
+
+
+===Preliminaries===
+*Question: How is the MAX center working out?
+*In the News: Of course, whether a Fermi-style factor of 10 is good enough depends on the context.  Estimate of a parameter in a model is changed based on a new mechanism, increasing by a factor of 10 the estimate of dangerous automobile-borne particulates in the atmosphere :[http://www.nytimes.com/2012/02/19/science/earth/scientists-find-new-dangers-in-tiny-but-pervasive-particles-in-air-pollution.html?_r=1 article].
+*Example of a linear combination: admissions yield model.
+
+===Review of subspaces===
+The idea of a subspace defined by a set of vectors: all the places you can get with a linear combination of the vectors.
+*Subspace of 1 vector is a line.
+*Subspace of 2 vectors is a plane: you can get anywhere in the plane by taking a linear combination of vectors.
+*Orthogonal complement to a vector: the space composed of the vectors perpendicular another vector.  To define this plane, all you need are two (non-collinear) vectors in it.
+
+===Review of Algebra and Arithmetic on Vectors===
+#Length: square root of sum of squares.  Easier to talk about square length so that we don't need to keep using the sqrt.
+#Dot product
+#Definition of length in terms of dot product <math>| \vec{a} | = \sqrt{ \vec{a} \cdot \vec{a}}</math>: Sum of squares
+#Angle between two vectors.  Commonsense definition and then the definition in terms of dot products: <math>\cos \theta = \frac{ a \cdot b }{\sqrt{ a\cdot a \times b \cdot b}}</math>
+#Derivation of this dot-product formula for angle based on the law of cosines.
+#:  <math>|a|^2 + |b|^2 - 2 |a| |b| \cos(\theta) = c^2</math>
+#: <math>|c|^2 = |a - b|^2 = (a-b) \cdot (a-b) = \sum_i a_i^2 - 2a_i b_i + b_i^2</math>
+#: So <math>2 |a| |b| \cos(\theta) = \sum_i 2 a_i b_i = 2 a \cdot b</math>
+
+===Projection using Arithmetic===
+#Coefficient from projection of <math>b</math> onto <math>a</math> is <math>\frac{a \cdot b}{a \cdot a}</math>.  Not symmetrical.
+
+
+===Extraction of Coefficients involving two vectors===
+*How to combine u and w to reach b.
+*Clicker Questions: {{Math 135 Clicker Question|KaplanLinalg2-1}}, {{Math 135 Clicker Question|KaplanLinalg2-2}}
+
+===Doing this with project()===
+<pre>
+u = c(1,2)
+v = c(-1,0)
+b = c(7,3)
+project( b ~ u + v - 1 )
+</pre>
+The -1 is there in the present program to be consistent with the statistics notation.  But after a semester's experience we are changing that.  Future editions of <code>project()</code> won't include the intercept unless specifically requested.
+
+Another example, involving the "intercept", that is <code>u=c(1,1)</code>
+
+Where does the "intercept" come from?  It's the value of the constant function.
+
+===Exercises with the <code>mLinAlgebra</code> program=== 
+
+NOTE: This does not yet understand the formula notation <code>b ~ v1 + v2</code>.  Instead, you list the vectors and put <code>target=...</code> at the end.
+
+====Two dimensions====
+<pre>
+b = c(4,1) # or use rbind( ) instead of c( )  
+v1 = c(2,5)  
+v2 = c(-3,5)
+</pre>
+*<code>mLinAlgebra(v1,target=b)</code>
+*<code>mLinAlgebra(v2,target=b)</code>
+*<code>mLinAlgebra(v1,v2,target=b)</code>
+
+See the original exercises: [http://www.macalester.edu/~kaplan/ISM/Exercises-HTML/11.14.html?access=not-defined&docname=11.14 solving], [http://www.macalester.edu/~kaplan/ISM/Exercises-HTML/11.15.html?access=not-defined&docname=11.15 redundancy]
+
+
+===Three dimensions===
+
+<pre>
+b   = c(4,1,-3)  # or use rbind( ) instead of c( )
+v1 = c(2,5,1)  
+v2 = c(-3,5,0)  
+v3 = c(1,1,1)
+</pre>
+*<code>mLinAlgebra(v1,v2,target=b)</code> No exact solution, but there is a least squares solution.
+*#Grow, shrink, or flip the segments of the walk to create a walk that reaches the target point. Could you do it? If so, congratulations! Now rotate the display. After all, it’s a 3-dimensional display.  Note the square-length of the residual, printed at the bottom.
+*#Did your end-of-walk point stay on the target when you rotated the display? Explain.
+*#Use the hint checkbox to find the best solution, that is, the coefficients that bring the end-of-walk point as close as possible to the target point. How does the length of the residual compare to your solution.
+*#Change the length of the walk along either of the model vectors from what it was for the correct solution. How does this change affect the length of the residual vector?
+*#NOTE: Need to add in the residual vector in the display so you can see that it's perpendicular to all the other vectors.
+
+*<code>mLinAlgebra(v1,v2,v3,target=b)</code> An exact solution, but it's hard to find until you learn the trick.  Then it's easy.
+*:Try to find a solution by growing, shrinking, and flipping the segments of the walk. For most people, this will be very hard. When it looks like you have gotten things worked out, rotate the display and check that the end-of-walk point stays on the target.
+*:Don’t despair! There’s a trick that makes it straightforward to find a solution. But you have to follow the steps diligently.
+*#Pick one of the vectors — it doesn’t matter which — and rotate the display to look exactly down this vector. The menu item does this for you, but you could also do it by hand by rotating the display.
+*#Leave the display orientation completely alone, the way you set it in (1). Now, using ONLY THE OTHER VECTORS, grow, shrink, or flip the segments of the walk until the end-of-walk point appears to be right over the target point. Get this as exact as possible. Of course, it’s likely that the end-of-walk point will not actually be at the target; it just looks that way. Look at the length of the residual vector? Is it zero?
+*#Once you have the end-of-walk point appearing directly over the target, rotate the display. Chances are, the end-of-walk point will no longer appear to be over the target. That’s fine. (If you can’t find a rotation where the end-of-walk point is not over the target, then you have already found a solution. This would be the case only if the length of the residual was zero in step (2). You were lucky!)
+*#Go back to the vector you picked in step (1) — make that vector the active vector. Grow or shrink just that vector to move the end-of-walk point. You will be able to move it over the target point. That’s the solution! If you have really reached it, then rotating the display will leave the end-of-walk point over the target.
+
+See the original exercises [http://www.macalester.edu/~kaplan/ISM/Exercises-HTML/11.16.html?access=not-defined&docname=11.16 solving], [http://www.macalester.edu/~kaplan/ISM/Exercises-HTML/11.17.html?access=not-defined&docname=11.17 redundancy]
+
+===Field Trip with Vectors===
+Go to a space where there is room to walk around, preferably with a "balcony" so that some students can get a view from above.  I use the lobby in Olin-Rice.
+#One vector
+#*Put target in line
+#*Put target behind vector
+#*Put target at origin.
+#*Target off of line (to give a positive coefficient)
+#*Target off of line (to give a negative coefficient)
+#*Target off line to give zero coefficient.
+#Two vectors
+#*Perpendicular
+#*Not perpendicular, but with target in line with one vector
+#*Not perpendicular, but with target out of line with both vectors.
+#Three vectors in the plane (redundancy)
+#Target held in the air.  
+#*How to get to the target?
+#*Closest point with 2 vectors.
+#*Closest point with just one vector
+
+===The meaning of the residual in function space===
+*Make up two functions --- ask the students for them.
+*Make up a target function.
+*Evaluate the functions at a fixed set of inputs to turn them into vectors.
+*Use project to find the best linear combination.
+*Plot out the resulting linear combination.
+*Add in some more functions and get closer to the target.
+
+===A Magic Trick===
+#Ask 6 students to specify functions, and construct these using <code>makeFun()</code>, calling them <code>f1</code> through <code>f6</code>.
+#Ask 1 student to give 6 different <math>x</math> values.
+#Ask 6 students to specify <math>z</math> values to go along with the <math>x</math> values.
+#Construct a data frame with x and y
+#Use <code>project()</code> to find the coefficients on one or two of the functions to match the data.  Plot out that function along with the data.
+#Use <code>project()</code> with all of the functions given by the students.
+
+Do this again using various other basis functions:
+*<code>mFitSigmoidal()</code>
+*<code>mFitPoly()</code>
+*<code>mFitSines()</code>
+Why does this work?
+
+===Using this trick in practice: Compressing Music===
+As a quick example, here are some tide data: they look a lot like music.
+<pre>
+tides = fetchData("hawaii.csv")
+tides$hours = tides$time/10
+mFitSines( water ~ hours, data=tides)
+</pre>
+#Turn on a sine and a cosine and set the period until you get a big response.
+#:For a small response, mention orthogonality and draw the corresponding vector diagram to show why the coefficient is close to zero.
+#Increase the number of terms to match the data.
+
+===Demonstrating the Residuals===
+<pre>
+water=fetchData("stan-data.csv")
+water$minutes = water$time/60
+mLineFit(temp~minutes, data=water)
+</pre>
+
+===Review===
+#By Hand:
+##Finding linear combinations of two vectors in two- and three-dimensional space.
+##Dot product formulas
+###length
+###angle (or, rather, cosine of angle)
+###projection onto a single vector
+#Use of the <code>project()</code> program.
+##What the intercept is about.
+##Its approach to dealing with redundant vectors.
+#Theory
+##How projection addresses the problem of finding the best answer even when there is no exact answer.
+##Why there is a unique answer when there is no redundancy.
+##What redundancy is about and why that removes the uniqueness of the answer.
+##How the vector picture maps onto finding functions that approximate data.
+###Constructing vectors from data and basis functions.
+###The meaning of the residual.
+###The Root Mean Square measure of the residual.  In statistics, this will be replaced by the standard deviation of the residuals and then, more sophisticated by the "Standard Error" of the residuals.
+
+
+===Exercises with the <code>mLinAlgebra</code> program=== 
+NOTE: This does not yet understand the formula notation <code>b ~ v1 + v2</code>.  Instead, you list the vectors and put <code>target=...</code> at the end.
+====Two dimensions====
+<pre>
+b = c(4,1) # or use rbind( ) instead of c( )  
+v1 = c(2,5)  
+v2 = c(-3,5)
+</pre>
+*<code>mLinAlgebra(v1,target=b)</code>
+*<code>mLinAlgebra(v2,target=b)</code>
+*<code>mLinAlgebra(v1,v2,target=b)</code>
+
+See the original exercises: [http://www.macalester.edu/~kaplan/ISM/Exercises-HTML/11.14.html?access=not-defined&docname=11.14 solving], [http://www.macalester.edu/~kaplan/ISM/Exercises-HTML/11.15.html?access=not-defined&docname=11.15 redundancy]
+===Three dimensions===
+<pre>
+b   = c(4,1,-3)  # or use rbind( ) instead of c( )
+v1 = c(2,5,1)  
+v2 = c(-3,5,0)  
+v3 = c(1,1,1)
+</pre>
+*<code>mLinAlgebra(v1,v2,target=b)</code> No exact solution, but there is a least squares solution.
+*#Grow, shrink, or flip the segments of the walk to create a walk that reaches the target point. Could you do it? If so, congratulations! Now rotate the display. After all, it’s a 3-dimensional display.  Note the square-length of the residual, printed at the bottom.
+*#Did your end-of-walk point stay on the target when you rotated the display? Explain.
+*#Use the hint checkbox to find the best solution, that is, the coefficients that bring the end-of-walk point as close as possible to the target point. How does the length of the residual compare to your solution.
+*#Change the length of the walk along either of the model vectors from what it was for the correct solution. How does this change affect the length of the residual vector?
+*#NOTE: Need to add in the residual vector in the display so you can see that it's perpendicular to all the other vectors.
+
+*<code>mLinAlgebra(v1,v2,v3,target=b)</code> An exact solution, but it's hard to find until you learn the trick.  Then it's easy.
+*:Try to find a solution by growing, shrinking, and flipping the segments of the walk. For most people, this will be very hard. When it looks like you have gotten things worked out, rotate the display and check that the end-of-walk point stays on the target.
+*:Don’t despair! There’s a trick that makes it straightforward to find a solution. But you have to follow the steps diligently.
+*#Pick one of the vectors — it doesn’t matter which — and rotate the display to look exactly down this vector. The menu item does this for you, but you could also do it by hand by rotating the display.
+*#Leave the display orientation completely alone, the way you set it in (1). Now, using ONLY THE OTHER VECTORS, grow, shrink, or flip the segments of the walk until the end-of-walk point appears to be right over the target point. Get this as exact as possible. Of course, it’s likely that the end-of-walk point will not actually be at the target; it just looks that way. Look at the length of the residual vector? Is it zero?
+*#Once you have the end-of-walk point appearing directly over the target, rotate the display. Chances are, the end-of-walk point will no longer appear to be over the target. That’s fine. (If you can’t find a rotation where the end-of-walk point is not over the target, then you have already found a solution. This would be the case only if the length of the residual was zero in step (2). You were lucky!)
+*#Go back to the vector you picked in step (1) — make that vector the active vector. Grow or shrink just that vector to move the end-of-walk point. You will be able to move it over the target point. That’s the solution! If you have really reached it, then rotating the display will leave the end-of-walk point over the target.
+
+See the original exercises [http://www.macalester.edu/~kaplan/ISM/Exercises-HTML/11.16.html?access=not-defined&docname=11.16 solving], [http://www.macalester.edu/~kaplan/ISM/Exercises-HTML/11.17.html?access=not-defined&docname=11.17 redundancy]
+
+
+===Nonlinear Curve Fitting===
+We're going to use the program <code>mFitExp</code>.  It does the linear algebra part of things automatically, leaving for the user to select the nonlinear parameters with a slider.
+
+Here's an example from the Income-Housing data.  Note that it's important to rescale the independent variable in order not to exceed the capacity of floating point numbers
+<pre>
+inc = fetchData("Income-Housing.csv")
+inc$inc = inc$Income/10000
+mFitExp( TwoVehicles ~ inc, data=inc)
+</pre>
+*It starts with just the constant selected.
+*Try adding in the linear term and the logarithmic term.  Neither of these has a nonlinear parameter, so everything is automatic.
+*Add in the exponential term (and take out the linear and logarithmic term).  Adjust k to make the sum of square residuals as small as possible.
+
+
+*[http://tidesandcurrents.noaa.gov/data_menu.shtml?bdate=20110801&edate=20110831&wl_sensor_hist=W1&relative=&datum=6&unit=1&shift=g&stn=1612404+FORD+ISLAND%2C+FERRY+DOCK%2C+PEARL+HARBOR%2C+HI&type=Historic+Tide+Data&format=View+Data Tide Data]
+
+#We're now getting close to understanding how <code>fitModel()</code> works.  A bit more calculus is required.
+

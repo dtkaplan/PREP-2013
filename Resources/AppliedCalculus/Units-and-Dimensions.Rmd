@@ -1,0 +1,307 @@
+====Starting Units and Dimensions====
+
+Dimension is the what, unit is the size, value is how many of that size.
+*Physical dimensions: length, area, volume, velocity, acceleration, force , pressure, density, energy
+**Group the names of units by dimension: mile, meter, mph, acre,acre-foot, cup, bushel, newton, pascal, ...
+**Work through the dimensions of physical quantities: force, pressure, density
+**Include money as a dimension: M, L, T, $
+**Walk through class: Give me a unit for "mass'' (kg, slug), "force'' (newton, pound), "energy'' (kwh, BTU, therm), 
+*Arithmetic on units.  Addition/Subtraction, Multiplication/Division, Exponentiation, Logs/Sines/etc.
+*Table of physical quantities and their dimension [http://dl.dropbox.com/u/5098197/Math135/Figures/Dimension-Table-7.1-Giordano-Weir.pdf Table 7.1 Giordano and Weir]
+**Transcendental functions MUST take a dimensionless and unitless argument: exp, sin, log, ...
+**Special nature of log.  <math>\ln(x/x_0)</math> has the right form.  But what happens if you leave off <math>x_0</math>?  It's a shifting factor.  If you are looking at differences of logs, the shifts cancel out.
+*Conversion between units of the same dimensions. The idea of "flavors of 1"
+*Elasticities and the desire to compare things in different units but in a unitless way.
+
+====Review of Dimensions====
+List some dimensions and ask for units that correspond to those dimensions.
+*M, L, T, <math>\Theta</math>
+*L/T, L/T²
+*M L/T (what is this called?  "momentum")
+*M L/T²
+
+A funny one:
+*L/L³ -- miles per gallon.  So, it would be dimensionally consistent to measure miles per gallon as 1/acre!
+
+====Diffusion Coefficient versus Velocity====
+A velocity tells how fast something is moving.  Multiply it by time and you find out how far it goes.
+
+A diffusion coefficient tells how fast something diffuses.  Do you multiply it by time?  
+<quotation>
+Carbon dioxide in air has a diffusion coefficient of 16 mm²/s, and in water its coefficient is 0.0016 mm²/s. --- From [http://en.wikipedia.org/wiki/Mass_diffusivity]
+</quotation>
+Do these units make sense?
+
+The distance travelled is the square root of the diffusion coefficient times time.  Things that diffuse move as <math>\sqrt{t}</math>.
+
+In economics, the corresponding measure of price drift is called '''volatility'''.  
+
+One way to express volatility is as <math>var( log( Q_t / Q_{t-1} ) )</math>.  The units of this will be variation per time unit.  Multiply by the amount of time, in units, then take the square root to get a typical amount of proportional change (either up or down) over the time period.
+
+
+[http://dl.dropbox.com/u/5098197/Exercises/HTML/AC-Units-Prob-110/AC-Units-Prob-110-A.html?access=AC7 Clicker Questions on Dimensions and Commensurability]
+
+====Unit Conversion====
+Which is bigger: a string or a ball.
+
+Things with the same dimension can be compared, even if the units are different.
+
+Flavors of 1 and the algebra of units.
+
+=====How fast am I walking?=====
+
+Walk briskly across the classroom.  Ask for an estimate of how fast I'm going, in mph.
+
+=====Swinging in a circle=====
+
+Tie a pen to the end of a roughly 1 meter long string.  Swing it around 2-4 times a second.  How fast is it going in kph?
+
+Figure out the distance travelled per second and convert to kph.
+
+=====Body-Mass index=====
+Convert from metric to lbs-inches.
+
+BMI = mass (kg) / height^2 (m),  What should the formula be in lbs and inches?  Multiply by (2.2046 lb/kg) and divide by (39.37 in/m)²
+
+====Dimensions and Basic Physics====
+
+You will live in a world of velocity and acceleration, and have to deal with important policy issues of energy.  So, it's important that you know some basic dimensions of physics.
+
+In addition, these will play out when we study differentiation and integration.  Partly this is because the original setting for developing these concepts was physics.  Partly it's because there is an important connection between arithmetic and the calculus operators.  To put it crudely:
+*Differentiation is like division; Integration is like multiplication.
+
+A hierarchy of physics dimensions:
+*Position: L
+*Velocity: L/T (distance divided by time)
+*Acceleration: L/T² (velocity divided by time) 
+*Force: Remember F=ma, so M L / T²  units: newtons, pounds
+*Energy: Force times distance: so M L² / T² units: joules, calories, BTU
+*Power: Energy divided by time: M L² / T³
+
+Other important ones --- 
+*mass density by volume: M/ L³
+*pressure, force per area: M / L T²
+*power density per area: M / T³
+
+To get from power to energy, multiply by time
+To get from pressure to force, multiply by area
+
+Work on first of these energy problems: [http://dl.dropbox.com/u/5098197/Exercises/HTML/AC-Units-of-Energy/AC-Units-of-Energy-A.html?access=AC7 Energy and dimensional analysis]
+
+Hand out mini-modeling problem: [http://dl.dropbox.com/u/5098197/Math135/In-Class/light-and-temperature.pdf Light and Temperature].  Go over the demonstration that <math>exp( hf/kT )</math> makes sense --- the inner quantity is dimensionless.
+
+====Dimensional Consistency====
+
+Consider the famous formula <math>E = m c^2</math>.  What else could it be?
+
+Does <math>x_0 + v_0 t + 1/2 a t^2</math> make sense dimensionally?
+
+Units of coefficients.  Work through coefficients on <math>a x^2 + b x + c</math> when <math>x</math> has units of meters.  Does the quadratic formula make sense dimensionally?
+
+
+====Dimensional Analysis====
+=====Period of pendulum=====
+*Quantitles of importancePeriod <math>T</math>, Pendulum length <math>L</math>, Mass <math>M</math>, Gravity <math>L/T^2</math>, Angle (dimensionless).  
+*:Combine these together
+*:<math>T^a \ L^b \ M^c \ (L/T^2)^d </math>
+*:  Find <math>a,b,c,d</math> to give a dimensionless quantity.   This amounts to 
+*:<math>\mbox{Period}^2 \frac{\mbox{gravity}}{\mbox{length}} = f(\mbox{others})</math>
+*:Hold the angle constant and solve, giving <math>\mbox{Period} =
+\sqrt{\frac{\mbox{Length}}{\mbox{gravity}}}</math>
+
+DO THE ESTIMATION OF TIME BY SWINGING THE PENDULUM.  At a fixed angle
+of release, find the period.  Change the mass and the length.  Make a
+table of the period versus length.  See if changing the mass changes
+anything.  See if things change from very small angles to very large angles.
+
+Example: Distance travelled by a projectile.
+
+Pendulum example.  What might the period depend on: mass, length, gravity, angle (also, air density, ...)
+
+Find two dimensionless groups (angle and gravity*time^2/length).  These must be functions of one another.  Work through the implications to get <math>\sqrt{L}</math> dependence of period.  Test this.
+
+=====Distance travelled by a canonball=====
+Quantities of interest: velocity v, angle alpha, gravity g, mass m, distance d.  How to get a quantity of dimension L by combining quantities of dimension <math>v \rightarrow L/T</math>, <math>g \rightarrow L/T^2</math>, and <math>m \rightarrow M</math>?  It's <math>v^2 / g</math>.  We've just discovered about energy going as <math>v^2</math>.
+
+=====Swing a rock on a string in a circle=====
+What's the force on the string?   (The so-called centripetal force.)  Force has dimension <math>f \rightarrow M L/T^2</math>.  The rock has mass <math>m\rightarrow M</math> and the string has radius <math>r \rightarrow L</math>.  Two ways to think about it:
+#What's the linear velocity of the rock?  <math>v \rightarrow L/T</math>
+#What's the angular velocity (revolutions per second)? <math> \omega \rightarrow 1/T</math>
+#How to combine linear velocity, mass, and radius to get <math>M L/T^2</math>?  It's <math>m v^2 / r</math>.  Or, for angular velocity, it's <math>m r /\omega^2</math>.  Compare those to the formulas in a physics book.
+
+====Activity on Units====
+(If time)
+*Find a named unit for these physical quantities.  (When you don't know what the quantity refers to, look it up!): Entropy, Luminance, Volume Transport, Inverse Time, Capacitance, Resistance, Gravitational Field, Electric Field, Viscosity, Solar Influx, Energy, Radioactivity, Pressure, Enthalpy 
+*Find an unfamiliar unit for the following: Mass, Permeability, Distance, Volume, Area, Speed, Time, Angle, 
+*[http://dl.dropbox.com/u/5098197/Exercises/HTML/AC-Units-of-Energy/AC-Units-of-Energy-A.html?access=AC7 Energy and dimensional analysis] 
+
+
+Worked on the "corn energy efficiency" problem.
+
+Introduce the Atomic Bomb group project.
+
+===Dimensions of Light and Temperature (from Wednesday)===
+How to plot out the function Iplanck. 
+*Setting T=330 reduces it to a function of 1 variable.
+What happens if you plot it out as a function of both f and T?  (Contour diagram)
+
+Finding the ratio.  Much easier to plot out Ratio versus T rather than T versus Ratio.
+
+===Dimensional Analysis (part 2)===
+
+====Designing a Cannon====
+We want to figure out how to design a cannon to send a ball a given distance.
+
+Factors that that important:
+*Distance: dimension L
+*Ball mass: dimension M
+*Amount of gunpowder.  Measure this with the energy content: M L² / T²
+*Gravity: dimension L / T²
+*Angle: dimensionless
+
+Buckingham Pi Theorem.  Each dimensionless group will be a function of the others.
+
+One dimensionless group: Ball mass * Distance * Gravity / Gunpowder
+Another dimensionless group: Angle
+
+Are there any others?  (No)
+
+So, Distance = Powder F(angle) / mass*gravity
+
+This theory is incomplete.  There are other factors that can play a role:
+*Air density: M / L³
+*Mass of the cannon itself -- as opposed to the mass of the ball.  (The larger the cannon, the smaller the recoil velocity and therefore the less energy that is imparted to the recoil.) M
+
+This adds more dimensionless groups, e.g. 
+*Ball mass / Cannon mass
+
+These may need to be included in the function, e.g. F( angle, mass ratio).  How do you decide?  If you find that data are plausibly along a function F(angle), then the other dimensionless groups are not necessarily needed.
+
+Note that power laws are important because of the ways that dimensions combine.
+
+====What to do when you don't have a theory====
+It often happens that the relationships are simple enough to be studied empirically, just by drawing on data.
+
+Why?  Because the different quantities are often related to one another by design constraints and optimality.  Example: The mass of the cannon will be related to the amount of gunpowder, because the cannon has to be strong enough.  But we try to keep the mass as small as possible to make the cannon fairly transportable.  For small cannons (e.g., rifles) the weight needs to be kept small so that the soldier can carry ammunition as well.
+
+====Example: Internal Combustion Engines====
+<pre>
+engines = fetchData("engines.csv")
+</pre>
+
+What's the relationship between displacement and stroke?  There doesn't need to be any particular relationship, since there is also bore width, but in fact there is.
+
+What's the relationship between displacement and power?  Could be anything, depending on RPM.  (Given the optimal mix of gasoline and air, power per cycle will be proportional to displacement (and compression).)
+
+What's the relationship between RPM and displacement?  Complicated, since the size of the pistons scales with displacement
+but the acceleration and therefore force is proportional to RPM².
+
+Plot out data on log-log axes to see the power-law relationship.
+
+===Weekly Quiz===
+[http://db.tt/2vUMhkgW]
+
+====From the Homework====
+*Remember the exercise with the efficiency of corn production?  Where is all that other energy going?  To non-edible parts of the crop.  Can we use those?  [http://www.nytimes.com/2011/09/27/business/energy-environment/using-water-to-turn-wood-chips-into-motor-fuel.html?hp News about an advance in turning cellulose into sugar]
+*Scaling of Pendulum-Swing Homework Problem
+*NASA estimation
+
+====Unit Conversion: BMI====
+From Friday notes.
+
+====Things you don't know, but do====
+*What's the budget of Macalester?
+*How tall is the 17th tallest mountain on Earth?
+*How tall is my sister?
+
+Estimation: If you know the leading place, you know a lot.  If you know the leading digit, you know a lot.  If you can pin something down to a factor of 2, you know a lot.
+
+====Group Project 1====
+
+*Go over atomic bomb project.
+*Show where to sign up for groups.
+
+====Units of Information====
+What's the basic unit of information?  "bit" for "binary digit", a term invented by John Tukey.  Other units: byte, kilobyte, megabyte, giga-, tera-, peta-  (I'm an old timer.  My first hard disk, bought at US government expense in 1983, was 5MB and cost $3500.  In graduate school at MIT in the late 1980s, I spent considerable time moving things off and on of our shared 40MB disk.  In 1991, with grant money, I bought a "huge" 1 GB disk for close to $10,000 and a CD burner for $25,000.
+
+Scientific notation.  Mantissa <math>\times 10^\mbox{exponent}</math>
+
+Counting digits.  Write a number in scientific notation.  Suppose it's <math>1.13 \times 10^{-3}</math>.  If you know the exponent exactly, and all of those digits in the mantissa are right, then you can fairly say you have <code>log10(113)</code> digits.  Or, if you want to express it in bits, you've got <code>log2(113)</code> bits.  If you do '''not''' know the exponent exactly, then the mantissa hardly makes a difference.  Suppose all you know is that the exponent is somewhere between -2 and -4.  Then it's reasonable to say that you know the value to somewhere within a factor of about 1000.  Of this, 100 comes from the uncertainty in the exponent and the remain factor of 10 comes from not knowing the mantissa.
+
+====Finish internal combustion engine example====
+[http://www.howstuffworks.com/engine1.htm Animation of the cycle]
+
+Comparative data in <code>engines.csv</code> (through <code>fetchData()</code>).
+
+Basic technique: 
+*Plot log of one quantity against another (or against some combination of others).
+*Things will often look linear.  Estimate the slope.
+*Another way to estimate the slope: use <code>project()</code>, e.g.
+<pre>
+> project( log(BHP)~1+log(mass),data=engines)
+(Intercept) 0.910096
+log(mass)   0.858983
+</pre>
+Does the slope depend on the unit of the log?
+
+*Look at power against mass.  For all but the smallest engines, power is roughly proportional to mass.  The larger engines are more massive per unit power, perhaps because they are used in stationary or ship settings, and the larger mass might make them last longer.  
+*Discover relationship between bore, stroke, and displacement.  See that it's a power law.  Why is the slope what it is?  (Because the cylinders are all roughly the same shape, and so displacement is bore-squared x stroke.)
+*Relationship between RPM and size.  Position of the piston is <math>S \sin(RPM 2\pi t)</math>. Refer to upcoming derivative relationship to show that acceleration is <math>4 \pi^2 RPM^2 S \sin(RPM 2 \pi t)</math>.  Some factors here: the strength of the piston rod needs to handle the force, which will be proportional to mass*RPM².  The fuel might take longer to burn in a larger cylinder.  Altogether, RPM is related to mass-³
+*Work toward realization that power is proportional to ncylinder*RPM*displacement/stroke --- the volume of combusted fuel per second, assuming that compression is constant.
+
+====Fermi/Estimation Problems====
+Who was Enrico Fermi?
+*First chain reaction (in the squash court at Univ. of Chicago).  This is what pushed the US to go forward with the Manhattan project.
+*"How many piano tuners in Chicago?"
+
+
+[http://www.atomicarchive.com/Docs/Trinity/Fermi.shtml  Fermi's diary entry on the day of the Trinity test.]
+
+===Fermi Problems===
+
+Article from today's NY Times on the [http://www.nytimes.com/2012/02/15/opinion/europe-v-world.html?_r=1 European Financial Crisis]: a recommendation to put "at least $1 trillion toward a ... safety net."  Is this the right amount?  What can you say?
+
+Some practice energy-related problems to do in class:
+*How much gasoline is used per year for passenger vehicles in the US?
+*How big would a CO₂ tax on gasoline have to be to reduce fuel use by half?
+
+And some other practice problems:
+*How much energy does opening up my garage door use?  
+*How much fuel per passenger mile to fly in an airplane?
+*Which saves more fuel: buying a Prius or going to school locally?
+
+Estimation of scale.  How best to state the range of an unknown quantity.  Sometimes people think that it's a matter of 1 to 9, but it's really about 0 to 9, and 0 can be much, much smaller than 9, while 1 can only be 1/9th as large as 9.  It could have been 0.1, or 0.001 or 0.00001.  
+
+It's conventional to ask the question first in terms of the position of the leading digit relative to the decimal point.  This is related to the log10 of the number.
+
+Question: How much CO<math>_2</math> is produced by cars in the US each year?  Choices
+
+<math>10^1</math>million pounds
+<math>10^2</math>, ...
+
+Here's an answer
+<blockquote>
+Carbon dioxide emissions from personal vehicles in the United States equaled 314 million metric tons in 2004. That much carbon could fill a coal train 55,000 miles long—long enough to circle the Earth twice.
+</blockquote>
+
+CO2 is product of number of cars x gallons of gas per car x mass of a gallon x relative mass of C to CO2. (which is 32/12)  (we'll ignore hydrogen, but we can fix this)
+
+gas per car = miles per car / miles per gallon
+
+Survey students on this amount 
+
+150M cars x 10000 miles / 20 mpg = 150M x 500 g = 75000M g
+
+75000M x 6 lbs x 2.5  =  562,500,000 tons per year.
+
+Fixing the gasoline story
+iso-octane = C8H18
+n-heptane = C7H16
+
+gasoline is 96/114 parts carbon by weight.  CO<math>_2</math> is 12/32 parts carbon.  So 1 lb of gasoline will produce 32/12 * 96/114 lbs of CO2, suggesting a weight of 2.24 lbs per pound of gasoline.
+
+====FLATH====
+
+A day on Fermi problems.
+
+Opening activity:  I brought in a bag of lentils.   Question for the class:  How many lentils would it take to fill up the classroom, floor to ceiling, wall to wall?  Answer to the nearest power of ten.  Students work in groups.

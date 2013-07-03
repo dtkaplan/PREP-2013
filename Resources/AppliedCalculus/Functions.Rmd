@@ -421,3 +421,17 @@ plotPoints(temp~time, data=stan, add=TRUE)
 #### Weekly Quiz    
 
 * [http://db.tt/wJOmPg1D Weekly Quiz]
+
+### Finishing up Functions of Two Variables
+
+Thinking about function "shapes" locally.
+
+* Always: a linear function
+* Broader: Various simple geological shapes.
+    * a mountain: [http://dl.dropbox.com/u/5098197/Math135/Figures/cairo-solar.png Solar energy in Cairo]
+    * a hillside, [http://dl.dropbox.com/u/5098197/Math135/Figures/1000px-Body_mass_index_chart.png Body mass index chart]
+    * a valley (ridge).[http://en.wikipedia.org/wiki/File:BMIGirls_1.svg  BMI percentiles for girls versus age]. 
+        Really this is a kind of hillside, since the labels are for percentiles at each age.  But it could more naturally be displayed as a probability density.
+        Here's the same information  [http://en.wikipedia.org/wiki/File:BMIBoys_1.svg for Boys, from Wikipedia]
+        Combine the two by drawing the contours on the board and then shifting plots.  It's really hard to deal with functions of three variables. And really, there are more variables, since it's weight, height, age, sex involved in this.  We're going to need some better way than drawing contours to be able to think about such relationships.
+    * a saddle or mountain pass. [example][http://stanwagon.com/wagon/Utah/GeorgiesCamp/HTMLLinks/GeorgiesCampCircumnavigation_16.html]
