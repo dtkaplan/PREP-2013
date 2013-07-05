@@ -30,6 +30,8 @@ Schedule
 * Identifying Modeling Concepts from the MOSAIC kick-off workshop: [video](http://www.ima.umn.edu/videos/?id=1316) and [slides](http://mosaic-web.org/KickOff/Presentations/aspectsOfModeling.pdf)
 * A panel discussion on modeling-based calculus with Mariah Birgen, Laurie Heyer, and Joe Mahaffy [video](http://www.mosaic-web.org/MCAST/videos/MCAST-2011-04-29/index.htm) and [slides](http://www.mosaic-web.org/MCAST/materials/April-29-2011/April-29-panel.pdf)
 
+* An editorial in AMSTAT News (July 2013) about [Calculus and Statistics](http://magazine.amstat.org/blog/2013/07/01/calculus-and-statistics/)
+
 ## Monday, July 8, 2013
 
 * Arrival at the College of Idaho in Caldwell, Idaho
