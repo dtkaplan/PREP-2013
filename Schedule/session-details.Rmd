@@ -48,12 +48,20 @@ Session Details
     
 ### Working with your current textbook
 
+
 * Finding "drop-in" activities
 * Converting non-modeling activities to modeling activities
 * Finding data 
     * coffee and orange juice, prevalence and incidence
     * The Island: Letting Students Experiment and College Data by Michael Bulmer [video](http://www.mosaic-web.org/go/MCAST/videos/MCAST-2012-02-24/index.htm). This is a simulation of realistic demographics, disease, and physiology from which students can collect data for modeling.
 * Some bogus models: [Snowy Tree crickets](../Notes/Functions/SnowTreeCricket.html) and [beach crowds](../Notes/Optimization/beach-population.html)
+
+### Finding data
+
+* Some examples: coffee and orange juice, prevalence and incidence, your cell phone
+* The Island: Letting Students Experiment and College Data by Michael Bulmer [video](http://www.mosaic-web.org/go/MCAST/videos/MCAST-2012-02-24/index.htm). This is a simulation of realistic demographics, disease, and physiology from which students can collect data for modeling.
+
+
     
 ### Tools for Modelers
 
