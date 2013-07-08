@@ -3,11 +3,11 @@ Volume and Prices
 
 ### Setting
 
-In the case of United States of America v. Mathew Martoma (US District Court for the Southern District of New York, criminal case no 12 Cr 973 (PGG) 2013), the government alleges that Mr. Martoma bought and sold stock illegally using insider information.  Two of the three counts of the indictment against Mr. Martoma have to do with an Irish drug company, Elan, whose stock is sold on the New York Stock Exchange (NYSE), and the Irish Stock Exchange (ISE).
+In the case of United States of America v. Mathew Martoma (US District Court for the Southern District of New York, criminal case no 12 Cr 973 (PGG) 2013), the government alleges that Mr. Martoma sold stock illegally using insider information.  Two of the three counts of the indictment against Mr. Martoma have to do with an Irish drug company, Elan, whose stock is sold on the New York Stock Exchange (NYSE), and the Irish Stock Exchange (ISE).
 
-It's alleged that Mr. Martoma gained illegitimate access to confidential information about a clinical trial for one of Elan's major products that indicated that future sales of the product would not be as successful as commonly believed.  According to the allegation, based on this insider information, Mr. Martoma sold large amounts of Elan stock.  This makes sense if Mr. Martoma came to conclude that the stock was worth less in the future than it was selling for in the present.
+It's alleged that Mr. Martoma gained illegitimate access to confidential information about a clinical trial for a drug in development that indicated that the drug would not be able to come to market.  According to the allegation, based on this insider information, Mr. Martoma sold large amounts of Elan stock that he had purchased earlier based on insider data that promised well for the drug.  Selling the stock makes sense if Mr. Martoma came to conclude that the stock would be worth less in the future than he could sell it for in the present.
 
-In June 2013, Mr. Martoma's lawyers petitioned the court to dismiss the Elan-related counts.  The petition points out that the US Supreme Court held that the relevant laws apply only "to purchases and sales of securities in the United States."  According to the brief, the District Court has already found that "if it could be shown 'that the [Elan shares] are entirely derivative in value on the shares traded on the Irish exchange,' that fact could warrant dismissal ...."
+In June 2013, Mr. Martoma's lawyers petitioned the court to dismiss the Elan-related counts.  The petition points out that the US Supreme Court held that the relevant security fraud laws apply only "to purchases and sales of securities in the United States."  Mr. Martoma's attorneys argued that "if it could be shown 'that the [Elan shares] are entirely derivative in value on the shares traded on the Irish exchange,' that fact could warrant dismissal ...."
 
 ### Your Goal
 
