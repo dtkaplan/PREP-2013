@@ -19,7 +19,7 @@ Schedule
 
 Details for individual sessions are available [here](session-details.html)
 
-#### Before the Workshop: Early July 2013
+### Before the Workshop: Early July 2013
 
 * Browse selectively through the videos [listed here](../Resources/ACM-Calculus-course/index.html) from the Associated Colleges of the Midwest (ACM) Online Course: *[Calculus: A Modeling Approach](http://www.acm.edu/features/feature/426?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+ACMNews+%28Associated+Colleges+of+the+Midwest+-+ACM+News%29)*.  The online aspects of this course are being developed by [Chad Topaz](http://www.chadtopaz.com/) at Macalester College and [Tina Garrett](http://www.stolaf.edu/people/garrettk/) at St. Olaf College, based on the Macalester *Applied Calculus* course and using the `mosaic` package for R.
 
@@ -34,7 +34,7 @@ Details for individual sessions are available [here](session-details.html)
 
 * An editorial in AMSTAT News (July 2013) about [Calculus and Statistics](http://magazine.amstat.org/blog/2013/07/01/calculus-and-statistics/)
 
-## Monday, July 8, 2013
+### Monday, July 8, 2013
 
 
 
@@ -48,7 +48,7 @@ Details for individual sessions are available [here](session-details.html)
     * [Map of campus](http://www.collegeofidaho.edu/sites/default/files/CampusMap/CofICampusMap.pdf)
     * At dinner we'll sign up for Thursday evening play: *Much Ado about Nothing*
 
-## Tuesday July 9, 2013
+### Tuesday July 9, 2013
 
 * 7:00-8:00 am Breakfast
 
@@ -65,7 +65,7 @@ All sessions will take place in 116 Boone Hall at the College.
 * 6:00-7:00 Dinner
 * Optional, on your own: *Sweeny Todd* at the Idaho Shakespeare Festival.  We'll provide more info.
 
-## Wednesday July 10, 2013
+### Wednesday July 10, 2013
 
 * 7:00-8:00 am Breakfast
 
@@ -80,7 +80,7 @@ All sessions will take place in 116 Boone Hall at the College.
 
 * 5:30-9:00 Dinner off campus at at [Bitner Vineyards](http://www.bitnervineyards.com/)
 
-## Thursday July 11, 2013
+### Thursday July 11, 2013
 
 * 7:00-8:00 am Breakfast
 
@@ -95,7 +95,7 @@ All sessions will take place in 116 Boone Hall at the College.
 * 5:30-9:00 Dinner off campus.  [Idaho Shakespeare Festival](http://www.idahoshakespeare.org/) 8pm performance of [*Much Ado about Nothing*](https://en.wikipedia.org/wiki/Much_Ado_About_Nothing)
 
 
-## Friday July 12, 2013
+### Friday July 12, 2013
 
 * 7:00-8:00 am Breakfast
 
