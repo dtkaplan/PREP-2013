@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Volume and Prices</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h1>Volume and Prices</h1>
+
+<h3>Setting</h3>
+
+<p>In the case of United States of America v. Mathew Martoma (US District Court for the Southern District of New York, criminal case no 12 Cr 973 (PGG) 2013), the government alleges that Mr. Martoma bought and sold stock illegally using insider information.  Two of the three counts of the indictment against Mr. Martoma have to do with an Irish drug company, Elan, whose stock is sold on the New York Stock Exchange (NYSE), and the Irish Stock Exchange (ISE).</p>
+
+<p>It&#39;s alleged that Mr. Martoma gained illegitimate access to confidential information about a clinical trial for one of Elan&#39;s major products that indicated that future sales of the product would not be as successful as commonly believed.  According to the allegation, based on this insider information, Mr. Martoma sold large amounts of Elan stock.  This makes sense if Mr. Martoma came to conclude that the stock was worth less in the future than it was selling for in the present.</p>
+
+<p>In June 2013, Mr. Martoma&#39;s lawyers petitioned the court to dismiss the Elan-related counts.  The petition points out that the US Supreme Court held that the relevant laws apply only &ldquo;to purchases and sales of securities in the United States.&rdquo;  According to the brief, the District Court has already found that &ldquo;if it could be shown &#39;that the [Elan shares] are entirely derivative in value on the shares traded on the Irish exchange,&#39; that fact could warrant dismissal &hellip;.&rdquo;</p>
+
+<h3>Your Goal</h3>
+
+<p>Determine the extent to which the Elan shares are derivative in value on the shares traded on the Irish Stock Exchange versus the shares traded on the New York Stock Exchange.</p>
+
+<h3>Data</h3>
+
+<p>The file <code>NYSE-ISE.csv</code> gives day-by-day price and volume information for Elan shares on the New York Stock Exchange and the Irish Stock Exchange.  It covers the period July 2006 to July 2008.  The &ldquo;volume&rdquo; is the number of shares sold that day on each stock exchange.  Price fluctuates during the day. The spreadsheet contains the opening and closing prices as well as the high and low prices for each day.  The price on the NYSE is in dollars.  The price on the ISE is in Euros.</p>
+
+<h3>Economic Theory</h3>
+
+<p>A stock&#39;s price fluctuates over the course of minutes, hours, days, weeks, months, and years.  Some of this fluctuation is due to changing facts, for instance changing profits of the company, the release of a new product, the release of a competing product, or new information about the company or the economy.  But much of the fluctuation stems from investor&#39;s differing interpretations of the facts and their differing views about the uncertain future.  Depending on these perceptions, one investor may value a stock differently from another.  Given these different valuations, there is a range of price at which an investor might buy or sell a stock.  Momentary imbalances in supply and demand, as different investors come into the market, lead to fluctuations in price.</p>
+
+<p>When there is a wide range of perceptions about the value of a stock, the stage is set for a lot of trading in the stock: a large &ldquo;volume.&rdquo;   It&#39;s not that a high volume implies a rising price.  High volume can occur as a price falls just as much as when a price rises.  On the other hand, a low volume typically is associated with small fluctuations in price.  Why?  When there is a narrow range of perceptions about the value of a stock there is little benefit in trading.</p>
+
+<p>One question is whether there is a systematic relationship between the daily volume and the daily fluctuations in price. To answer this, you&#39;ll have to come up with a meaningful way to measure daily fluctuation in price.  You&#39;ll also have to decide whether the data indicate that ISE activity is more or less important than NYSE activity in determining the price of the stocks that Mr. Martoma bought and sold on the NYSE.</p>
+
+<p>Can we distinguish between the impact of NYSE volume and ISE volume on daily spread?</p>
+
+<p>How does the daily spread depend on volume?  NYSE spread versus NYSE volume for different levels of ISE volume:</p>
+
+</body>
+
+</html>
+

@@ -1,0 +1,71 @@
+Volume and Prices
+=============================
+
+### Setting
+
+In the case of United States of America v. Mathew Martoma (US District Court for the Southern District of New York, criminal case no 12 Cr 973 (PGG) 2013), the government alleges that Mr. Martoma bought and sold stock illegally using insider information.  Two of the three counts of the indictment against Mr. Martoma have to do with an Irish drug company, Elan, whose stock is sold on the New York Stock Exchange (NYSE), and the Irish Stock Exchange (ISE).
+
+It's alleged that Mr. Martoma gained illegitimate access to confidential information about a clinical trial for one of Elan's major products that indicated that future sales of the product would not be as successful as commonly believed.  According to the allegation, based on this insider information, Mr. Martoma sold large amounts of Elan stock.  This makes sense if Mr. Martoma came to conclude that the stock was worth less in the future than it was selling for in the present.
+
+In June 2013, Mr. Martoma's lawyers petitioned the court to dismiss the Elan-related counts.  The petition points out that the US Supreme Court held that the relevant laws apply only "to purchases and sales of securities in the United States."  According to the brief, the District Court has already found that "if it could be shown 'that the [Elan shares] are entirely derivative in value on the shares traded on the Irish exchange,' that fact could warrant dismissal ...."
+
+### Your Goal
+
+Determine the extent to which the Elan shares are derivative in value on the shares traded on the Irish Stock Exchange versus the shares traded on the New York Stock Exchange.
+
+### Data
+
+The file `NYSE-ISE.csv` gives day-by-day price and volume information for Elan shares on the New York Stock Exchange and the Irish Stock Exchange.  It covers the period July 2006 to July 2008.  The "volume" is the number of shares sold that day on each stock exchange.  Price fluctuates during the day. The spreadsheet contains the opening and closing prices as well as the high and low prices for each day.  The price on the NYSE is in dollars.  The price on the ISE is in Euros.
+
+### Economic Theory
+
+A stock's price fluctuates over the course of minutes, hours, days, weeks, months, and years.  Some of this fluctuation is due to changing facts, for instance changing profits of the company, the release of a new product, the release of a competing product, or new information about the company or the economy.  But much of the fluctuation stems from investor's differing interpretations of the facts and their differing views about the uncertain future.  Depending on these perceptions, one investor may value a stock differently from another.  Given these different valuations, there is a range of price at which an investor might buy or sell a stock.  Momentary imbalances in supply and demand, as different investors come into the market, lead to fluctuations in price.
+
+When there is a wide range of perceptions about the value of a stock, the stage is set for a lot of trading in the stock: a large "volume."   It's not that a high volume implies a rising price.  High volume can occur as a price falls just as much as when a price rises.  On the other hand, a low volume typically is associated with small fluctuations in price.  Why?  When there is a narrow range of perceptions about the value of a stock there is little benefit in trading.
+
+One question is whether there is a systematic relationship between the daily volume and the daily fluctuations in price. To answer this, you'll have to come up with a meaningful way to measure daily fluctuation in price.  You'll also have to decide whether the data indicate that ISE activity is more or less important than NYSE activity in determining the price of the stocks that Mr. Martoma bought and sold on the NYSE.
+
+
+```{r include=FALSE}
+require(DCF)
+```
+
+```{r echo=FALSE}
+elan <- read.csv("/Users/kaplan/Dropbox/Projects/ElanDavid/NYSE-ISE.csv")
+elan <- subset(elan, complete.cases(elan))
+elan <- transform(elan, 
+                  NYSEspread=NYSEHigh/NYSELow, 
+                  NYSEchange=NYSEClose-NYSEOpen, 
+                  ISEspread=ISEHigh/ISELow, 
+                  ISEchange=ISEClose-ISEOpen, 
+                  ISEVolumeGroup=ntiles(log10(ISEVolume),n=5),
+                  NYSEVolumeGroup=ntiles(log10(NYSEVolume),n=5))
+```
+
+Can we distinguish between the impact of NYSE volume and ISE volume on daily spread?
+
+```{r include=FALSE}
+mod <- lm( NYSEspread ~ log10(ISEVolume) + ISEspread + log10(NYSEVolume), data=elan)
+anova(mod)
+summary(mod)
+mod2 <- lm( NYSEspread ~ log10(NYSEVolume) + ISEspread + log10(ISEVolume), data=elan)
+anova(mod2)
+```
+
+How does the daily spread depend on volume?  NYSE spread versus NYSE volume for different levels of ISE volume:
+
+```{r eval=FALSE,echo=FALSE}
+ggplot(data=elan, aes(x=NYSEVolume, y=NYSEspread))+geom_point()+aes(colour=ISEVolumeGroup)+scale_x_log10() + stat_smooth(method=lm)+ theme(legend.position="right")
+#
+ggplot(data=elan, aes(x=ISEVolume, y=NYSEspread))+geom_point()+aes(colour=NYSEVolumeGroup)+scale_x_log10() + stat_smooth(method=lm)+ theme(legend.position="right")
+#
+ggplot(data=elan, aes(x=NYSEVolume, y=NYSEspread))+geom_point()+scale_x_log10() + stat_smooth(method=lm)+ theme(legend.position="none") 
+#
+ggplot(data=elan, aes(x=ISEVolume, y=ISEspread))+geom_point()+scale_x_log10() + stat_smooth(method=lm)+ theme(legend.position="none") 
+#
+ggplot(data=elan, aes(x=ISEVolume, y=NYSEspread))+geom_point()+scale_x_log10() + stat_smooth(method=lm)+ theme(legend.position="none") 
+#
+ggplot(data=elan, aes(x=NYSEVolume, y=ISEspread))+geom_point()+scale_x_log10() + stat_smooth(method=lm)+ theme(legend.position="none") 
+#
+ggplot(data=elan, aes(x=NYSEVolume, y=ISEVolume))+geom_point()+scale_x_log10() +scale_y_log10() +  stat_smooth(method=lm)+ theme(legend.position="none") 
+```
