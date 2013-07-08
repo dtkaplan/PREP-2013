@@ -24,8 +24,8 @@ Session Details
 
 * Orientation to RStudio
 * Getting Started with R
-  * The most important template in R
-  * Calculus operations in the `mosaic` package. *Start R in Calculus*
+    * The most important template in R
+    * Calculus operations in the `mosaic` package. *Start R in Calculus*
 * Using R Markdown
 
 ### Mathematical functions for modeling
@@ -46,9 +46,8 @@ Session Details
 
 ### Finding data
 
-Some examples: 
-    * coffee and orange juice, prevalence and incidence, your cell phone
-    * The Island: Letting Students Experiment and College Data by Michael Bulmer [video](http://www.mosaic-web.org/go/MCAST/videos/MCAST-2012-02-24/index.htm). This is a simulation of realistic demographics, disease, and physiology from which students can collect data for modeling.
+* Some examples: coffee and orange juice, prevalence and incidence, your cell phone
+* The Island: Letting Students Experiment and College Data by Michael Bulmer [video](http://www.mosaic-web.org/go/MCAST/videos/MCAST-2012-02-24/index.htm). This is a simulation of realistic demographics, disease, and physiology from which students can collect data for modeling.
 
     
 ### Tools for Modelers
