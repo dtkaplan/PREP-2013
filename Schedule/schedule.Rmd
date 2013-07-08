@@ -114,31 +114,28 @@ All sessions will take place in 116 Boone Hall at the College.
 
 ### Mathematical functions for modeling
 * Deliverable: Slides about your functions
+* Discussion about parameters: Why some forms are better than others.
 
 ### Fitting parameters
-* Examples: [world population](../Notes/Functions/WorldPopulation.html)m [tides](../Notes/Tides/tides-hawaii.html), [income and housing](https://dl.dropboxusercontent.com/u/5098197/Exercises/HTML/AC-Income-and-Housing/AC-Income-and-Housing-A.html), [cooling water](../Notes/Cooling/CoolingCoffee.html)
+* Examples: [world population](../Notes/Functions/WorldPopulation.html), [tides](../Notes/Tides/tides-hawaii.html), [income and housing](https://dl.dropboxusercontent.com/u/5098197/Exercises/HTML/AC-Income-and-Housing/AC-Income-and-Housing-A.html), [cooling water](../Notes/Cooling/CoolingCoffee.html)
    
 ## Session 2: Tuesday PM
 
 ### The process of modeling
 
 * The process of modeling
-* Group work on [model settings](model-settings.html)
-    
-### Working with your current textbook
+* What makes a model bogus?  Examples: [Snowy Tree crickets](../Notes/Functions/SnowTreeCricket.html) and [beach crowds](../Notes/Optimization/beach-population.html)
+* Group work on [model settings](model-settings.html).  Come up with a proposed approach to constructing the model, look for some data, ...
 
-* Finding "drop-in" activities
-* Converting non-modeling activities to modeling activities
-* Finding data 
-    * coffee and orange juice, prevalence and incidence
-    * The Island: Letting Students Experiment and College Data by Michael Bulmer [video](http://www.mosaic-web.org/go/MCAST/videos/MCAST-2012-02-24/index.htm). This is a simulation of realistic demographics, disease, and physiology from which students can collect data for modeling.
-* Some bogus models: [Snowy Tree crickets](../Notes/Functions/SnowTreeCricket.html) and [beach crowds](../Notes/Optimization/beach-population.html)
-    
+### Finding data
+* Examples: coffee and orange juice, prevalence and incidence, the cell phone app
+* The Island: Letting Students Experiment and College Data by Michael Bulmer [video](http://www.mosaic-web.org/go/MCAST/videos/MCAST-2012-02-24/index.htm). This is a simulation of realistic demographics, disease, and physiology from which students can collect data for modeling.
+
 ### Tools for Modelers
 
 * Functions in Two Variables
 * Residuals
-
+    
 ## Session 3 Wednesday AM
 
 ### Tools for modelers
@@ -148,6 +145,11 @@ All sessions will take place in 116 Boone Hall at the College.
 * Heuristics for models
 
 ## Session 4 Wednesday PM
+
+### Working with your current textbook
+
+* Finding "drop-in" activities
+* Converting non-modeling activities to modeling activities 
 
 ### Building a case study
 

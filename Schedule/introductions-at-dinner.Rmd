@@ -1,0 +1,43 @@
+Introductions at Dinner
+===========================
+
+### Welcome
+
+Randy Pruim, MC
+
+* Show people some techniques for teaching calculus in a way that's oriented toward modeling.
+
+
+### Introductions
+
+Someone from College Idaho has to introduce someone from outside.
+* In addition to essential facts about the person being introduced, something that the person likes about their home town or home institution. 
+
+
+### Icebreaker Possibilities
+
+As people to write down, individually,
+* a one- or two-sentence definition of calculus intended for prospective students
+* a definition of modeling.
+
+To talk about in small groups (mixing the Caldwell and non-Caldwell folks):
+* Who are your calculus students?
+* What do they want to get from the course?  What legitimate things should they want to get from the course?
+* What are your favorite applications of calculus?
+* What's an important topic of calculus that you have trouble finding realistic applications for?
+
+### Geek Logic
+
+Hand out topic sheets from [*Geek Logic*](prep2012/handouts/geek-logik.pdf)
+* In groups, pick out some scenarios that you like.
+* How would you decide if the formula is reasonable?
+* How would you verify if the model is correct?
+* Categorize it as useful, wrong, ridiculous.
+
+### Announcements:
+
+* Interest in Tuesday *Sweeny Todd* show.
+* Interest in Thursday *Much Ado about Nothing* performance.
+* Where will breakfast be?
+* Timing for the sessions.
+* Local information from the local experts.

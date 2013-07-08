@@ -1,6 +1,9 @@
 An Optimization Problem
 =======================
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../../javascripts/main.js"></script>
+
 Here's an optimization problem the form of which (if not the setting) will be familiar to instructors:
 
 The number of people, $P$, visiting a certain beach on a particular day in January depends on the number of hours, $x$ that the temperature is below 30 C according to the rule
