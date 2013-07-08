@@ -582,11 +582,11 @@ blockquote {
 code {
   font-family: "Lucida Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   font-size: 13px;
-  color: #efefef;
+  color: #000;
   text-shadow: 0px 1px 0px #000;
   margin: 0 4px;
   padding: 2px 6px;
-  background: #333;
+  background: #EEE;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   -o-border-radius: 2px;
@@ -597,7 +597,7 @@ code {
 
 pre {
   padding: 8px 15px;
-  background: #333333;
+  background: #EEE;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   -o-border-radius: 3px;

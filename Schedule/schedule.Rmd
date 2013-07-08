@@ -116,7 +116,7 @@ All sessions will take place in 116 Boone Hall at the College.
 * Deliverable: Slides about your functions
 
 ### Fitting parameters
-* Examples: Tides, poverty, coffee
+* Examples: [world population](../Notes/Functions/WorldPopulation.html)m [tides](../Notes/Tides/tides-hawaii.html), [income and housing](https://dl.dropboxusercontent.com/u/5098197/Exercises/HTML/AC-Income-and-Housing/AC-Income-and-Housing-A.html), [cooling water](../Notes/Cooling/CoolingCoffee.html)
    
 ## Session 2: Tuesday PM
 
@@ -132,7 +132,7 @@ All sessions will take place in 116 Boone Hall at the College.
 * Finding data 
     * coffee and orange juice, prevalence and incidence
     * The Island: Letting Students Experiment and College Data by Michael Bulmer [video](http://www.mosaic-web.org/go/MCAST/videos/MCAST-2012-02-24/index.htm). This is a simulation of realistic demographics, disease, and physiology from which students can collect data for modeling.
-* Some bogus models (crickets and beaches)
+* Some bogus models: [Snowy Tree crickets](../Notes/Functions/SnowTreeCricket.html) and [beach crowds](../Notes/Optimization/beach-population.html)
     
 ### Tools for Modelers
 

@@ -21,6 +21,8 @@ Working in groups, we want you to outline your proposed approach to at least thr
 * What's a company's future profit flow worth today?  Netflix?  Apple?
 * Stock trading:  Insider trading and the case of United States v. Martoma. [Description](../Notes/ElanStockTrading/)
 * Steaming upriver
+* A swinging dog door: video[1](http://www.youtube.com/watch?v=I6Lt_ji-P2E&feature=youtu.be) and [2](http://youtu.be/T_dSf4vRMcU)
+* Ants crossing the sidewalk.  [video](http://www.youtube.com/watch?v=-MTcHL_a31o&feature=youtu.be)
 * Body shape and diabetes
 * The shape of a tin can
 * Volume and area of a lake.  Data: Some of the 10,000 lakes in Minnesota: [Pokegama Lake](../Resources/Pokegama_Lake_measured.pdf), [Lake of the Isles](../Resources/c0961010.pdf), [Snail Lake](../Resources/c0502010.pdf)

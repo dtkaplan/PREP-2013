@@ -2,7 +2,7 @@ A Fitting Problem
 ========================================================
 ```{r warming=FALSE,message=FALSE,echo=FALSE,results="hide",label="options",echo=FALSE}
 require(knitr, quietly=TRUE)
-opts_chunk$set(fig.width=3,fig.height=3,out.width="3in")
+opts_chunk$set(fig.width=3,fig.height=3,out.width="60%",dev="svg")
 library(mosaic,quietly=TRUE)
 trellis.par.set(theme=col.mosaic())
 ```
