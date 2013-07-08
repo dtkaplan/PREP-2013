@@ -17,7 +17,9 @@ options(rstudio.markdownToHTML =
 Schedule
 =================
 
-#### Before the Workshop: Early July 2013
+Details for individual sessions are available [here](session-details.html)
+
+### Before the Workshop: Early July 2013
 
 * Browse selectively through the videos [listed here](../Resources/ACM-Calculus-course/index.html) from the Associated Colleges of the Midwest (ACM) Online Course: *[Calculus: A Modeling Approach](http://www.acm.edu/features/feature/426?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+ACMNews+%28Associated+Colleges+of+the+Midwest+-+ACM+News%29)*.  The online aspects of this course are being developed by [Chad Topaz](http://www.chadtopaz.com/) at Macalester College and [Tina Garrett](http://www.stolaf.edu/people/garrettk/) at St. Olaf College, based on the Macalester *Applied Calculus* course and using the `mosaic` package for R.
 
@@ -32,7 +34,7 @@ Schedule
 
 * An editorial in AMSTAT News (July 2013) about [Calculus and Statistics](http://magazine.amstat.org/blog/2013/07/01/calculus-and-statistics/)
 
-## Monday, July 8, 2013
+### Monday, July 8, 2013
 
 
 
@@ -46,7 +48,7 @@ Schedule
     * [Map of campus](http://www.collegeofidaho.edu/sites/default/files/CampusMap/CofICampusMap.pdf)
     * At dinner we'll sign up for Thursday evening play: *Much Ado about Nothing*
 
-## Tuesday July 9, 2013
+### Tuesday July 9, 2013
 
 * 7:00-8:00 am Breakfast
 
@@ -63,7 +65,7 @@ All sessions will take place in 116 Boone Hall at the College.
 * 6:00-7:00 Dinner
 * Optional, on your own: *Sweeny Todd* at the Idaho Shakespeare Festival.  We'll provide more info.
 
-## Wednesday July 10, 2013
+### Wednesday July 10, 2013
 
 * 7:00-8:00 am Breakfast
 
@@ -78,7 +80,7 @@ All sessions will take place in 116 Boone Hall at the College.
 
 * 5:30-9:00 Dinner off campus at at [Bitner Vineyards](http://www.bitnervineyards.com/)
 
-## Thursday July 11, 2013
+### Thursday July 11, 2013
 
 * 7:00-8:00 am Breakfast
 
@@ -93,7 +95,7 @@ All sessions will take place in 116 Boone Hall at the College.
 * 5:30-9:00 Dinner off campus.  [Idaho Shakespeare Festival](http://www.idahoshakespeare.org/) 8pm performance of [*Much Ado about Nothing*](https://en.wikipedia.org/wiki/Much_Ado_About_Nothing)
 
 
-## Friday July 12, 2013
+### Friday July 12, 2013
 
 * 7:00-8:00 am Breakfast
 
@@ -102,81 +104,4 @@ All sessions will take place in 116 Boone Hall at the College.
 * 11:30-12:30 Lunch
 * 11:30-1:30 Check out
 * 1:30 Shuttle service to airport
-
----------------------------
-
-## Session 1: Tuesday AM
-
-### Software orientation
-
-* Calculus operations in the `mosaic` package. *Start R in Calculus*
-* Using R Markdown
-
-### Mathematical functions for modeling
-* Deliverable: Slides about your functions
-* Discussion about parameters: Why some forms are better than others.
-
-### Fitting parameters
-* Examples: [world population](../Notes/Functions/WorldPopulation.html), [tides](../Notes/Tides/tides-hawaii.html), [income and housing](https://dl.dropboxusercontent.com/u/5098197/Exercises/HTML/AC-Income-and-Housing/AC-Income-and-Housing-A.html), [cooling water](../Notes/Cooling/CoolingCoffee.html)
-   
-## Session 2: Tuesday PM
-
-### The process of modeling
-
-* The process of modeling
-* What makes a model bogus?  Examples: [Snowy Tree crickets](../Notes/Functions/SnowTreeCricket.html) and [beach crowds](../Notes/Optimization/beach-population.html)
-* Group work on [model settings](model-settings.html).  Come up with a proposed approach to constructing the model, look for some data, ...
-
-### Finding data
-* Examples: coffee and orange juice, prevalence and incidence, the cell phone app
-* The Island: Letting Students Experiment and College Data by Michael Bulmer [video](http://www.mosaic-web.org/go/MCAST/videos/MCAST-2012-02-24/index.htm). This is a simulation of realistic demographics, disease, and physiology from which students can collect data for modeling.
-
-### Tools for Modelers
-
-* Functions in Two Variables
-* Residuals
-    
-## Session 3 Wednesday AM
-
-### Tools for modelers
-
-* Units and dimensions
-* Fitting and precision
-* Heuristics for models
-
-## Session 4 Wednesday PM
-
-### Working with your current textbook
-
-* Finding "drop-in" activities
-* Converting non-modeling activities to modeling activities 
-
-### Building a case study
-
-* Learning objectives
-* Mathematical objectives
-* Participant presentations: Your modeling setting
-
-## Session 5 Thursday AM
-
-### Tools for Modelers
-
-* Dynamics
-* Optimization
-    * [QALYs](http://prep2012.mosaic-web.org/Topics/Optimization/QALY1.html)
-
-## Session 6 Thursday PM
-
-* Building a modeling case study.
-* Writing modeling projects and exercises
-
-
-
-## Session 7 Friday AM
-
-* The good and bad of open-ended activities
-* Participant Presentation: Leading us through a model
-
-
-
 

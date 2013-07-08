@@ -1,0 +1,94 @@
+```{r include=FALSE}
+# Run this as a chunk before compiling!
+options(markdown.HTML.stylesheet = '../stylesheets/prep2013.css')
+options(rstudio.markdownToHTML =
+  function(inputFile, outputFile) {     
+    require(markdown)
+    markdownToHTML(inputFile, outputFile, stylesheet='../stylesheets/prep2013.css')  
+  }
+)
+```
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../javascripts/main.js"></script>
+
+### MAA PREP 2013 Workshop
+### Modeling: Early and Often in Undergraduate Calculus
+
+
+Session Details
+================
+
+## Session 1: Tuesday AM
+
+### Software orientation
+
+* Orientation to RStudio
+* Getting Started with R
+  * The most important template in R
+  * Calculus operations in the `mosaic` package. *Start R in Calculus*
+* Using R Markdown
+
+### Mathematical functions for modeling
+* Deliverable: Use RMarkdown to defend your choice of functions
+
+### Fitting parameters
+* Examples: [world population](../Notes/Functions/WorldPopulation.html) [tides](../Notes/Tides/tides-hawaii.html), [income and housing](https://dl.dropboxusercontent.com/u/5098197/Exercises/HTML/AC-Income-and-Housing/AC-Income-and-Housing-A.html), [cooling water](../Notes/Cooling/CoolingCoffee.html)
+   
+## Session 2: Tuesday PM
+
+### The process of modeling
+
+* The process of modeling
+* Group work on [model settings](model-settings.html)
+    
+### Working with your current textbook
+
+* Finding "drop-in" activities
+* Converting non-modeling activities to modeling activities
+* Finding data 
+    * coffee and orange juice, prevalence and incidence
+    * The Island: Letting Students Experiment and College Data by Michael Bulmer [video](http://www.mosaic-web.org/go/MCAST/videos/MCAST-2012-02-24/index.htm). This is a simulation of realistic demographics, disease, and physiology from which students can collect data for modeling.
+* Some bogus models: [Snowy Tree crickets](../Notes/Functions/SnowTreeCricket.html) and [beach crowds](../Notes/Optimization/beach-population.html)
+    
+### Tools for Modelers
+
+* Functions in Two Variables
+* Residuals
+
+## Session 3 Wednesday AM
+
+### Tools for modelers
+
+* Units and dimensions
+* Fitting and precision
+* Heuristics for models
+
+## Session 4 Wednesday PM
+
+### Building a case study
+
+* Learning objectives
+* Mathematical objectives
+* Participant presentations: Your modeling setting
+
+## Session 5 Thursday AM
+
+### Tools for Modelers
+
+* Dynamics
+* Optimization
+    * [QALYs](http://prep2012.mosaic-web.org/Topics/Optimization/QALY1.html)
+
+## Session 6 Thursday PM
+
+* Building a modeling case study.
+* Writing modeling projects and exercises
+
+
+## Session 7 Friday AM
+
+* The good and bad of open-ended activities
+* Participant Presentation: Leading us through a model
+
+
+
