@@ -39,16 +39,17 @@ Session Details
 ### The process of modeling
 
 * The process of modeling
+* Some bogus models: [Snowy Tree crickets](../Notes/Functions/SnowTreeCricket.html) and [beach crowds](../Notes/Optimization/beach-population.html)
+* Presentation of a handful of model settings: Karl-Dieter, Danny, Eric
 * Group work on [model settings](model-settings.html)
     
-### Working with your current textbook
 
-* Finding "drop-in" activities
-* Converting non-modeling activities to modeling activities
-* Finding data 
-    * coffee and orange juice, prevalence and incidence
+### Finding data
+
+Some examples: 
+    * coffee and orange juice, prevalence and incidence, your cell phone
     * The Island: Letting Students Experiment and College Data by Michael Bulmer [video](http://www.mosaic-web.org/go/MCAST/videos/MCAST-2012-02-24/index.htm). This is a simulation of realistic demographics, disease, and physiology from which students can collect data for modeling.
-* Some bogus models: [Snowy Tree crickets](../Notes/Functions/SnowTreeCricket.html) and [beach crowds](../Notes/Optimization/beach-population.html)
+
     
 ### Tools for Modelers
 
@@ -60,16 +61,21 @@ Session Details
 ### Tools for modelers
 
 * Units and dimensions
-* Fitting and precision
-* Heuristics for models
+* Fitting and precision: statistics for modeling
+* Heuristics for model terms
 
 ## Session 4 Wednesday PM
+
+### Working with your current textbook
+
+* Finding "drop-in" activities
+* Converting non-modeling activities to modeling activities
 
 ### Building a case study
 
 * Learning objectives
 * Mathematical objectives
-* Participant presentations: Your modeling setting
+* Participant presentations: Your modeling setting.  In your 5 min presentation, you should tell people enough about the facts to let them set up a modeling process.  The Thursday and Friday presentations will focus on modeling approaches to your setting, but for today it's about the background, goals, and facts.
 
 ## Session 5 Thursday AM
 
