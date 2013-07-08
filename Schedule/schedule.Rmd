@@ -109,14 +109,17 @@ All sessions will take place in 116 Boone Hall at the College.
 
 ### Software orientation
 
-* Calculus operations in the `mosaic` package. *Start R in Calculus*
+* Orientation to RStudio
+* Getting Started with R
+  * The most important template in R
+  * Calculus operations in the `mosaic` package. *Start R in Calculus*
 * Using R Markdown
 
 ### Mathematical functions for modeling
-* Deliverable: Slides about your functions
+* Deliverable: Use RMarkdown to defend your choice of functions
 
 ### Fitting parameters
-* Examples: [world population](../Notes/Functions/WorldPopulation.html)m [tides](../Notes/Tides/tides-hawaii.html), [income and housing](https://dl.dropboxusercontent.com/u/5098197/Exercises/HTML/AC-Income-and-Housing/AC-Income-and-Housing-A.html), [cooling water](../Notes/Cooling/CoolingCoffee.html)
+* Examples: [world population](../Notes/Functions/WorldPopulation.html) [tides](../Notes/Tides/tides-hawaii.html), [income and housing](https://dl.dropboxusercontent.com/u/5098197/Exercises/HTML/AC-Income-and-Housing/AC-Income-and-Housing-A.html), [cooling water](../Notes/Cooling/CoolingCoffee.html)
    
 ## Session 2: Tuesday PM
 
