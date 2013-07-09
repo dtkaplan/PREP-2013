@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>Housing Prices</title>
+
+<base target="_blank"/>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 {
+   font-size:2.2em;
+}
+
+h2 {
+   font-size:1.8em;
+}
+
+h3 {
+   font-size:1.4em;
+}
+
+h4 {
+   font-size:1.0em;
+}
+
+h5 {
+   font-size:0.9em;
+}
+
+h6 {
+   font-size:0.8em;
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * {
+      background: transparent !important;
+      color: black !important;
+      filter:none !important;
+      -ms-filter: none !important;
+   }
+
+   body {
+      font-size:12pt;
+      max-width:100%;
+   }
+
+   a, a:visited {
+      text-decoration: underline;
+   }
+
+   hr {
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote {
+      padding-right: 1em;
+      page-break-inside: avoid;
+   }
+
+   tr, img {
+      page-break-inside: avoid;
+   }
+
+   img {
+      max-width: 100% !important;
+   }
+
+   @page :left {
+      margin: 15mm 20mm 15mm 10mm;
+   }
+
+   @page :right {
+      margin: 15mm 10mm 15mm 20mm;
+   }
+
+   p, h2, h3 {
+      orphans: 3; widows: 3;
+   }
+
+   h2, h3 {
+      page-break-after: avoid;
+   }
+}
+
+</style>
+
+<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script>
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+<script>sagecell.makeSagecell({"inputLocation": ".sage", "linked":"true"});</script>
+
+
+</head>
+
+<body>
+<h1>What will home sales be?</h1>
+
+<p>You have some gadget that a fairly fixed proportion of new home buyers need. (Maybe you sell water heaters.)  You know that people will need to buy this gadget at other times as well, and that you won't have full market share; nonetheless, in order to try to predict <em>minimum</em> revenue, you would find it useful to keep track of home sales.</p>
+
+<h2>Info</h2>
+
+<p>There are a lot of different types of information out there, and some of it is not available to just anyone.  Still, there are a number of sources for home sale information (new and existing, national or state-by-state):
+<ul>
+<li>The US Census Bureau, e.g. American Fact Finder</li>
+<li>Zillow or Trulia</li>
+<li>Local blogs</li>
+</p>
+
+
+<p>In this case, we can start with Massachusetts home sale information from January 1996 through May 2013, obtained from Zillow.
+<div class="sage"><script type="text/x-sage">
+MA = [5087,4039,5559,6838,8457,8796,8382,9314,7139,7578,6845,6517,5853,4793,6208,7008,8628,9291,9386,9576,8336,8866,7016,7660,5951,5227,7379,8443,9608,11657,10808,10074,9208,8868,8046,9012,6722,5692,7811,8751,9083,11556,10875,10730,8850,8330,7606,7882,6146,5575,7613,7248,8867,11373,8773,9916,8846,8296,7782,7262,5864,5005,6638,6605,8117,10261,9718,11041,7455,7959,6901,6696,6466,5631,7446,8173,9812,9758,10071,9633,7813,7904,7349,7290,6541,5538,8146,8256,10729,11644,12902,13861,12035,12223,9128,10069,8019,8062,10987,12647,12408,16249,15324,14842,12958,12572,12092,12619,9346,8238,11380,11765,12631,12366,11070,11492,9881,8507,7908,7870,5541,5214,10452,9807,11986,13880,10920,12382,10195,10262,9771,10031,8802,7794,10288,9846,11185,12802,11419,12507,8768,9232,8524,8084,7131,6974,7895,8954,9993,10621,10292,10134,8544,9260,6879,7688,5776,5988,7457,7429,8251,10048,10998,9841,9057,9931,9441,8896,6503,6281,8639,9230,9606,11403,8116,8355,7653,7054,7292,8808,6220,5710,7233,7239,7383,9291,8235,9262,7576,7452,7660,7634,6522,6476,7885,8028,9665,10866,9922,11161,8565,9357,9606,10547,8016,6687,8238,9331,15650]
+data = zip(range(len(MA)),MA)
+</script></div>
+For simplicity, we just consider this to be 209 months, though it would be easy to adapt things to a broader time frame.  First we should probably plot it, just to see what is going on.
+<div class="sage"><script type="text/x-sage">
+show(line(data,linestyle='--',marker='^',legend_label='Home Sales'))
+</script></div>
+</p>
+
+<h2>First attempts at modeling</h2>
+<p>It turns out that this is a nice way to demonstrate that too much freedom can be too confusing.  Here is what happens when you do a full-blown sinusoidal model on this data.  After all, it <em>should</em> be periodic, right?
+
+<div class="sage"><script type="text/x-sage">var('a,b,c,d')
+S(t) = a*sin(b*(t+c))+d
+show(plot(S.subs(find_fit(data,S,solution_dict=True)),(t,0,208),color='red')+line(data,linestyle='--'))
+</script></div>
+</p>
+
+<p>What happened here is overzealous application.  The linear model is more useful than that one!
+<div class="sage"><script type="text/x-sage">var('a,b,c,d')
+T(t) = a + b*t
+show(plot(T.subs(find_fit(data,T,solution_dict=True)),(t,0,208),color='red')+line(data,linestyle='--'))
+</script></div>
+But this model might be too simple.</p>
+
+<h2>Just enough sophistication</h2>
+<p>What is our goal, anyway?  We want to model home sales enough to predict what our inventory and sales goals should be, roughly speaking.  Well, a big part of that would include what time of year we should focus on.</p>
+
+<p>Looking at the raw data, we can note that February is essentially <em>always</em> the low month, year after year.  And the period is clearly going to be 12 months if it is going to be anything.  So:
+<ul>
+<li>With a period of 12 months, then for $\sin(Bt)$ the period will be $P=2\pi/B$, so we solve to get $B = 2\pi/P = \pi/6$.  Now we don't have to ask the computer to find this.</li>
+<li>Ordinarily, we could try to offset this by some amount, and that would be good with students who knew their trig functions well.  But why not just offset the data by one?
+<div class="sage"><script type="text/x-sage">var('a,b,c,d')
+data = zip([-1..207],MA)
+data[1] # February 1996
+</script></div>
+Now we could just use a model with $-cos(Bt)$, since the negative cosine starts at the bottom of a cycle.</li>
+</p>
+
+<p>Let's put this into practice.  Now we only need two free variables - the amplitude and the midpoint.
+<div class="sage"><script type="text/x-sage">var('a,b,c,d')
+var('a,b')
+S(t) = -a*cos(pi/6*t)+b
+show(plot(S.subs(find_fit(data,S,solution_dict=True)),(t,-1,207),color='red')+line(data,linestyle='--'))
+</script></div>
+This already looks a lot better.
+</p>
+
+<h2>Next steps</h2>
+<p>Naturally, this is not perfect.  For instance, there are times where the low point is over a thousand homes off, and (less important, perhaps) where the high point is also grossly off.  What else could we try to incorporate?
+<ul>
+<li>We could just look at the lowest point in each curve.  Would this be useful?  This is great to talk about.</li>
+<li>Should we model it as a trig function plus a linear function?  Would that be useful? Why or why not?</li>
+<li>Is such a model useful in any case?</li>
+</ul>
+
+
+
+</body>
+
+</html>
+

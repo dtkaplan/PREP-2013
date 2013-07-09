@@ -23,7 +23,10 @@ Session Details
 
 ### Introductions
 
+
 * [Slides](../Intro/Intro.pdf)
+* Participants' [Definitions of Calculus and Modeling](../SessionNotes/definitions.html)
+
 
 ## Session 1: Tuesday AM
 
@@ -39,7 +42,7 @@ Session Details
 * Deliverable: Use RMarkdown to defend your choice of functions
 
 ### Fitting parameters
-* Examples: [world population](../Notes/Functions/WorldPopulation.html) [tides](../Notes/Tides/tides-hawaii.html), [income and housing](https://dl.dropboxusercontent.com/u/5098197/Exercises/HTML/AC-Income-and-Housing/AC-Income-and-Housing-A.html), [cooling water](../Notes/Cooling/CoolingCoffee.html)
+* Examples: [world population](../Notes/Functions/WorldPopulation.html), [tides](../Notes/Tides/tides-hawaii.html), [income and housing](https://dl.dropboxusercontent.com/u/5098197/Exercises/HTML/AC-Income-and-Housing/AC-Income-and-Housing-A.html), [cooling water](../Notes/Cooling/CoolingCoffee.html)
    
 ## Session 2: Tuesday PM
 
@@ -54,7 +57,7 @@ Session Details
 * Finding "drop-in" activities
 * Converting non-modeling activities to modeling activities
 * Finding data 
-    * coffee and orange juice, prevalence and incidence
+    * [pouring orange juice](../Notes/OrangeJuiceFlow/OrangeJuice.html), cell telephone sensor data
     * The Island: Letting Students Experiment and College Data by Michael Bulmer [video](http://www.mosaic-web.org/go/MCAST/videos/MCAST-2012-02-24/index.htm). This is a simulation of realistic demographics, disease, and physiology from which students can collect data for modeling.
 * Some bogus models: [Snowy Tree crickets](../Notes/Functions/SnowTreeCricket.html) and [beach crowds](../Notes/Optimization/beach-population.html)
 
@@ -67,8 +70,8 @@ Session Details
     
 ### Tools for Modelers
 
-* Functions in Two Variables
-* Residuals
+* [Functions in Two Variables](../Notes/TwoVariables/TwoVariablesIntro.html)
+* Residuals -- looking at the cooling water: `fetchData("PREP/water-cooling.csv")`
 
 ## Session 3 Wednesday AM
 

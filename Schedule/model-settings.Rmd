@@ -17,6 +17,7 @@ Some Model Settings
 Working in groups, we want you to outline your proposed approach to at least three of these problems.
 
 * Antibiotics (as introduced by Eric Marland)
+* [Modeling Housing Starts](../Notes/housingprices.html) (Karl-Dieter Crisman)
 * Being Warren Buffet
 * What's a company's future profit flow worth today?  Netflix?  Apple?
 * Stock trading:  Insider trading and the case of United States v. Martoma. [Description](../Notes/ElanStockTrading/)

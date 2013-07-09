@@ -1,15 +1,15 @@
 Introducing Functions of Multiple Variables
 ========================================================
 
-```{r echo=FALSE,results="hide",label="options",echo=FALSE}
+```{r echo=FALSE,results="hide",label="options",include=FALSE}
 require(knitr, quietly=TRUE)
-opts_chunk$set(fig.width=3,fig.height=3,out.width="3in")
-```
-
-```{r warning=FALSE,error=FALSE,message=FALSE,results="hide",echo=FALSE}
+opts_chunk$set(fig.width=3,fig.height=3,out.width="60%",dev="svg")
 library(mosaic,quietly=TRUE)
 trellis.par.set(theme=col.mosaic())
 ```
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../../javascripts/main.js"></script>
 
 To judge from the conventional curriculum, one needs to master functions of one variable before tackling functions of two variables.
 * Real-world relationships generally involve more than two quantities.
@@ -91,11 +91,6 @@ In answering Problem 2, students need to think about how the demand for orange j
 
 ### Some settings
 
-==Two Variables==
-Unsorted list.
-
 * Cobb-Douglas Production Function [http://rpubs.com/dtkaplan/543 introductory write-up]
-* Polynomials in two vars and the rules for picking terms.
 * Can you see the effect of electricity usage in the <code>utilities.csv</code> data?  Look only at the winter months.
 * Path integrals and the ideal gas law
-* Optimization, the brachistochrone problem.
