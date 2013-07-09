@@ -23,21 +23,23 @@ Session Details
 
 ### Introductions
 
+* Participants' [Definitions of Calculus and Modeling](../SessionNotes/definitions.html)
+
 ## Session 1: Tuesday AM
 
 ### Software orientation
 
 * Orientation to RStudio
 * Getting Started with R
-  * The most important template in R
-  * Calculus operations in the `mosaic` package. (*[Start R in Calculus](http://www.amazon.com/Start-Calculus-Daniel-T-Kaplan/dp/0983965897)*)
+   * The most important template in R
+   * Calculus operations in the `mosaic` package. (*[Start R in Calculus](http://www.amazon.com/Start-Calculus-Daniel-T-Kaplan/dp/0983965897)*)
 * Using R Markdown
 
 ### Mathematical functions for modeling
 * Deliverable: Use RMarkdown to defend your choice of functions
 
 ### Fitting parameters
-* Examples: [world population](../Notes/Functions/WorldPopulation.html) [tides](../Notes/Tides/tides-hawaii.html), [income and housing](https://dl.dropboxusercontent.com/u/5098197/Exercises/HTML/AC-Income-and-Housing/AC-Income-and-Housing-A.html), [cooling water](../Notes/Cooling/CoolingCoffee.html)
+* Examples: [world population](../Notes/Functions/WorldPopulation.html), [tides](../Notes/Tides/tides-hawaii.html), [income and housing](https://dl.dropboxusercontent.com/u/5098197/Exercises/HTML/AC-Income-and-Housing/AC-Income-and-Housing-A.html), [cooling water](../Notes/Cooling/CoolingCoffee.html)
    
 ## Session 2: Tuesday PM
 

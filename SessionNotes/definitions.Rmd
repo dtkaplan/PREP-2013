@@ -1,0 +1,38 @@
+Definitions 
+=============
+
+Produced by participants at the MAA PREP 2013 workshop **at the start** of the workshop
+
+## Modeling
+
+
+1. The act of using mathematics to describe a physical situation or relationship
+2. Finding formulas that tell a lot of the stories of real-life data.
+3.Creating a small scale, simplified replica of a complex situation which preserves relevant features and allows tentative conclusions to be drawn or tested with regard to the original situation.
+1. Process of abstracting something complicated to something simple.
+1. Constructing/using formulas to describe real world relationships.
+1. The process of describing or establishing a mathematical relationship among different quantities.
+1. A mathematical approach to describing reality with goal of understanding and/or predicting.
+1. Modeling is a process by which complex phenomena are approximated by simpler ones, often more amenable to calculation or representation.
+1. Using authentic or nearly authentic scenarios to learn math concepts and/or processes and/or to think critically about the scenario and given information.
+1. Fit a function to data
+1. Quantifying world; making practice mathematical; Describing, explaining, predicting phenomena in the world; Using mathematics to help understand the world
+1. Creating a quantitative description of a situation
+
+## Calculus
+
+1. The mathematics of change
+1. A mathematical approach to working with change
+1. Analyzing situations involving change.
+1. Mathematics of change, developed/created to model things that change in the world.
+1. [blank]
+1. Calculus generally designates a set of computational rules or heuristics designed to aid in the solution of complex problems that recur often in similar variations.  More specifically, a set of heuristics designed to solve problems in change and motion and accumulation.
+1. Calculus is involved with rates of change, finding slopes, areas underneath a curved line ...
+1. Why speed and totals make our world work.
+1. System of calculation
+1. Any definition I can come up with seems either too vague or too specific.
+1. The study of relationships between different functions in an effort to describe and understand physical phenomena.
+1. Small stones.  Methods of computation.  
+    * Limits $\neq$ Actual thing.  $\lim_{x\rightarrow c} f(x) \neq f(c)$
+    * Direction is quantifiale at an instant of time
+    * Infinitely small items can be added to make a finite whole
