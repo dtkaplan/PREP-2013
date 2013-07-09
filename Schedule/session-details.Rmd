@@ -54,7 +54,7 @@ Session Details
 * Finding "drop-in" activities
 * Converting non-modeling activities to modeling activities
 * Finding data 
-    * coffee and orange juice, prevalence and incidence
+    * [pouring orange juice](../Notes/OrangeJuiceFlow/OrangeJuice.html), cell telephone sensor data
     * The Island: Letting Students Experiment and College Data by Michael Bulmer [video](http://www.mosaic-web.org/go/MCAST/videos/MCAST-2012-02-24/index.htm). This is a simulation of realistic demographics, disease, and physiology from which students can collect data for modeling.
 * Some bogus models: [Snowy Tree crickets](../Notes/Functions/SnowTreeCricket.html) and [beach crowds](../Notes/Optimization/beach-population.html)
 
@@ -67,8 +67,8 @@ Session Details
     
 ### Tools for Modelers
 
-* Functions in Two Variables
-* Residuals
+* [Functions in Two Variables](../Notes/TwoVariables/TwoVariablesIntro.html)
+* Residuals -- looking at the cooling water: `fetchData("PREP/water-cooling.csv")`
 
 ## Session 3 Wednesday AM
 
