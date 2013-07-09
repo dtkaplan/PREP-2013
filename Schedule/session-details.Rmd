@@ -23,13 +23,15 @@ Session Details
 
 ### Introductions
 
+* [Slides](../Intro/Intro.pdf)
+
 ## Session 1: Tuesday AM
 
 ### Software orientation
 
 * Orientation to RStudio
 * Getting Started with R
-  * The most important template in R
+  * [The most important template in R](../RIntro/LearningTeachingR.html)
   * Calculus operations in the `mosaic` package. (*[Start R in Calculus](http://www.amazon.com/Start-Calculus-Daniel-T-Kaplan/dp/0983965897)*)
 * Using R Markdown
 
