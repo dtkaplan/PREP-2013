@@ -20,7 +20,7 @@ Working in groups, we want you to outline your proposed approach to at least thr
 * [Modeling Housing Starts](../Notes/housingprices.html) (Karl-Dieter Crisman)
 * Being Warren Buffet
 * What's a company's future profit flow worth today?  Netflix?  Apple?
-* Stock trading:  Insider trading and the case of United States v. Martoma. [Description](../Notes/ElanStockTrading/)
+* Stock trading:  Insider trading and the case of United States v. Martoma. [Description](../Notes/ElanStockTrading/Elan-prices.html)
 * Steaming upriver
 * A swinging dog door: video[1](http://www.youtube.com/watch?v=I6Lt_ji-P2E&feature=youtu.be) and [2](http://youtu.be/T_dSf4vRMcU)
 * Ants crossing the sidewalk.  [video](http://www.youtube.com/watch?v=-MTcHL_a31o&feature=youtu.be)
