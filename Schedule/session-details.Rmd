@@ -60,6 +60,7 @@ Session Details
 * Fitting and precision
 * A [quiz on functions](http://rpubs.com/dtkaplan/792)
 * Some other quizzes [1](https://www.dropbox.com/s/14uah8abemevxlw/Quiz-2012-02-03.pdf), [2](https://www.dropbox.com/s/or3p7q1lx0t5o95/Quiz-2012-02-10.pdf), [3](https://www.dropbox.com/s/igvcdbx6553se6f/Quiz-2012-02-17.pdf), [4](https://www.dropbox.com/s/9iya2nozi7szc0h/Quiz-2012-02-24.pdf), [5](https://www.dropbox.com/s/qfa3nwnovsaw5lm/quiz-2012-03-23.pdf), [6](https://www.dropbox.com/s/t8gqptxrfkshxcb/quiz-2012-03-30.pdf), [7](https://www.dropbox.com/s/dcagvob75yicf8h/quiz-2012-04-06.pdf), [8](https://www.dropbox.com/s/zpz5c7y92e4pew2/quiz-2012-04-23.pdf), [mid-term](https://www.dropbox.com/s/t0xeo2yb89jt06m/Mid-Term-March-2012.pdf), [final](https://www.dropbox.com/s/ijgjfw24e54ql2c/Final-May-2012.pdf)
+* Markdown and latex: [html](../Resources/latex-rmd.html) and [pdf](../Resources/latex-rmd.pdf), [Rmd](../Resources/latex-rmd.Rmd) and [Rnw](../Resources/latex-rmd.Rnw)
 
 ### Derivatives and Anti-derivatives
 
