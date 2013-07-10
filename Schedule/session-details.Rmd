@@ -92,6 +92,7 @@ Calculus at Macalester.)
 * Using `fitModel()`, `lm()`, `nls()`
 * Precision via resampling
 * Residuals -- looking at the cooling water: `fetchData("PREP/water-cooling.csv")`
+* Danny's history as an [R script](../Resources/Wednesday.R)
 
 ## Session 4 Wednesday PM
 
