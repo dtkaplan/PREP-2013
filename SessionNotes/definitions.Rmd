@@ -8,7 +8,7 @@ Produced by participants at the MAA PREP 2013 workshop **at the start** of the w
 
 1. The act of using mathematics to describe a physical situation or relationship
 2. Finding formulas that tell a lot of the stories of real-life data.
-3.Creating a small scale, simplified replica of a complex situation which preserves relevant features and allows tentative conclusions to be drawn or tested with regard to the original situation.
+3. Creating a small scale, simplified replica of a complex situation which preserves relevant features and allows tentative conclusions to be drawn or tested with regard to the original situation.
 1. Process of abstracting something complicated to something simple.
 1. Constructing/using formulas to describe real world relationships.
 1. The process of describing or establishing a mathematical relationship among different quantities.

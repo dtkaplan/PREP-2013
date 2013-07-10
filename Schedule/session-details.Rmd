@@ -50,38 +50,42 @@ Session Details
 
 * The process of modeling
 * Group work on [model settings](model-settings.html)
-    
+
+
+## Session 3 Wednesday AM
+
+### Review of functions and the modeling process
+
+* Functions for a modeler's toolkit: constant, power-law, exponential, sine, bump, and S-functions.  Linear combinations.
+* Constructing functions
+    * linear & nonlinear fitting
+
+### Derivatives and Anti-derivatives
+
+General comments on [models, mathematics, and calculus](../Notes/Overviews/Modeling-and-Mathematics.html) and on [teaching derivatives and anti-derivatives](../Notes/Overviews/Derivatives.html)
+* From a function to its derivatives: [HIV prevalence and incidence](https://dl.dropboxusercontent.com/u/5098197/Math135/In-Class/hiv-graph.pdf); [economic production](https://dl.dropboxusercontent.com/u/5098197/Math135/In-Class/cobb-douglas-partial-derivatives.pdf); [celebrity divorce](https://dl.dropboxusercontent.com/u/5098197/Math135/In-Class/celebrity-divorce.pdf)
+* From a derivative to a function: [distance travelled by a car](https://dl.dropboxusercontent.com/u/5098197/Math135/In-Class/road-capacity-activity.pdf) and [traffic light capacity](../Notes/Integration/Traffic-Light-Capacity.html).  Some other [integration model settings](../Notes/Overviews/Integrals.html)
+
+
+### Tools for modelers
+
+* Residuals -- looking at the cooling water: `fetchData("PREP/water-cooling.csv")`
+* [Functions in Two Variables](../Notes/TwoVariables/TwoVariablesIntro.html). Activity: [Drawing contours](https://dl.dropboxusercontent.com/u/5098197/Math135/In-Class/hiv-graph.pdf)  Activity: the [ideal gas law](https://dl.dropboxusercontent.com/u/5098197/Math135/In-Class/ideal-gas-activity1.pdf)
+* Heuristics for polynomials [pdf](http://dl.dropbox.com/u/5098197/Math135/In-Class/poly2d.pdf) and [comments to instructors](../Notes/Polynomials/notes-on-polynomials.html)
+* Fitting and precision
+* Units and dimensions
+
+
+## Session 4 Wednesday PM
+
 ### Working with your current textbook
 
-
-* Finding "drop-in" activities
+* Finding "drop-in" modeling activities
 * Converting non-modeling activities to modeling activities
 * Finding data 
     * [pouring orange juice](../Notes/OrangeJuiceFlow/OrangeJuice.html), cell telephone sensor data
     * The Island: Letting Students Experiment and College Data by Michael Bulmer [video](http://www.mosaic-web.org/go/MCAST/videos/MCAST-2012-02-24/index.htm). This is a simulation of realistic demographics, disease, and physiology from which students can collect data for modeling.
 * Some bogus models: [Snowy Tree crickets](../Notes/Functions/SnowTreeCricket.html) and [beach crowds](../Notes/Optimization/beach-population.html)
-
-### Finding data
-
-* Some examples: coffee and orange juice, prevalence and incidence, your cell phone
-* The Island: Letting Students Experiment and College Data by Michael Bulmer [video](http://www.mosaic-web.org/go/MCAST/videos/MCAST-2012-02-24/index.htm). This is a simulation of realistic demographics, disease, and physiology from which students can collect data for modeling.
-
-
-    
-### Tools for Modelers
-
-* [Functions in Two Variables](../Notes/TwoVariables/TwoVariablesIntro.html)
-* Residuals -- looking at the cooling water: `fetchData("PREP/water-cooling.csv")`
-
-## Session 3 Wednesday AM
-
-### Tools for modelers
-
-* Units and dimensions
-* Fitting and precision
-* Heuristics for models
-
-## Session 4 Wednesday PM
 
 ### Building a case study
 
