@@ -1,0 +1,21 @@
+Latex vs. Rmd
+======================
+
+```{r include=FALSE}
+require(mosaic)
+```
+
+You'll use substantially the same structure to write a document usin
+g markdown or $\LaTeX$, that is, with a `.Rmd` or `.Rnw` file type.
+
+The style of the "chunk" differs, but the R commands are the same
+
+```{r dev='svg',out.width='60%'}
+f <- antiD( sin(3*x) ~ x )
+plotFun(f(x)~x, x.lim=range(0,4) )
+```   
+
+Why would you want to use one versus the other?
+* Latex compiles nicely to PDF, Rmd to HTML
+* Rmd is easier to write and compile
+

@@ -1,0 +1,31 @@
+\documentclass{article}
+
+
+\title{RMD versus Latex}
+
+\begin{document}
+\maketitle
+
+
+<<include=FALSE>>=
+require(mosaic)
+@
+
+You'll use substantially the same structure to write a document usin
+g markdown or \LaTeX, that is, with a \texttt{.Rmd} or \texttt{.Rnw} file type.
+
+The style of the "chunk" differs, but the R commands are the same
+
+<<dev='pdf',out.width='3in'>>=
+f <- antiD( sin(3*x) ~ x )
+plotFun(f(x)~x, x.lim=range(0,4) )
+@  
+
+Why would you want to use one versus the other?
+\begin{itemize}
+\item Latex compiles nicely to PDF, Rmd to HTML
+\item Rmd is easier to write and compile
+\end{itemize}
+
+
+\end{document}

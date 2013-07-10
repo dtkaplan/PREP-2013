@@ -71,8 +71,9 @@ General comments on [models, mathematics, and calculus](../Notes/Overviews/Model
 ### Tools for modelers
 
 * Residuals -- looking at the cooling water: `fetchData("PREP/water-cooling.csv")`
-* [Functions in Two Variables](../Notes/TwoVariables/TwoVariablesIntro.html). 
-    * Activity: [Drawing contours](https://dl.dropboxusercontent.com/u/5098197/Math135/In-Class/hiv-graph.pdf)  
+* Contour Plots
+    * [Functions in Two Variables](../Notes/TwoVariables/TwoVariablesIntro.html). 
+    * Activity: [Drawing contours](https://dl.dropboxusercontent.com/u/5098197/Math135/In-Class/findingContours.pdf)
     * Activity: the [ideal gas law](https://dl.dropboxusercontent.com/u/5098197/Math135/In-Class/ideal-gas-activity1.pdf)
 * Heuristics for polynomials [pdf](http://dl.dropbox.com/u/5098197/Math135/In-Class/poly2d.pdf) and [comments to instructors](../Notes/Polynomials/notes-on-polynomials.html)
 * Transformations.  Example: `used-hondas.csv`
