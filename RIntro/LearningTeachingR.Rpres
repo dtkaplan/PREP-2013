@@ -1,0 +1,310 @@
+
+<style type="text/css">
+span.boxed {
+  border:5px solid gray;
+  border-radius:10px;
+  padding: 5px;
+}
+span.invboxed {
+  border:5px solid gray;
+  padding: 5px;
+  border-radius:10px;
+  color: white;
+}
+table, td, th
+{
+border:0px;
+}
+</style>
+
+Focusing on R Essentials
+========================================================
+author: Randy Pruim
+date: 2013-May-18
+depends: mosaic
+autosize: true
+
+## Less Volume, More Creativity
+
+Less Volume, More Creativity
+========================================================
+left: 60%
+```{r echo=FALSE }
+require(mosaic)
+trellis.par.set(theme=col.mosaic())
+```
+```{r echo=FALSE}
+require(knitr)
+opts_chunk$set( 
+  fig.width=8, 
+  fig.height=3,
+  out.width=800,
+  out.height=300
+  )
+```
+
+A lot of times you end up putting in a lot more volume, because you are teaching fundamentals  and you are teaching concepts that you need to put in, but you may not necessarily use because they are building blocks for other concepts and variations that will come off of that ... In the offseason you have a chance to take a step back and tailor it more specifically towards your  team and towards your players." 
+<br><br>
+Mike McCarthy, Head Coach, Green Bay Packers 
+
+*********************
+<img src="images/MikeMcCarthy.jpg" align="top" width="100%">
+                                          
+SIBKIS
+========================================================
+left:70%
+
+Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away. 
+<br><br>
+--- Antoine de Saint-Exupery
+***************
+<img src="images/SaintExupery.jpg" width="100%">
+
+
+The Most Important R Template
+========================================================
+&nbsp;
+
+<center>
+<h2><strong><span class="invboxed">goal</span> ( <span class="invboxed">yyy</span> ~ <span class="invboxed">xxx</span> , data = <span class="invboxed">mydata</span> )</strong> 
+</h2></center>
+
+&nbsp;
+
+The Most Important R Template
+========================================================
+&nbsp;
+
+<center>
+<h2><strong><span class="boxed">goal</span> ( <span class="boxed">&nbsp;y&nbsp;</span> ~ <span class="boxed">&nbsp;x&nbsp;</span> , data = <span class="boxed">mydata</span> )</strong> 
+</h2></center>
+ 
+The Most Important R Template
+========================================================
+&nbsp;
+
+<center>
+<h2><strong><span class="boxed">goal</span> ( <span class="boxed">&nbsp;y&nbsp;</span> ~ <span class="boxed">&nbsp;x&nbsp;</span> , data = <span class="boxed">mydata</span> , ...)</strong> 
+</h2></center>
+&nbsp;
+
+### Simpler version:  
+ * `goal( ~ x, data = mydata )`
+
+&nbsp;
+### Fancier version: 
+ * `goal( y ~ x | z , data = mydata )`
+ 
+&nbsp;
+### Unified version: 
+ * `goal( formula , data = mydata )`
+
+The Two Questions
+========================================================
+&nbsp;
+<center>
+<h2><strong><span class="boxed">goal</span> ( <span class="boxed">&nbsp;y&nbsp;</span> ~ <span class="boxed">&nbsp;x&nbsp;</span> , data = <span class="boxed">mydata</span> )</strong> 
+</h2></center>
+ 
+&nbsp;
+
+
+###  What do you want R to do?  (goal)
+ * This determines the function to use 
+ 
+&nbsp;
+
+###  What must R know to do that?  
+ * This determines the inputs to the function
+ * Must identify the variables and data frame
+ 
+Graphical Summaries: One Variable
+========================================================
+```{r fig.width=8, fig.height=3, out.height=400, fig.align="center"}
+freqpolygon( ~age, data=HELPrct) 
+```
+
+What is a Frequency Polygon?
+========================================================
+```{r fig.width=8, fig.height=3, out.height=400, fig.align="center", echo=FALSE}
+freqpolygon( ~age, data=HELPrct, lwd=3, par.settings=col.whitebg(), 
+             panel=function(x,...) { 
+  panel.xhistogram(x,...);
+  panel.freqpolygon(x,...)}
+             )
+```
+
+Graphical Summaries: One Variable
+========================================================
+```{r eval=FALSE, tidy=FALSE}
+freqpolygon( ~age, data=HELPrct ) 
+  histogram( ~age, data=HELPrct ) 
+densityplot( ~age, data=HELPrct ) 
+     bwplot( ~age, data=HELPrct ) 
+     qqmath( ~age, data=HELPrct ) 
+```
+Graphical Summaries: Two Variables
+========================================================
+```{r fig.width=8, fig.height=3, out.height=400, fig.align="center"}
+xyplot( births ~ dayofyear, data=Births78) 
+```
+
+Graphical Summaries
+========================================================
+```{r fig.width=8, fig.height=3, out.height=400, fig.align="center"}
+bwplot( age ~ substance, data=HELPrct) 
+```
+
+Graphical Summaries
+========================================================
+```{r fig.width=8, fig.height=3, out.height=400, fig.align="center"}
+bwplot( substance ~ age, data=HELPrct) 
+```
+
+
+The Graphics Template
+========================================================
+
+<center>
+<h2><strong><span class="boxed">plotname</span> ( <span class="boxed">&nbsp;y&nbsp;</span> ~ <span class="boxed">&nbsp;x&nbsp;</span> , data = <span class="boxed">mydata</span> , ...)</strong> 
+</h2></center>
+
+&nbsp;
+
+### One variable
+ * `histogram()`,  `qqmath()`,  `densityplot()`, `freqpolygon()` 
+
+### Two Variables
+ * `xyplot()`, `bwplot()`
+
+Your turn
+========================================================
+type: prompt
+**Create a plot of your own choosing.**
+
+**Hints:**
+```{r eval=FALSE}
+names(HELPrct)
+```
+ *  **i1** average number of drinks (standard units) consumed per day, in the past 30 days (measured at baseline)
+
+ * **i2** maximum number of drinks (standard units) consumed per day, in the past 30 days (measured at baseline)
+ 
+```{r eval=FALSE}
+names(Utilities2)
+```
+
+<center>
+<h2><strong><span class="boxed">plotname</span> ( <span class="boxed">&nbsp;y&nbsp;</span> ~ <span class="boxed">&nbsp;x&nbsp;</span> , data = <span class="boxed">mydata</span> , ...)</strong> 
+</h2></center>
+groups and panels
+========================================================
+
+ * Add `groups = ???` to overlay plots on top of each other.  
+ * Use `y ~ x | z` to create multipanel plots.
+
+```{r fig.width=8, fig.height=3, out.height=400, fig.align="center", tidy=FALSE}
+densityplot( ~ age | sex, data=HELPrct,  
+               group=substance,  
+               auto.key=TRUE)   
+```
+ 
+Numerical Summaries: One Variable
+========================================================
+```{r}
+mean( ~ age, data=HELPrct )
+favstats( ~ age, data=HELPrct )
+tally( ~ sex, data=HELPrct)
+```
+
+Numerical Summaries: Two Variables
+========================================================
+```{r}
+sd( age ~ substance, data=HELPrct )
+```
+
+Numerical Summaries: Tables
+========================================================
+```{r}
+tally( sex ~ substance, data=HELPrct )
+tally( ~ sex + substance, data=HELPrct )
+```
+Your turn
+========================================================
+type: prompt
+**Create a numerical summary of your own choosing.**
+
+**Hints:**
+```{r eval=FALSE}
+names(HELPrct)
+```
+ *  **i1** average number of drinks (standard units) consumed per day, in the past 30 days (measured at baseline)
+
+ * **i2** maximum number of drinks (standard units) consumed per day, in the past 30 days (measured at baseline)
+ 
+```{r eval=FALSE}
+names(Utilities2)
+```
+
+<center>
+<h2><strong><span class="boxed">summary</span> ( <span class="boxed">&nbsp;y&nbsp;</span> ~ <span class="boxed">&nbsp;x&nbsp;</span> , data = <span class="boxed">mydata</span> , ...)</strong> 
+</h2></center>
+
+ * possible summaries:  `mean()`, `median()`, `min()`, `max()`, `sd()`, `var()`, `favstats()`, etc.
+
+Mathematical Functions
+======================
+
+Let's define 
+$$latex
+f(x,y) = sin( \pi \; x) \cos(\pi \; y)
+$$
+```{r}
+f <- makeFun( sin(x *pi) * cos(y * pi) ~ x + y )
+f(x=1/2, y=1/4)
+f(1/2, 1/4)
+```
+
+Mathematical Functoins
+=======================
+What does $f$ look like to R?
+```{r}
+f
+```
+Could also have been defined as 
+```{r}
+f <- function (x, y) { # curly braces not required 
+  sin(x * pi) * cos(y * pi)
+}
+```
+
+Plotting functions
+=========================
+
+```{r, fig.align='center'}
+plotFun( f(x,y) ~ x + y, x.lim=c(0,2), y.lim=c(0,2) )
+```
+
+But wait, there's more
+======================
+
+* Differentiation and Anti-differentiation
+```{r, results='hide'}
+f <- makeFun( cos(x^2) ~ x )
+g <- D(f(x) ~ x);  G <- antiD(f(x) ~ x)
+plotFun(g(x) ~ x, col = 'blue', x.lim=c(-1,5))
+plotFun(f(x) ~ x, col = 'black', add=TRUE)
+plotFun(G(x) ~ x, col = 'red', add=TRUE)
+```
+
+
+Linear Models
+========================================================
+
+* Fitting models
+```{r eval=FALSE}
+      lm ( formula, data=mydata )
+fitModel ( formula, data=mydata )
+     nls ( formula, data=mydata )
+```
+

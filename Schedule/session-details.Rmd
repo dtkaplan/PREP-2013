@@ -23,7 +23,10 @@ Session Details
 
 ### Introductions
 
+
+* [Slides](../Intro/Intro.pdf)
 * Participants' [Definitions of Calculus and Modeling](../SessionNotes/definitions.html)
+
 
 ## Session 1: Tuesday AM
 
@@ -31,8 +34,8 @@ Session Details
 
 * Orientation to RStudio
 * Getting Started with R
-   * The most important template in R
-   * Calculus operations in the `mosaic` package. (*[Start R in Calculus](http://www.amazon.com/Start-Calculus-Daniel-T-Kaplan/dp/0983965897)*)
+  * [The most important template in R](../RIntro/LearningTeachingR.html)
+  * Calculus operations in the `mosaic` package. (*[Start R in Calculus](http://www.amazon.com/Start-Calculus-Daniel-T-Kaplan/dp/0983965897)*)
 * Using R Markdown
 
 ### Mathematical functions for modeling
