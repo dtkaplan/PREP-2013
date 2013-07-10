@@ -1,31 +1,67 @@
 \documentclass{article}
 
+\usepackage[margin=1in]{geometry}    % useful for setting margins in LaTeX
 
-\title{RMD versus Latex}
+
+\title{Creating Documents with Rmd or Rnw}
+\author{PREP 2013}
 
 \begin{document}
 \maketitle
 
+You'll use substantially the same structure to write a document using
+markdown or \LaTeX, that is, with a \texttt{.Rmd} or \texttt{.Rnw} file type.
 
-<<include=FALSE>>=
-require(mosaic)
+\section{Why would you want to use one versus the other?}
+\begin{itemize}
+\item \LaTeX\ compiles nicely to PDF, Rmd to HTML
+\item Rmd is easier to write and compile, but offers less control over formatting
+\item If you already know \LaTeX, Rnw isn't really any harder.
+\end{itemize}
+
+\section{The Boiler Plate}
+
+Files will typically start with an R-chunk that sets things up the way you want it.
+(This can be hidden from view using \texttt{include=FALSE} inside the chunk tag.)
+
+
+<<message=FALSE, tidy=FALSE>>=
+require(mosaic)                         # load packages that will be used
+require(knitr)                          # so you can run chunks
+
+opts_chunk$set(                         # set some defaults for R output
+  fig.width=8,                          # generate plots 8 inches wide
+  fig.height=3,                         # generate plots 3 inches tall
+  out.width=".8\\textwidth",            # width of figures in pdf (note escapes)
+  fig.align="center",                   # center figures
+  dev = 'pdf',                          # create pdf graphics
+  tidy = FALSE                          # don't tidy up the R code
+  )                                     # there are many other options, too
+
+trellis.par.set(theme=col.mosaic())     # change a bunch of color settings
+trellis.par.set(fontsize=list(text=10)) # set font size for plots
 @
 
-You'll use substantially the same structure to write a document usin
-g markdown or \LaTeX, that is, with a \texttt{.Rmd} or \texttt{.Rnw} file type.
+\paragraph{Important Note.} Before using Rnw files in RStudio, you should change the default so that RStudio uses knitr rather than Sweave (an older system that does a similar thing).  Do this in the Sweave section of the RStudio options.
 
-The style of the "chunk" differs, but the R commands are the same
+\newpage
 
-<<dev='pdf',out.width='3in'>>=
-f <- antiD( sin(3*x) ~ x )
-plotFun(f(x)~x, x.lim=range(0,4) )
-@  
+\section{Some examples}
 
-Why would you want to use one versus the other?
-\begin{itemize}
-\item Latex compiles nicely to PDF, Rmd to HTML
-\item Rmd is easier to write and compile
-\end{itemize}
+Let's take a look at the function 
+$$f(x) = sin(3x)$$
+and its derivative and antiderivative.
+The style of the ``chunk" differs, but the R commands are the same
+in Rnw and Rmd.
+
+<<>>=
+f <- makeFun( sin(3*x) ~ x )
+g <- D( f(x) ~ x )
+F <- antiD( f(x) ~ x )
+plotFun( f(x) ~ x, x.lim=c(0,4), ylim=c(-pi,pi) )
+plotFun( F(x) ~ x, add=TRUE, col=2)
+plotFun( g(x) ~ x, add=TRUE, col=3)
+@
 
 
 \end{document}

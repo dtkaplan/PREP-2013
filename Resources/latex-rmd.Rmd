@@ -1,21 +1,50 @@
-Latex vs. Rmd
+Creating Documents with Rmd or Rnw
 ======================
 
-```{r include=FALSE}
-require(mosaic)
+You'll use substantially the same structure to write a document using
+markdown or $\LaTeX$, that is, with a `.Rmd` or `.Rnw` file type.
+
+##  Why would you want to use one versus the other?
+* $\LaTeX$ compiles nicely to PDF, Rmd to HTML
+* Rmd is easier to write and compile, but offers less control over formatting
+* If you already know $\LaTeX$, Rnw isn't really any harder.
+
+## The Boiler Plate
+
+Files will typically start with an R-chunk that sets things up the way you want it.
+(This can be hidden from view using `include=FALSE` inside the chunk tag.)
+```{r message=FALSE, tidy=FALSE}
+require(mosaic)                         # load packages that will be used
+require(knitr)                          # so you can run chunks
+
+opts_chunk$set(                         # set some defaults for R output
+  fig.width=8,                          # generate plots 8 inches wide
+  fig.height=3,                         # generate plots 3 inches tall
+  out.width="80%",                      # width of figures in HTML
+  fig.align="center",                   # center figures
+  dev = 'svg',                          # create svg graphics
+  tidy = FALSE                          # don't tidy up the R code
+  )                                     # there are many other options, too
+
+trellis.par.set(theme=col.mosaic())     # change a bunch of color settings
+trellis.par.set(fontsize=list(text=15)) # set font size for plots
 ```
 
-You'll use substantially the same structure to write a document usin
-g markdown or $\LaTeX$, that is, with a `.Rmd` or `.Rnw` file type.
+## Some examples
 
-The style of the "chunk" differs, but the R commands are the same
 
-```{r dev='svg',out.width='60%'}
-f <- antiD( sin(3*x) ~ x )
-plotFun(f(x)~x, x.lim=range(0,4) )
+Let's take a look at the function 
+$$f(x) = sin(3x)$$
+and its derivative and antiderivative.
+The style of the "chunk" differs, but the R commands are the same in Rmd and Rnw.
+
+```{r}
+f <- makeFun( sin(3*x) ~ x )
+g <- D( f(x) ~ x )
+F <- antiD( f(x) ~ x )
+plotFun( f(x) ~ x, x.lim=c(0,4), ylim=c(-pi,pi) )
+plotFun( F(x) ~ x, add=TRUE, col=2)
+plotFun( g(x) ~ x, add=TRUE, col=3)
 ```   
 
-Why would you want to use one versus the other?
-* Latex compiles nicely to PDF, Rmd to HTML
-* Rmd is easier to write and compile
 
