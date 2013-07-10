@@ -57,8 +57,9 @@ Session Details
 ### Review of functions and the modeling process
 
 * Functions for a modeler's toolkit: constant, power-law, exponential, sine, bump, and S-functions.  Linear combinations.
-* Constructing functions
-    * linear & nonlinear fitting
+* Fitting and precision
+* A [quiz on functions](http://rpubs.com/dtkaplan/792)
+* Some other quizzes [1](https://www.dropbox.com/s/14uah8abemevxlw/Quiz-2012-02-03.pdf), [2](https://www.dropbox.com/s/or3p7q1lx0t5o95/Quiz-2012-02-10.pdf), [3](https://www.dropbox.com/s/igvcdbx6553se6f/Quiz-2012-02-17.pdf), [4](https://www.dropbox.com/s/9iya2nozi7szc0h/Quiz-2012-02-24.pdf), [5](https://www.dropbox.com/s/qfa3nwnovsaw5lm/quiz-2012-03-23.pdf), [6](https://www.dropbox.com/s/t8gqptxrfkshxcb/quiz-2012-03-30.pdf), [7](https://www.dropbox.com/s/dcagvob75yicf8h/quiz-2012-04-06.pdf), [8](https://www.dropbox.com/s/zpz5c7y92e4pew2/quiz-2012-04-23.pdf), [mid-term](https://www.dropbox.com/s/t0xeo2yb89jt06m/Mid-Term-March-2012.pdf), [final](https://www.dropbox.com/s/ijgjfw24e54ql2c/Final-May-2012.pdf)
 
 ### Derivatives and Anti-derivatives
 
@@ -70,13 +71,18 @@ General comments on [models, mathematics, and calculus](../Notes/Overviews/Model
 ### Tools for modelers
 
 * Residuals -- looking at the cooling water: `fetchData("PREP/water-cooling.csv")`
-* [Functions in Two Variables](../Notes/TwoVariables/TwoVariablesIntro.html). Activity: [Drawing contours](https://dl.dropboxusercontent.com/u/5098197/Math135/In-Class/hiv-graph.pdf)  Activity: the [ideal gas law](https://dl.dropboxusercontent.com/u/5098197/Math135/In-Class/ideal-gas-activity1.pdf)
+* [Functions in Two Variables](../Notes/TwoVariables/TwoVariablesIntro.html). 
+    * Activity: [Drawing contours](https://dl.dropboxusercontent.com/u/5098197/Math135/In-Class/hiv-graph.pdf)  
+    * Activity: the [ideal gas law](https://dl.dropboxusercontent.com/u/5098197/Math135/In-Class/ideal-gas-activity1.pdf)
 * Heuristics for polynomials [pdf](http://dl.dropbox.com/u/5098197/Math135/In-Class/poly2d.pdf) and [comments to instructors](../Notes/Polynomials/notes-on-polynomials.html)
-* Fitting and precision
-* Units and dimensions
+* Transformations.  Example: `used-hondas.csv`
 
 
 ## Session 4 Wednesday PM
+
+
+* Units and dimensions
+
 
 ### Working with your current textbook
 
