@@ -2,13 +2,16 @@ QALY Problem 1
 ========================================================
 ```{r echo=FALSE,results="hide",label="options",echo=FALSE}
 require(knitr, quietly=TRUE)
-opts_chunk$set(fig.width=5,fig.height=5,out.width="5in")
+opts_chunk$set(fig.width=5,fig.height=5,out.width="60%",dev='svg')
 ```
 
 ```{r warning=FALSE,error=FALSE,message=FALSE,results="hide",echo=FALSE}
 library(mosaic,quietly=TRUE)
 trellis.par.set(theme=col.mosaic())
 ```
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../javascripts/main.js"></script>
 
 In epidemiology, a QALY ([quality-adjusted life year](http://en.wikipedia.org/wiki/Quality-adjusted_life_year)) is a measure of duration of life adjusted for the health condition of the person --- a year of a person in good health is 1 QALY, but a year in a person in very poor health is less than 1 QALY.  
 

@@ -2,10 +2,13 @@ Optimization in One-Variable
 ========================================================
 ```{r echo=FALSE,message=FALSE,warning=FALSE,error=FALSE,results="hide",label="options"}
 require(knitr, quietly=TRUE)
-opts_chunk$set(fig.width=5,fig.height=5,out.width="5in")
+opts_chunk$set(fig.width=5,fig.height=5,out.width="60%",dev='svg')
 library(mosaic,quietly=TRUE)
 trellis.par.set(theme=col.mosaic())
 ```
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../javascripts/main.js"></script>
 
 Real problems involving optimization in one variable are not unheard of, but they are atypical.  Careful thought should be given to the ways in which the settings and techniques being taught are misleading.  
 

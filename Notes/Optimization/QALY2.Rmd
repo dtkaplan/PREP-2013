@@ -2,13 +2,15 @@ QALY Problem 2
 ========================================================
 ```{r echo=FALSE,results="hide",label="options",echo=FALSE}
 require(knitr, quietly=TRUE)
-opts_chunk$set(fig.width=5,fig.height=5,out.width="5in")
+opts_chunk$set(fig.width=5,fig.height=5,out.width="60%",dev='svg')
 ```
 
 ```{r warning=FALSE,error=FALSE,message=FALSE,results="hide",echo=FALSE}
 library(mosaic,quietly=TRUE)
 trellis.par.set(theme=col.mosaic())
 ```
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../javascripts/main.js"></script>
 
 In a previous exercise, a graph of the hypothetical impact of three forms of health-care expenditures was presented.  Here is a similar exercise, which will explore a constrained optimization using slightly hypothetical functions, $f_1$, $f_2$, and $f_3$:
 

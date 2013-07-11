@@ -2,13 +2,16 @@ Constrained Optimization Intro
 ========================================================
 ```{r echo=FALSE,results="hide",label="options",echo=FALSE}
 require(knitr, quietly=TRUE)
-opts_chunk$set(fig.width=5,fig.height=5,out.width="5in")
+opts_chunk$set(fig.width=5,fig.height=5,out.width="60%",dev='svg')
 ```
 
 ```{r warning=FALSE,error=FALSE,message=FALSE,results="hide",echo=FALSE}
 library(mosaic,quietly=TRUE)
 trellis.par.set(theme=col.mosaic())
 ```
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../javascripts/main.js"></script>
 
 Optimization is important for modeling the world; nature and man often  maximize or minimize some quantity: physical systems adopt conformations that minimize potential energy, economic actors seek to maximize profits (or at least to minimize costs), model fitting involves finding the parameters that bring a function form as close as possible to the data.
 

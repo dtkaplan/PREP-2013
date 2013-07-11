@@ -2,13 +2,16 @@ Multivariate Optimization Examples
 ========================================================
 ```{r echo=FALSE,results="hide",label="options",echo=FALSE}
 require(knitr, quietly=TRUE)
-opts_chunk$set(fig.width=3,fig.height=3,out.width="3in")
+opts_chunk$set(fig.width=3,fig.height=3,out.width="60%",dev='svg')
 ```
 
 ```{r warning=FALSE,error=FALSE,message=FALSE,results="hide",echo=FALSE}
 library(mosaic,quietly=TRUE)
 trellis.par.set(theme=col.mosaic())
 ```
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../javascripts/main.js"></script>
 
 Production Functions
 --------------------
@@ -20,15 +23,15 @@ labor.  The five parallel thick lines are budget constraints ranging
 from \$2K to \$10K.
 
 
-```{r label="graph1new",width=5,height=5,out.width="4.5in",echo=FALSE}
+```{r label="graph1new",width=5,height=5,out.width="60%",dev='svg',echo=FALSE}
 f = makeFun(20*sqrt(x*y) ~ x&y )
 plotFun(f(x,y)~x&y, x.lim=c(0,20), y.lim=c(0,20), 
         levels=c(10,seq(20,400,by=30)),
              filled=FALSE,xlab="Capital", ylab="Labor",
              main="Bicycles Per Week",cex=1.8)
 expend = makeFun(200*x +375*y~x+y )
-plotFun( expend(x,y)~x+y, add=TRUE, filled=FALSE,
-         levels=2000*(1:5), col="blue", lwd=3)
+#plotFun( expend(x,y)~x+y, add=TRUE, filled=FALSE,
+#         levels=2000*(1:5), col="blue", lwd=3)
 ``` 
 
 #### Questions:

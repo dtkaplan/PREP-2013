@@ -98,9 +98,13 @@ Calculus at Macalester.)
 
 ### Contour Plots
 * Activity: [Drawing contours](https://dl.dropboxusercontent.com/u/5098197/Math135/In-Class/findingContours.pdf)
+
+## Session 5 Thursday AM
+
+### Warm up
 * Activity: the [ideal gas law](https://dl.dropboxusercontent.com/u/5098197/Math135/In-Class/ideal-gas-activity1.pdf)
 
-### Units and dimensions
+
 
 ### Working with your current textbook
 
@@ -111,23 +115,20 @@ Calculus at Macalester.)
     * The Island: Letting Students Experiment and College Data by Michael Bulmer [video](http://www.mosaic-web.org/go/MCAST/videos/MCAST-2012-02-24/index.htm). This is a simulation of realistic demographics, disease, and physiology from which students can collect data for modeling.
 * Some bogus models: [Snowy Tree crickets](../Notes/Functions/SnowTreeCricket.html) and [beach crowds](../Notes/Optimization/beach-population.html)
 
+## Session 6 Thursday PM
+
+### Tools for Modelers
+
+* Dynamics
+* Units and dimensions
+* Optimization.  [One variable](../Notes/Optimization/One-Variable-Optimization.html), multiple variables, multiple variables with constraints [introduction](../Notes/Optimization/ConstraintsIntroduction.html) and [examples](../Notes/Optimization/ConstrainedOptimization.html), and [Lagrange multipliers](../Notes/Optimization/lagrange-multipliers.html)
+    * Quality Adjusted Life Years exercises: [one](../Notes/Optimization/QALY1.html), [two](../Notes/Optimization/QALY2.html), [three](../Notes/Optimization/QALY3.html)
+
 ### Building a case study
 
 * Learning objectives
 * Mathematical objectives
 * Participant presentations: Your modeling setting
-
-## Session 5 Thursday AM
-
-### Tools for Modelers
-
-* Dynamics
-* Optimization
-    * [QALYs](http://prep2012.mosaic-web.org/Topics/Optimization/QALY1.html)
-
-## Session 6 Thursday PM
-
-* Building a modeling case study.
 * Writing modeling projects and exercises
 
 

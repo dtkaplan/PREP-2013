@@ -3,6 +3,9 @@ Lagrange Multipliers
 
 Here's part of the explanation of constrained optimization from Hughes-Hallett et al. *Applied Calculus* 4/e (p. 383):
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../javascripts/main.js"></script>
+
 <img src="HH-lagrange-explain.png" width=400>
 
 -------------------

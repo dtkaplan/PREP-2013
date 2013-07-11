@@ -3,13 +3,16 @@ QALY 3
 
 ```{r echo=FALSE,results="hide",label="options",echo=FALSE}
 require(knitr, quietly=TRUE)
-opts_chunk$set(fig.width=5,fig.height=5,out.width="5in")
+opts_chunk$set(fig.width=5,fig.height=5,out.width="60%",dev='svg')
 ```
 
 ```{r warning=FALSE,error=FALSE,message=FALSE,results="hide",echo=FALSE}
 library(mosaic,quietly=TRUE)
 trellis.par.set(theme=col.mosaic())
 ```
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../javascripts/main.js"></script>
 
 You are a member of a health-care oversight committee that allocates funds for investment in health-care facilities.  The committee has two proposal before it and needs to decide how best to spend the available
 \$50M budget:
@@ -20,17 +23,14 @@ Experts have evaluated each proposal in terms of different cost options and the 
 
 Here are the expert estimates:
 
-<pre>
-\begin{centering}
-QALY Impact of the Proposals
+#### QALY Impact of the Proposals
 
-\begin{tabular}{lrrrrrr}
-Expenditure & 0 & 10 & 20 & 30 & 40 & 50\\\hline
-Proposal A & 0 & 40 & 100 & 150 & 170 & 180\\
-Proposal B & 0 & 30 & 80 & 140 & 160 & 175\\
-\end{tabular}
-\end{centering}
-</pre>
+
+Expenditure | 0 | 10 | 20 | 30 | 40 | 50
+----------:|:--|:---|:----|:----|:----|:-----
+Proposal A | 0 | 40 | 100 | 150 | 170 | 180
+Proposal B | 0 | 30 | 80  | 140 | 160 | 175
+
 
 Such estimates from experts should be taken with a grain of salt, but they are often the best information you have to inform a model.
 
