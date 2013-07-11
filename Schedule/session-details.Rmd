@@ -121,7 +121,7 @@ Calculus at Macalester.)
 
 * Dynamics
 * Units and dimensions
-* Optimization.  [One variable](../Notes/Optimization/One-Variable-Optimization.html), multiple variables, multiple variables with constraints [introduction](../Notes/Optimization/ConstraintsIntroduction.html) and [examples](../Notes/Optimization/ConstrainedOptimization.html), and [Lagrange multipliers](../Notes/Optimization/lagrange-multipliers.html)
+* Optimization.  [One variable](../Notes/Optimization/One-Variable-Optimization.html), multiple variables, multiple variables with constraints [introduction](../Notes/Optimization/ConstraintsIntroduction.html) and [examples](../Notes/Optimization/constrainedOptimization.html), and [Lagrange multipliers](../Notes/Optimization/lagrange-multipliers.html)
     * Quality Adjusted Life Years exercises: [one](../Notes/Optimization/QALY1.html), [two](../Notes/Optimization/QALY2.html), [three](../Notes/Optimization/QALY3.html)
 
 ### Building a case study
